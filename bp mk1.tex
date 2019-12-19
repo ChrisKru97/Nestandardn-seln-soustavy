@@ -1,25 +1,25 @@
 \documentclass[12pt]{book}
 \usepackage[utf8]{inputenc}
-
-%nezobrazovalo se dobře ť, proto jsem přidal balík:
 \usepackage[T1]{fontenc}
-%nerozdělovala se slova na konci řádku, proto jsem přidal balík:
 \usepackage[czech]{babel}
-
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{mathtools}
 \usepackage{amssymb}
+\usepackage{geometry}
+\geometry{outer=2cm,inner=2cm}
 \newtheorem{definice}{Definice}
-\newtheorem{veta}{V\v eta}
+\newtheorem{veta}{Věta}
 \newtheorem{lema}{Lema}
-\newtheorem{ozn}{Ozna\v cen\'\i}
+\newtheorem{ozn}{Označení}
 \newtheorem{dusledek}{Důsledek}
-\newtheorem{pr}{P\v r\'\i klad}
+\newtheorem{pr}{Příklad}
 \newtheorem{dukaz}{Důkaz}
-\newtheorem{pozn}{Pozn\' amka}
+\newtheorem{pozn}{Poznámka}
 \newtheorem{hypoteza}{Hypotéza}
 \newtheorem{umluva}{Úmluva}
+
+
 \begin{document}
 \begin{titlepage}
    \begin{center}
@@ -49,7 +49,7 @@
 
        \textbf{Vypracoval: Christian Krutsche}
 
-      \vspace{0.5cm}
+       \vspace{0.5cm}
 
        \textbf{Vedoucí: RNDr. Pavel Jahoda, Ph.D.}
 
@@ -99,8 +99,8 @@ Cílem této práce je prozkoumat různé nestandardní možnosti zápisu či k�
 
 \newpage
 
-\section{Úvod}
-\subsection{Definice}
+\chapter{Úvod}
+\section{Definice}
 
 \newcommand{\poslbeta}{\{\beta_i\}_{i=1}^{\infty}}
 \newcommand{\poslalpha}{\{\alpha_i\}_{i=0}^{\infty}}
@@ -109,10 +109,20 @@ Cílem této práce je prozkoumat různé nestandardní možnosti zápisu či k�
 
 Připomeňme, že libovolnou podmnožinu $\varphi$ kartézského součinu $A \times B$ nazýváme relací mezi prvky z množiny $A$ a prvky z množiny $B$. Fakt, že $(a,b)\in \varphi$ budeme značit $\varphi(a) = b$ a $\varphi \subseteq A \times B$ budeme značit $\varphi : A \rightarrow B$, tak jak je to obvyklé u zobrazení, jež jsou speciálními případy relací.
 
-???????????????????V dalším textu budeme pracovat s tělesy a okruhy na nichž je definován součet nekonečné řady.???????????????????????????????????????????????????????????????????????
+%V dalším textu budeme pracovat s tělesy a okruhy na nichž je definován součet nekonečné řady.
+
+% https://homel.vsb.cz/~bou10/MA1/4.pdf strana 3/28
+\begin{definice}
+	Posloupností na množině M rozumíme každou funkci, jejímž definičním oborem je množina $\mathbb{N}$. Posloupnost, která každému $n \in \mathbb{N}$ přiřazuje číslo $a_n \in M$ budeme zapisovat některým z následujících způsobů:
+	\begin{itemize}
+		\item $a_1, a_2, a_3, ...$
+		\item $(a_n)$
+		\item ${a_n}_{n=1}^{\infty}$
+	\end{itemize}
+\end{definice}
 
 \begin{definice} \textbf{(Číselná soustava na tělese)}
-	Nechť $(A,+,\cdot)$ je těleso; $\poslalpha$ a $\poslbeta$ jsou posloupnosti prvků z $A$; $C\subseteq A$ a $B$ je množina všech posloupností prvků z $C$.
+	Nechť $(A,+,\cdot)$ je těleso; $\poslalpha$ a $\poslbeta$ jsou posloupnosti na množině $A$; $C\subseteq A$ a $B$ je množina všech posloupností na množině $C$.
 	\textbf{Číselnou soustavou na tělese $(A,+,\cdot)$} o základu $\poslalpha$ a $\poslbeta$ s ciframi z $C$ nazveme libovolnou relaci $\varphi : A \rightarrow B\times B$, kde 	$\varphi(x)=\left(\{a_{i}\}_{i=0}^{\infty},\{b_{i}\}_{i=1}^{\infty}\right)$ právě když
 
 		$$x = \sum_{i=0}^{\infty} a_{i}\alpha_{i} + \sum_{i=1}^{\infty} b_{i}\beta_{i}$$
@@ -120,9 +130,9 @@ Připomeňme, že libovolnou podmnožinu $\varphi$ kartézského součinu $A \ti
 		Množinu $C$ označujeme jako \textbf{množinu cifer} číselné soustavy $\varphi$. Budeme používat značení $\varphi(x) = \left(\{a_{i}\}_{i=0}^{\infty},\{b_{i}\}_{i=1}^{\infty}\right) = (\dots a_2,a_1,a_0;b_1, b_2, b_3, \dots)_{\varphi}$ a pokud nebude možno dojít k omylu, pak také $(\dots a_2,a_1,a_0;b_1, b_2, b_3, \dots)_{\varphi} = (\dots a_2,a_1,a_0;b_1, b_2, b_3, \dots) = (\dots a_2a_1a_0,b_1 b_2 b_3 \dots)$
 		\end{definice}
 
-Všimněme si, že nevyžadujeme, aby $\varphi$ bylo zobrazení. Číselná soustava nemusí vyjadřovat každý prvek z $A$ a ty prvky z $A$, které jsou v relaci $\varphi$, nemusí být vyjádřeny jediným způsobem. Uvažujme například obvyklou desítkovou číselnou soustavu na tělese reálných čísel. Jde o číselnou soustavu, kde $C = \{0, 1, 2, \dots, 9\}$ a základem jsou konstantní posloupnosti $\{\alpha_n\}_{n = 0}^{\infty} = \{10\}_{n = 0}^{\infty}$ a $\{\beta_n\}_{n = 1}^{\infty} = \{\frac{1}{10}\}_{n = 1}^{\infty}$. Potom ($[x]$ je dolní celá část reálného čísla $x$)
+Všimněme si, že nevyžadujeme, aby $\varphi$ bylo zobrazení. Číselná soustava nemusí vyjadřovat každý prvek z $A$ a ty prvky z $A$, které jsou v relaci $\varphi$, nemusí být vyjádřeny jediným způsobem. Uvažujme například obvyklou desítkovou číselnou soustavu na tělese reálných čísel. Jde o číselnou soustavu, kde $C = \{0, 1, 2, \dots, 9\}$ a základem jsou konstantní posloupnosti na : $\poslalpha = \{10^n\}_{n = 0}^{\infty}$ a $\poslbeta = \{\frac{1}{10^n}\}_{n = 1}^{\infty}$ na množině $C$. Potom ($\lfloor x\rfloor$ je celočíselná část reálného čísla $x$)  
 
-$$\varphi(1) = \left(  \left\{ \left[\frac{1}{n+1} \right] \right\}_{n = 0}^{\infty} , \left\{ 0 \right\}_{n = 0}^{\infty} \right) = \left(\dots 001,000 \dots \right),$$
+$$\varphi(1) = \left(  \left\{ \left\lfloor\frac{1}{n+1} \right\rfloor \right\}_{n = 0}^{\infty} , \left\{ 0 \right\}_{n = 0}^{\infty} \right) = \left(\dots 001,000 \dots \right),$$
 
 ale také
 
@@ -169,18 +179,17 @@ $$(\forall x \in A) (\exists! \posla \in \textbf{B}): x = \sum_{i=0}^{\infty} a_
 		\item Nechť $\poslalpha$ a $\poslbeta$  jsou posloupnosti, které jsou základem číselné soustavy na tělese $(A,+,\cdot)$. Jestliže $\exists n \in \mathbb{A}$, pro které platí:
 	$$ (\forall i \in \mathbb{N} : \alpha_i = n^i,\beta_i = n^{-i}) \land (\alpha_{0} = 1)$$
 	pak prvek \textbf{n} nazýváme také základem této číselné soutavy (1 označuje neutrální prvek tělesa $(A,+,\cdot)$ vzhledem k násobení).
-	% TODO definovat obecny(nekonecny) pripad zapisu s spodnim indexem n
 	\item Nechť $\varphi(x) = (\posla,\poslb)$ je číselná soustava na tělese o základu \textbf{n}.\newline Pokud $(\exists n_1 \in \mathbb{N}) (\forall m \in \mathbb{N},m>n_1):a_m = 0$, a pokud $(\exists n_2 \in \mathbb{N}) (\forall m \in \mathbb{N},m>n_2):b_m = 0$, budeme zapisovat: $\varphi(x) = (a_{n_1} ... a_0,b_1 ... b_{n_2})_n$
 	\item V případě n=10 píšeme pouze $\varphi(x) = a_{n_1} ... a_0,b_1 ... b_{n_2}$
 	\item Nechť $\poslalpha$ je posloupnost, která je základem číselné soustavy na okruhu $(A,+,\cdot)$ s jedničkou. Jestliže $\exists n \in \mathbb{A}$, pro které platí:
-	$$ (\forall i \in \mathbb{N} : \alpha_i = n^i) \land (\alpha_{0} = 1)$$
-	pak prvek \textbf{n} nazýváme také základem této číselné soutavy (1 je jedničkou v okruhu $(A,+,\cdot)$ ).
+	$$ (\forall i \in \mathbb{N}_0 : \alpha_i = n^i)$$
+	pak prvek \textbf{n} nazýváme také základem této číselné soutavy $($1 je jedničkou v okruhu $(A,+,\cdot))$.
 	\item Nechť $\varphi(x) = (\posla)$ je číselná soustava na okruhu o základu \textbf{n}.\newline Pokud $(\exists n_1 \in \mathbb{N}) (\forall m \in \mathbb{N},m>n_1):a_m = 0$, budeme zapisovat: $\varphi(x) = (a_{n_1} ... a_0)_n$
 \end{itemize}
 \end{umluva}
 
 \newpage
-\subsection{Názorné příklady}
+\section{Názorné příklady}
 Pro lepší představu definice číselné soustavy si ji předveďme na příkladu
 \begin{pr}
 	Uvažujme těleso reálných čísel $(\mathbb{R},+,\cdot)$. Tj. zvolili jsme A = $\mathbb{R}$. Obvyklý desetinný zápis reálných čísel je vlastně číselná soustava na tělese $(\mathbb{R},+,\cdot)$ o základu $\poslalpha=\{{10^i\}}_{i=0}^{\infty}$, $\poslbeta=\{{10^{-i}\}}_{i=1}^{\infty}$ a C = $\{0,1,2,3,4,5,6,7,8,9\}$. Podle dohody můžeme říci, že jde o číselnou soustavu na tělese o základu 10 a platí:
@@ -225,19 +234,19 @@ $$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): a_i = 0 $$
 
 \newpage
 
-\section{Fibonacciho kódování}
+\chapter{Fibonacciho kódování}
 
 \newpage
 
-\section{Zlatý řez}
+\chapter{Zlatý řez}
 
 \newpage
 
-\section{Negabinární}
+\chapter{Negabinární}
 
 \begin{definice}
 	Negabinární číselná soustava je číselná soustava o základu -2 s množinou cifer $C=\{0,1\}$\newline
-	Negabinární číselná soustava je zobrazení:
+	Negabinární číselná soustava je relace:
 	$\varphi:\mathbb{Z}\to B$
 	 $$B=\{\{a_n\}_{n=0}^\infty,a_n \in \{0,1\} \}$$
 \end{definice}
@@ -318,11 +327,11 @@ Musíme ověřit korektnost 5. Musíme ukázat, že $\varphi$ je opravdu zobraze
 %5. vyhody, nevyhody
 \newpage
 
-\section{Odmocnina ze dvou??}
+\chapter{Odmocnina ze dvou??}
 
 \newpage
 
-\section{Kvaterimaginární (2i)}
+\chapter{Kvaterimaginární (2i)}
 
 \begin{definice}
 	Kvaterimaginární(2i) číselná soustava je číselná soustava (neinjektivní) na tělese $(\mathbb{C},+,\cdot)$ o základu $2i$, kde množina cifer $C = \{0,1,2,3\}$
@@ -346,7 +355,7 @@ $$1.03_{2i} = 0.0003_{2i} = \left(\frac{1}{5}\right)_{10}$$
 
 \newpage
 
-\section{Complex (i-1)}
+\chapter{Complex (i-1)}
 
 \begin{definice}
 	Complex(i-1) číselná soustava je injektivní číselná soustava na okruhu $(\mathbb{Z}_{[i]},+,\cdot)$ o základu $1-i$, kde množina cifer $C = \{0,1\}$
@@ -367,10 +376,10 @@ $$\varphi(x) = (\posla,\poslb)_{1-i}$$
 
 \newpage
 
-\section{Factorial base}
+\chapter{Factorial base}
 
 \newpage
 
-\section{Eulerovo cislo}
+\chapter{Eulerovo cislo}
 
 \end{document} 
