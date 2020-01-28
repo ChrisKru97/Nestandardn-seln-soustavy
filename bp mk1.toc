@@ -1,12 +1,12 @@
 \babel@toc {czech}{}
-\contentsline {chapter}{\numberline {1}\IeC {\'U}vod}{7}% 
-\contentsline {section}{\numberline {1.1}Definice}{7}% 
-\contentsline {section}{\numberline {1.2}N\IeC {\'a}zorn\IeC {\'e} p\IeC {\v r}\IeC {\'\i }klady}{10}% 
-\contentsline {chapter}{\numberline {2}Fibonacciho k\IeC {\'o}dov\IeC {\'a}n\IeC {\'\i }}{13}% 
-\contentsline {chapter}{\numberline {3}Zlat\IeC {\'y} \IeC {\v r}ez}{15}% 
-\contentsline {chapter}{\numberline {4}Negabin\IeC {\'a}rn\IeC {\'\i }}{17}% 
-\contentsline {chapter}{\numberline {5}Odmocnina ze dvou??}{21}% 
-\contentsline {chapter}{\numberline {6}Kvaterimagin\IeC {\'a}rn\IeC {\'\i } (2i)}{23}% 
-\contentsline {chapter}{\numberline {7}Complex (i-1)}{25}% 
-\contentsline {chapter}{\numberline {8}Factorial base}{27}% 
-\contentsline {chapter}{\numberline {9}Eulerovo cislo}{29}% 
+\contentsline {chapter}{\numberline {1}\IeC {\'U}vod}{7}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Definice}{7}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}N\IeC {\'a}zorn\IeC {\'e} p\IeC {\v r}\IeC {\'\i }klady}{10}{section.1.2}% 
+\contentsline {chapter}{\numberline {2}Fibonacciho k\IeC {\'o}dov\IeC {\'a}n\IeC {\'\i }}{13}{chapter.2}% 
+\contentsline {chapter}{\numberline {3}Zlat\IeC {\'y} \IeC {\v r}ez}{15}{chapter.3}% 
+\contentsline {chapter}{\numberline {4}Negabin\IeC {\'a}rn\IeC {\'\i }}{17}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}Odmocnina ze dvou??}{21}{chapter.5}% 
+\contentsline {chapter}{\numberline {6}Kvaterimagin\IeC {\'a}rn\IeC {\'\i } (2i)}{23}{chapter.6}% 
+\contentsline {chapter}{\numberline {7}Complex (i-1)}{25}{chapter.7}% 
+\contentsline {chapter}{\numberline {8}Faktori\IeC {\'a}lov\IeC {\'a}}{27}{chapter.8}% 
+\contentsline {chapter}{\numberline {9}Eulerovo cislo}{31}{chapter.9}% 

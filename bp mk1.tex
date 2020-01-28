@@ -7,6 +7,7 @@
 \usepackage{mathtools}
 \usepackage{amssymb}
 \usepackage{geometry}
+\usepackage{hyperref}
 \geometry{outer=2cm,inner=2cm}
 \newtheorem{definice}{Definice}
 \newtheorem{veta}{Věta}
@@ -107,11 +108,11 @@ Cílem této práce je prozkoumat různé nestandardní možnosti zápisu či k�
 \newcommand{\posla}{\{a_i\}_{i=0}^{\infty}}
 \newcommand{\poslb}{\{b_i\}_{i=1}^{\infty}}
 
-Připomeňme, že libovolnou podmnožinu $\varphi$ kartézského součinu $A \times B$ nazýváme relací mezi prvky z množiny $A$ a prvky z množiny $B$. Fakt, že $(a,b)\in \varphi$ budeme značit $\varphi(a) = b$ a $\varphi \subseteq A \times B$ budeme značit $\varphi : A \rightarrow B$, tak jak je to obvyklé u zobrazení, jež jsou speciálními případy relací.
+Připomeňme, že libovolnou podmnožinu $\varphi$ kartézského součinu $A \times B$ nazýváme binární relací(dále jen relací) mezi prvky z množiny $A$ a prvky z množiny $B$. Fakt, že $(a,b)\in \varphi$ budeme značit $\varphi(a) = b$ a $\varphi \subseteq A \times B$ budeme značit $\varphi : A \rightarrow B$, tak jak je to obvyklé u zobrazení, jež jsou speciálními případy relací.
 
 %V dalším textu budeme pracovat s tělesy a okruhy na nichž je definován součet nekonečné řady.
 
-% https://homel.vsb.cz/~bou10/MA1/4.pdf strana 3/28
+% https://homel.vsb.cz/~bo0/MA1/4.pdf strana 3/28
 \begin{definice}
 	Posloupností na množině M rozumíme každou funkci, jejímž definičním oborem je množina $\mathbb{N}$. Posloupnost, která každému $n \in \mathbb{N}$ přiřazuje číslo $a_n \in M$ budeme zapisovat některým z následujících způsobů:
 	\begin{itemize}
@@ -166,7 +167,7 @@ Dále můžeme tvrdit, že hodnota $\varphi(x)$ (i v případě, že $\varphi(x)
 		Jestliže pro číselnou soustavu $\varphi$ na tělese $(A,+,\cdot)$ platí, že $\varphi$ je zobrazení s definičním oborem $A$, pak tuto soustavu nazveme \textbf{Jednoznačnou číselnou soustavou na tělese $(A,+,\cdot)$}. Analogicky, jestliže pro číselnou soustavu $\varphi$ na okruhu $(A,+,\cdot)$ platí, že $\varphi$ je zobrazení s definičním oborem $A$, pak tuto soustavu nazveme \textbf{Jednoznačnou číselnou soustavou na okruhu $(A,+,\cdot)$}.
 	\end{definice}
 
-Jednoznačnou číselnou soustavou na tělese (respektive okruhu), tedy nazveme každou číselnou soustavu v níž dokážeme vyjádřit libovolný prvek tělesa (okruhu), přičemž je toto vyjádření jediné možné. To jest platí:	
+Jednoznačnou číselnou soustavou na tělese (respektive okruhu), tedy nazveme každou číselnou soustavu v níž dokážeme vyjádřit libovolný prvek tělesa (okruhu), přičemž je toto vyjádření jediné možné. Proto platí:	
 
 $$(\forall x \in A) (\exists!(\posla,\poslb)\in\textbf{B}\times\textbf{B}): x = \sum_{i=0}^{\infty} a_{i}\alpha_{i} + \sum_{i=1}^{\infty} b_{i}\beta_{i},$$
 
@@ -220,7 +221,7 @@ Pozorování:
 %Mohutnost C musí být co nejmenší potřebná pro vyjádření celého A.
 
 %Je-li nosná množina tělesa $A \subseteq \mathbb{Z}$, pak posloupnoust $\forall i \in \mathbb{N} : b_i = 0$ (tj. je není třeba vyjadřovat zlomkovou část čísla)\newline \newline
-Je li základem soustavy racionální čislo či posloupnost čísel
+Je li základem soustavy racionální číslo či posloupnost čísel
 $$\forall i \in \mathbb{N} : \alpha_i \in \mathbb{Q} \land \beta_i \in \mathbb{Q}$$
 pak:
 $$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): b_i = 0 $$
@@ -231,16 +232,11 @@ $$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): a_i = 0 $$
 (tj. celočíselná část musí být  z konečného počtu prvků \textbf{a})
 
 
-
-\newpage
-
 \chapter{Fibonacciho kódování}
 
-\newpage
 
 \chapter{Zlatý řez}
 
-\newpage
 
 \chapter{Negabinární}
 
@@ -250,56 +246,56 @@ $$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): a_i = 0 $$
 	$\varphi:\mathbb{Z}\to B$
 	 $$B=\{\{a_n\}_{n=0}^\infty,a_n \in \{0,1\} \}$$
 \end{definice}
-Musíme ověřit korektnost 5. Musíme ukázat, že $\varphi$ je opravdu zobrazení na $\mathbb{Z}$. To jest, že $D(\varphi)=\mathbb{Z}$ a že každé celé číslo z je možné vyjádřit ve tvaru $z=\sum_{i=0}^\infty a_i(-2)^i$ jednoznačně
+Musíme ověřit korektnost definice. Musíme ukázat, že $\varphi$ je opravdu zobrazení na $\mathbb{Z}$. To jest, že $D(\varphi)=\mathbb{Z}$ a že každé celé číslo z je možné vyjádřit ve tvaru $z=\sum_{i=0}^\infty a_i(-2)^i$ jednoznačně
 
 \begin{veta}
 	%$$\nexists z \in \mathbb{Z}:$$tj.
-	$$(\forall z \in \mathbb{Z})(\exists n_0 \in \mathbb{N}) (\forall n > n_0) : a_n = 0$$tj. neexistuje žádné celé číslo, které by se zobrazilo na nekonečnou posloupnost $a_n$
+	$$(\forall z \in \mathbb{Z})(\exists n_0 \in \mathbb{N}) (\forall n > n_0) : a_n = 0$$tj. celé číslo se vždy zobrazí na konečnou posloupnost cifer
 	\end{veta}
 
 \begin{dukaz}
 	Předpokládejme, že takové číslo $z$ existuje, pak uvažujme tři případy:
 	\begin{itemize}
-		\item[$a)$] $(\exists n_0 \in \mathbb{N})(\forall n > n_0): (n\mod2 = 0 \land a_n = 0)\lor (n\mod2 = 1 \land a_n = 1)$
-		Je zřejmé, že takové číslo by v součtu bylo $-\infty \implies \notin \mathbb{Z}$
-		\item[$b)$] $(\exists n_0 \in \mathbb{N})(\forall n > n_0): (n\mod2 = 0 \land a_n = 1)\lor (n\mod2 = 1 \land a_n = 0)$
-		Je zřejmé, že takové číslo by v součtu bylo $\infty \implies \notin \mathbb{Z}$
-		\item[$c)$] Pro každé sudé $n_1$ najdeme $n_2$ větší, kde $a_{n_2}=1$ a analogicky pro každé liché $n_1$ najdeme $n_2$ větší, kde $a_{n_2}=1$
-		\begin{itemize}
-		\item[I.]$(\forall n_1 \in \mathbb{N},a_{n_1} = 1\land n_1\mod2=1)(\exists n_2 \in \mathbb{N},a_{n_2} = 1\land n_2\mod2=0):n_2 > n_1$\newline
+		\item[$a)$]
+		Každý sudý člen posloupnosti $a_n$ má hodnotu 1 a každý lichý člen hodnotu 0.
+		Je zřejmé, že hodnota takového číslo by byla: $z= -\infty \implies z \notin \mathbb{Z}$
+		\item[$b)$]Každý lichý člen posloupnosti $a_n$ má hodnotu 1 a každý sudý člen hodnotu 0.
+		Je zřejmé, že hodnota takového číslo by byla: $z= \infty \implies z \notin \mathbb{Z}$
+		\item[$c)$] Pro každé sudé $n_1$ najdeme liché $n_2$, kde $ n_2>n_1 \land a_{n_2}=1$\newline
+		%TODO problem s lichou mocninou
 		$$ n_2\mod 2 = 0 \implies (-2)^{n_2} = 2^{n_2}$$
 		$$-\left(\sum_{n=0}^{n_2-1}2^n\right)+(-2)^{n_2}\leq \left(\sum_{n=0}^{n_2-1}a_n(-2)^n\right)+(-2)^{n_2}  \leq\left(\sum_{n=0}^{n_2-1}2^n\right)+(-2)^{n_2}$$
 		$$-\left(\frac{2^{n_2}-1}{2-1}\right)+2^{n_2}\leq   \left( \sum_{n=0}^{n_2-1}a_n(-2)^n \right)+(-2)^{n_2}  \leq\left(\frac{2^{n_2}-1}{2-1} \right)+2^{n_2}$$
 		$$1\leq   \left( \sum_{n=0}^{n_2-1}a_n(-2)^n \right)+(-2)^{n_2}  \leq 2\cdot2^{n_2}-1$$
-		\item[II.]$(\forall n_1 \in \mathbb{N},a_{n_1} = 1\land n_1\mod2=0)(\exists n_2 \in \mathbb{N},a_{n_2} = 1\land n_2\mod2=1):n_2 > n_1$\newline
+		\item[$d)$] Analogicky pro každé liché $n_1$ najdeme sudé $n_2$ větší, kde $ n_2>n_1 \land a_{n_2}=1$\newline
 		$$-\left(\sum_{n=0}^{n_2-1}2^n\right)+(-2)^{n_2}\leq \left(\sum_{n=0}^{n_2-1}a_n(-2)^n\right)+(-2)^{n_2}  \leq\left(\sum_{n=0}^{n_2-1}2^n\right)+(-2)^{n_2}$$
 		$$-\left(\frac{2^{n_2}-1}{2-1}\right)-2^{n_2}\leq   \left( \sum_{n=0}^{n_2-1}a_n(-2)^n \right)-2^{n_2}  \leq\left(\frac{2^{n_2}-1}{2-1} \right)-2^{n_2}$$
 		$$-2\cdot2^{n_2}+1\leq   \left( \sum_{n=0}^{n_2-1}a_n(-2)^n \right)-2^{n_2}  \leq -1$$
-		Je zřejmé, že taková suma nekonverguje, protože vždy najdeme případ, kdy suma je menší než -1 a zároveň případ, kdy suma je větší než 1 $\implies$ \textbf{spor!}
-		\end{itemize}
 		
 	\end{itemize}
+	Je zřejmé, že v případě $c)$ a $d)$ suma nekonverguje, protože vždy najdeme případ, kdy suma je menší než -1 a zároveň případ, kdy suma je větší než 1 $\implies$ \textbf{spor!}
 	$$ z = \sum_{n=0}^\infty a_n(-2)^n \implies (\exists n \in \mathbb{N})(\forall n \in \mathbb{N},n>n_0):a_n=0$$
 	\end{dukaz}
 
 \newpage
 \begin{dukaz}
 	Je třeba dokázat korektnost, tj. že $\varphi(z)$ je zobrazení.
-	Předpokládejme $$\{a_n\}_{n=0}^\infty \ne \{b_n\}_{n=0}^\infty \land$$ $$z=\sum_{n=0}^{k}a_n(-2)^n = \sum_{n=0}^{k}b_n(-2)^n$$
-	$$C_n = a_n - b_n$$
-	$$\left(\sum_{n=0}^k(a_n-b_n)(-2)^n\right) = 0 , C_n \in \{-1, 0 ,1\}$$
+	Dokazujeme sporem, a proto předpokládejme že existuje celé číslo \textbf{z}, které je v relaci s posloupností $\mathbf{a_n}$ a zároveň v relaci s jinou posloupností $\mathbf{b_n}$. Pokud takové číslo existuje, tak $\varphi(z)$ jistě není zobrazení.
+	 $$\{a_n\}_{n=0}^\infty \ne \{b_n\}_{n=0}^\infty$$ $$z=\sum_{n=0}^{k}a_n(-2)^n = \sum_{n=0}^{k}b_n(-2)^n$$
+	definujme posloupnost $C_n$ splňující: $$C_n = a_n - b_n$$
+	$$\sum_{n=0}^k C_n(-2)^n = 0 , C_n \in \{-1, 0 ,1\}$$
 	Abychom došli ke sporu, předpokládejme, že $\exists n_0 \in \{0,...,k\}: C_n \ne 0$
 	\begin{itemize}
 		\item[$\alpha)$]$C_{n_0} = 1$
 		\begin{itemize}
-			\item[I.)] $n_0 \mod2 = 0$
+			\item[I.)] $\mathbf{n_0}$ je liché
 			$$-\left(\sum_{n=0}^{n_0-1}2^n\right)+(-2)^{n_0}\leq \left(\sum_{n=0}^{n_0-1}C_n(-2)^n\right)+C_{n_0}\cdot(-2)^{n_2}  \leq\left(\sum_{n=0}^{n_0-1}2^n\right)+(-2)^{n_0}$$
 			$$1\leq \left(\sum_{n=0}^{n_0-1}C_n(-2)^n\right)+C_{n_0}\cdot(-2)^{n_2}  \leq 2^{n_0 + 1}-1$$
-			Takové číslo bude jistě kladné, což je \textbf{spor}
-			\item[II.)] $n_0 \mod2 = 1$
+			Takové číslo je jistě kladné $\implies$ \textbf{z} nemůže být v relaci s posloupností $\mathbf{a_n}$ a zároveň v relaci s posloupností $\mathbf{b_n}$
+			\item[II.)]  $\mathbf{n_0}$ je sudé
 			$$-\left(\sum_{n=0}^{n_0-1}2^n\right)+(-2)^{n_0}\leq \left(\sum_{n=0}^{n_0-1}C_n(-2)^n\right)+C_{n_0}\cdot(-2)^{n_2}  \leq\left(\sum_{n=0}^{n_0-1}2^n\right)+(-2)^{n_0}$$
 			$$-2^{n_0+1}+1\leq \left(\sum_{n=0}^{n_0-1}C_n(-2)^n\right)+C_{n_0}\cdot(-2)^{n_2}  \leq -1$$
-			Takové číslo bude jistě záporné, což je \textbf{spor}
+			Takové číslo je jistě záporné $\implies$ \textbf{z} nemůže být v relaci s posloupností $\mathbf{a_n}$ a zároveň v relaci s posloupností $\mathbf{b_n}$
 			
 		\end{itemize}
 		\item[$\beta)$]$C_{n_0} = -1$\newline
@@ -325,11 +321,9 @@ Musíme ověřit korektnost 5. Musíme ukázat, že $\varphi$ je opravdu zobraze
 %3. priklad prevodu tam a zpet, scitani, nasobeni
 %4. zobecnit prevod, pripadne scitani,nasobeni
 %5. vyhody, nevyhody
-\newpage
 
 \chapter{Odmocnina ze dvou??}
 
-\newpage
 
 \chapter{Kvaterimaginární (2i)}
 
@@ -353,7 +347,6 @@ $$\varphi(x) = (\posla,\poslb)_{2i}$$
 Důkaz neinjektivity
 $$1.03_{2i} = 0.0003_{2i} = \left(\frac{1}{5}\right)_{10}$$
 
-\newpage
 
 \chapter{Complex (i-1)}
 
@@ -374,11 +367,90 @@ $$\varphi(x) = (\posla,\poslb)_{1-i}$$
 	%78 = 1010010_{-2}
 \end{pr}
 
-\newpage
 
-\chapter{Factorial base}
+\chapter{Faktoriálová}
+
+\begin{definice}
+	Faktoriálová číselná soustava je číselná soustava o základu $\{(i-1)!\}_{i=0}^\infty$ s množinou cifer $C=\mathbb{Z}$\newline
+	Faktoriálová číselná soustava je relace:
+	$\varphi:\mathbb{Z}\to B$
+	$$B=\{\{a_n\}_{n=0}^\infty,a_n \in \{0,1\} \}$$
+\end{definice}
+Musíme ověřit korektnost definice. Musíme ukázat, že $\varphi$ je opravdu zobrazení na $\mathbb{Z}$. To jest, že $D(\varphi)=\mathbb{Z}$ a že každé celé číslo z je možné vyjádřit ve tvaru $z=\sum_{i=0}^\infty a_i(-2)^i$ jednoznačně
+
+\begin{veta}
+	%$$\nexists z \in \mathbb{Z}:$$tj.
+	$$(\forall z \in \mathbb{Z})(\exists n_0 \in \mathbb{N}) (\forall n > n_0) : a_n = 0$$tj. celé číslo se vždy zobrazí na konečnou posloupnost cifer
+\end{veta}
+
+\begin{dukaz}
+	Předpokládejme, že takové číslo $z$ existuje, pak uvažujme tři případy:
+	\begin{itemize}
+		\item[$a)$]
+		Každý sudý člen posloupnosti $a_n$ má hodnotu 1 a každý lichý člen hodnotu 0.
+		Je zřejmé, že hodnota takového číslo by byla: $z= -\infty \implies z \notin \mathbb{Z}$
+		\item[$b)$]Každý lichý člen posloupnosti $a_n$ má hodnotu 1 a každý sudý člen hodnotu 0.
+		Je zřejmé, že hodnota takového číslo by byla: $z= \infty \implies z \notin \mathbb{Z}$
+		\item[$c)$] Pro každé sudé $n_1$ najdeme liché $n_2$, kde $ n_2>n_1 \land a_{n_2}=1$\newline
+		%TODO problem s lichou mocninou
+		$$ n_2\mod 2 = 0 \implies (-2)^{n_2} = 2^{n_2}$$
+		$$-\left(\sum_{n=0}^{n_2-1}2^n\right)+(-2)^{n_2}\leq \left(\sum_{n=0}^{n_2-1}a_n(-2)^n\right)+(-2)^{n_2}  \leq\left(\sum_{n=0}^{n_2-1}2^n\right)+(-2)^{n_2}$$
+		$$-\left(\frac{2^{n_2}-1}{2-1}\right)+2^{n_2}\leq   \left( \sum_{n=0}^{n_2-1}a_n(-2)^n \right)+(-2)^{n_2}  \leq\left(\frac{2^{n_2}-1}{2-1} \right)+2^{n_2}$$
+		$$1\leq   \left( \sum_{n=0}^{n_2-1}a_n(-2)^n \right)+(-2)^{n_2}  \leq 2\cdot2^{n_2}-1$$
+		\item[$d)$] Analogicky pro každé liché $n_1$ najdeme sudé $n_2$ větší, kde $ n_2>n_1 \land a_{n_2}=1$\newline
+		$$-\left(\sum_{n=0}^{n_2-1}2^n\right)+(-2)^{n_2}\leq \left(\sum_{n=0}^{n_2-1}a_n(-2)^n\right)+(-2)^{n_2}  \leq\left(\sum_{n=0}^{n_2-1}2^n\right)+(-2)^{n_2}$$
+		$$-\left(\frac{2^{n_2}-1}{2-1}\right)-2^{n_2}\leq   \left( \sum_{n=0}^{n_2-1}a_n(-2)^n \right)-2^{n_2}  \leq\left(\frac{2^{n_2}-1}{2-1} \right)-2^{n_2}$$
+		$$-2\cdot2^{n_2}+1\leq   \left( \sum_{n=0}^{n_2-1}a_n(-2)^n \right)-2^{n_2}  \leq -1$$
+		
+	\end{itemize}
+	Je zřejmé, že v případě $c)$ a $d)$ suma nekonverguje, protože vždy najdeme případ, kdy suma je menší než -1 a zároveň případ, kdy suma je větší než 1 $\implies$ \textbf{spor!}
+	$$ z = \sum_{n=0}^\infty a_n(-2)^n \implies (\exists n \in \mathbb{N})(\forall n \in \mathbb{N},n>n_0):a_n=0$$
+\end{dukaz}
 
 \newpage
+\begin{dukaz}
+	Je třeba dokázat korektnost, tj. že $\varphi(z)$ je zobrazení.
+	Dokazujeme sporem, a proto předpokládejme že existuje celé číslo \textbf{z}, které je v relaci s posloupností $\mathbf{a_n}$ a zároveň v relaci s jinou posloupností $\mathbf{b_n}$. Pokud takové číslo existuje, tak $\varphi(z)$ jistě není zobrazení.
+	$$\{a_n\}_{n=0}^\infty \ne \{b_n\}_{n=0}^\infty$$ $$z=\sum_{n=0}^{k}a_n(-2)^n = \sum_{n=0}^{k}b_n(-2)^n$$
+	definujme posloupnost $C_n$ splňující: $$C_n = a_n - b_n$$
+	$$\sum_{n=0}^k C_n(-2)^n = 0 , C_n \in \{-1, 0 ,1\}$$
+	Abychom došli ke sporu, předpokládejme, že $\exists n_0 \in \{0,...,k\}: C_n \ne 0$
+	\begin{itemize}
+		\item[$\alpha)$]$C_{n_0} = 1$
+		\begin{itemize}
+			\item[I.)] $\mathbf{n_0}$ je liché
+			$$-\left(\sum_{n=0}^{n_0-1}2^n\right)+(-2)^{n_0}\leq \left(\sum_{n=0}^{n_0-1}C_n(-2)^n\right)+C_{n_0}\cdot(-2)^{n_2}  \leq\left(\sum_{n=0}^{n_0-1}2^n\right)+(-2)^{n_0}$$
+			$$1\leq \left(\sum_{n=0}^{n_0-1}C_n(-2)^n\right)+C_{n_0}\cdot(-2)^{n_2}  \leq 2^{n_0 + 1}-1$$
+			Takové číslo je jistě kladné $\implies$ \textbf{z} nemůže být v relaci s posloupností $\mathbf{a_n}$ a zároveň v relaci s posloupností $\mathbf{b_n}$
+			\item[II.)]  $\mathbf{n_0}$ je sudé
+			$$-\left(\sum_{n=0}^{n_0-1}2^n\right)+(-2)^{n_0}\leq \left(\sum_{n=0}^{n_0-1}C_n(-2)^n\right)+C_{n_0}\cdot(-2)^{n_2}  \leq\left(\sum_{n=0}^{n_0-1}2^n\right)+(-2)^{n_0}$$
+			$$-2^{n_0+1}+1\leq \left(\sum_{n=0}^{n_0-1}C_n(-2)^n\right)+C_{n_0}\cdot(-2)^{n_2}  \leq -1$$
+			Takové číslo je jistě záporné $\implies$ \textbf{z} nemůže být v relaci s posloupností $\mathbf{a_n}$ a zároveň v relaci s posloupností $\mathbf{b_n}$
+			
+		\end{itemize}
+		\item[$\beta)$]$C_{n_0} = -1$\newline
+		Důkaz je úplně stejný, ať je $C_{n_0}$ liché nebo sudé, nikdy se suma rovnat 0 jistě nebude.
+	\end{itemize}
+\end{dukaz}
+\newpage
+Podle Úmluvy \ref{u1} v negabinární číselné soustavě zapisujeme:
+$$\varphi(x) = (\posla,\poslb)_{-2}$$
+
+
+\begin{pr}
+	Jestliže $\varphi$ je negabinární číselná soustava, pak platí:
+	$$\varphi(1\cdot-2^6+1\cdot-2^4+1\cdot-2^1)=(\{a_i\})=(64+16+(-2))$$
+	$${a_i}=(0,1,0,0,1,0,1,...) $$
+	%78 = 1010010_{-2}
+\end{pr}
+
+% TODO neni treba dokazat ze + a * funguji i po zobrazeni??
+
+%1.definice
+%2. overeni podminek (korektnost) (zkusit overit surjektivitu)
+%3. priklad prevodu tam a zpet, scitani, nasobeni
+%4. zobecnit prevod, pripadne scitani,nasobeni
+%5. vyhody, nevyhody
 
 \chapter{Eulerovo cislo}
 
