@@ -1,0 +1,29 @@
+INFO: latexindent version 3.6, 2019-05-05, a script to indent .tex files
+      latexindent lives here: /usr/local/texlive/2019/texmf-dist/scripts/latexindent/
+      Thu Jan 30 23:46:21 2020
+      Filename: bp mk1.tex
+INFO: Processing switches:
+      -s|--silent: Silent mode active (you have used either -s or --silent)
+      -w|--overwrite: Overwrite mode active, will make a back up of bp mk1.tex first
+INFO: Directory for backup files and indent.log: .
+INFO: YAML settings read: defaultSettings.yaml
+      Reading defaultSettings.yaml from /usr/local/texlive/2019/texmf-dist/scripts/latexindent/defaultSettings.yaml
+INFO: YAML settings read: indentconfig.yaml or .indentconfig.yaml
+      Home directory is /Users/christiankrutsche (didn't find either indentconfig.yaml or .indentconfig.yaml)
+      To specify user settings you would put indentconfig.yaml here: /Users/christiankrutsche/indentconfig.yaml
+      Alternatively, you can use the hidden file .indentconfig.yaml as: /Users/christiankrutsche/.indentconfig.yaml
+INFO: Backup procedure (-w flag active):
+      ./bp mk1.bak0 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      ./bp mk1.bak1 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      copying bp mk1.tex to ./bp mk1.bak2
+      Backup file: ./bp mk1.bak2
+      bp mk1.tex will be overwritten after indentation
+INFO: Phase 1: searching for objects
+INFO: Phase 2: finding surrounding indentation
+INFO: Phase 3: indenting objects
+INFO: Phase 4: final indentation check
+INFO: Output routine:
+      Overwriting file bp mk1.tex
+      --------------
+INFO: Please direct all communication/issues to:
+      https://github.com/cmhughes/latexindent.pl
