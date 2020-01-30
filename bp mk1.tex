@@ -8,6 +8,7 @@
 \usepackage{amssymb}
 \usepackage{geometry}
 \usepackage{hyperref}
+\usepackage{amsthm}
 \geometry{outer=2cm,inner=2cm}
 \newtheorem{definice}{Definice}
 \newtheorem{veta}{Věta}
@@ -15,7 +16,7 @@
 \newtheorem{ozn}{Označení}
 \newtheorem{dusledek}{Důsledek}
 \newtheorem{pr}{Příklad}
-\newtheorem{dukaz}{Důkaz}
+\newtheorem*{dukaz}{Důkaz}
 \newtheorem{pozn}{Poznámka}
 \newtheorem{hypoteza}{Hypotéza}
 \newtheorem{umluva}{Úmluva}
@@ -108,17 +109,14 @@ Cílem této práce je prozkoumat různé nestandardní možnosti zápisu či k�
 \newcommand{\posla}{\{a_i\}_{i=0}^{\infty}}
 \newcommand{\poslb}{\{b_i\}_{i=1}^{\infty}}
 
-Připomeňme, že libovolnou podmnožinu $\varphi$ kartézského součinu $A \times B$ nazýváme binární relací(dále jen relací) mezi prvky z množiny $A$ a prvky z množiny $B$. Fakt, že $(a,b)\in \varphi$ budeme značit $\varphi(a) = b$ a $\varphi \subseteq A \times B$ budeme značit $\varphi : A \rightarrow B$, tak jak je to obvyklé u zobrazení, jež jsou speciálními případy relací.
-
-%V dalším textu budeme pracovat s tělesy a okruhy na nichž je definován součet nekonečné řady.
-
-% https://homel.vsb.cz/~bo0/MA1/4.pdf strana 3/28
+Připomeňme, že libovolnou podmnožinu $\varphi$ kartézského součinu $A \times B$ nazýváme binární relací(dále jen relací) mezi prvky z množiny $A$ a prvky z množiny $B$. Fakt, že $(a,b)\in \varphi$ budeme značit $\varphi(a) = b$ a $\varphi \subseteq A \times B$ budeme značit $\varphi : A \rightarrow B$, tak jak je to obvyklé u zobrazení, jež jsou speciálními případy relací.\newline\newline
+Následující definici jsme převzali z \cite{aa}
 \begin{definice}
 	Posloupností na množině M rozumíme každou funkci, jejímž definičním oborem je množina $\mathbb{N}$. Posloupnost, která každému $n \in \mathbb{N}$ přiřazuje číslo $a_n \in M$ budeme zapisovat některým z následujících způsobů:
 	\begin{itemize}
 		\item $a_1, a_2, a_3, ...$
 		\item $(a_n)$
-		\item ${a_n}_{n=1}^{\infty}$
+		\item $\{a_n\}_{n=1}^{\infty}$
 	\end{itemize}
 \end{definice}
 
@@ -241,16 +239,16 @@ $$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): a_i = 0 $$
 \chapter{Negabinární}
 
 \begin{definice}
-	Negabinární číselná soustava je číselná soustava o základu -2 s množinou cifer $C=\{0,1\}$\newline
-	Negabinární číselná soustava je relace:
-	$\varphi:\mathbb{Z}\to B$
-	 $$B=\{\{a_n\}_{n=0}^\infty,a_n \in \{0,1\} \}$$
+	Negabinární číselná soustava je číselná soustava na okruhu $\mathbb{Z}$ o základu -2 s množinou cifer $C=\{0,1\}$.
 \end{definice}
-Musíme ověřit korektnost definice. Musíme ukázat, že $\varphi$ je opravdu zobrazení na $\mathbb{Z}$. To jest, že $D(\varphi)=\mathbb{Z}$ a že každé celé číslo z je možné vyjádřit ve tvaru $z=\sum_{i=0}^\infty a_i(-2)^i$ jednoznačně
+Dokážeme, že negabinární číselná soustava je jednoznačná číselná soustava
+$\varphi:\mathbb{Z}\to B$, kde
+$$B=\{\{a_n\}_{n=0}^\infty,a_n \in \{0,1\} \}$$
+Musíme ukázat, že $\varphi$ je zobrazení na $\mathbb{Z}$. To jest, že $D(\varphi)=\mathbb{Z}$ a že každé celé číslo z je možné vyjádřit jediným způsobem ve tvaru $z=\sum_{i=0}^\infty a_i(-2)^i$.\newline Nejprve ale dokážeme, že v negabinární číselné soustavě má každé celé číslo ciferný zápis s konečným počtem nenulových cifer. 
 
 \begin{veta}
 	%$$\nexists z \in \mathbb{Z}:$$tj.
-	$$(\forall z \in \mathbb{Z})(\exists n_0 \in \mathbb{N}) (\forall n > n_0) : a_n = 0$$tj. celé číslo se vždy zobrazí na konečnou posloupnost cifer
+	$$(\forall z \in \mathbb{Z})(\exists n_0 \in \mathbb{N}) (\forall n > n_0) : a_n = 0$$
 	\end{veta}
 
 \begin{dukaz}
@@ -453,5 +451,9 @@ $$\varphi(x) = (\posla,\poslb)_{-2}$$
 %5. vyhody, nevyhody
 
 \chapter{Eulerovo cislo}
+
+\begin{thebibliography}{2}
+	\bibitem{aa} \href{https://homel.vsb.cz/~bou10/MA1/4.pdf}{Jiří Bouchala, Matematická analýza ve Vesmíru, strana 3}
+\end{thebibliography}
 
 \end{document} 
