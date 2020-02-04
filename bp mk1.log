@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.28)  30 JAN 2020 23:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.28)  4 FEB 2020 20:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -500,56 +500,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
-[9]
+[9] [10]
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 191.
+(hyperref)                removing `\textasciicaron' on input line 194.
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 225--227
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--227
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
-[11] [12
 
-]
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
+
+ []
+
+[12]
 Kapitola 2.
-[13] [14] [15] [16] [17] [18
+[13
+
+] [14] [15] [16]
+Kapitola 3.
+[17
 
 ]
-Kapitola 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
 
  []
 
-[19] [20
+[18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 469.
+ [19
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 425.
- [21]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 425.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 469.
  (./bp mk1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 425.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 425.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 469.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 469.
 Package rerunfilecheck Info: File `"bp mk1".out' has not changed.
 (rerunfilecheck)             Checksum: CA700C7117D211F100AAE455F4FA670F;272.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 425.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 469.
  ) 
 Here is how much of TeX's memory you used:
- 9243 strings out of 492616
- 132091 string characters out of 6129481
+ 9249 strings out of 492616
+ 132125 string characters out of 6129481
  248850 words of memory out of 5000000
  12996 multiletter control sequences out of 15000+600000
  19135 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,8n,32p,629b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,8n,32p,629b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
@@ -570,10 +570,10 @@ e/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/t
 exmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2019/tex
 mf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on "bp mk1.pdf" (21 pages, 298757 bytes).
+Output written on "bp mk1.pdf" (19 pages, 303165 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 187 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
+ 233 PDF objects out of 1000 (max. 8388607)
+ 191 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

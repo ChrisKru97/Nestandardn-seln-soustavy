@@ -182,7 +182,10 @@ $$(\forall x \in A) (\exists! \posla \in \textbf{B}): x = \sum_{i=0}^{\infty} a_
 		\item Nechť $\poslalpha$ je posloupnost, která je základem číselné soustavy na okruhu $(A,+,\cdot)$ s jedničkou. Jestliže $\exists n \in \mathbb{A}$, pro které platí:
 		      $$ (\forall i \in \mathbb{N}_0 : \alpha_i = n^i)$$
 		      pak prvek \textbf{n} nazýváme také základem této číselné soutavy $($1 je jedničkou v okruhu $(A,+,\cdot))$.
+		\item Neexistuje-li takový prvek, můžeme pro jednoduchost označit základem soustavy definovaný znak charakterizující tuto soustavu. Např. pro faktoriálovou soustavu bude základem znak \textbf{!} a pro Fibonacciho soustavu bude základem znak \textbf{F}
 		\item Nechť $\varphi(x) = (\posla)$ je číselná soustava na okruhu o základu \textbf{n}.\newline Pokud $(\exists n_1 \in \mathbb{N}) (\forall m \in \mathbb{N},m>n_1):a_m = 0$, budeme zapisovat: $\varphi(x) = (a_{n_1} \dots a_0)_n$
+		\item Jestliže je číselná soustava $\varphi$ na okruhu $\mathbb{N}_0$ jednoznačnou číselnou soustavou na okruhu $\mathbb{N}_0$, pak můžeme $D(\varphi)$ rozšířit na $\mathbb{Z}$ a zapisovat následovně: $\varphi(x) = 	\begin{cases} (a_{n_1} \dots a_0)_n &x\ge0 \\
+		-(a_{n_1} \dots a_0)_n & x<0 \end{cases}$
 		\item Pokud zmíníme, že číslo z je v relaci s posloupností $a_n$ pro číselnou soustavu na okruhu o základu $\{\alpha_i\}_{i=0}^\infty$, pak dle definice číselné soustavy na okruhu jistě platí $z = \sum_{i=0}^{\infty} a_{i}\alpha_{i}$
 	\end{itemize}
 \end{umluva}
@@ -239,20 +242,34 @@ $$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): a_i = 0 $$
 \chapter{Negabinární}
 
 \begin{definice}
-	Negabinární číselná soustava je číselná soustava na okruhu $\mathbb{Z}$ o základu -2 s množinou cifer $C=\{0,1\}$.
+	Negabinární číselná soustava je číselná soustava na okruhu $\mathbb{Z}$ o základu -2 s množinou cifer $C=\{0,1\}$ a mmnožinou všech posloupností
+	$B=\{\{a_n\}_{n=0}^\infty,a_n \in \{0,1\} \}$.\newline
+	Podle Úmluvy \ref{u1} v negabinární číselné soustavě zapisujeme:
+	$\varphi(x) = (\posla)_{-2}$\newline
+	Negabinární číselná soustava je relace:
+	$\varphi:\mathbb{Z}\to B$
 \end{definice}
 \begin{veta}
-	Pro každé $z \in \mathbb{Z} \quad \exists\{a_n\}_{n=0}^\infty:z=\sum_{i=0}^{\infty}a_i(-2)^i$. To jest $D(\varphi)=\mathbb{Z}$
+	Pro každé $z \in \mathbb{Z} \quad \exists\{a_n\}_{n=0}^\infty:z=\sum_{i=0}^{\infty}a_i\cdot(-2)^i$. To jest $D(\varphi)=\mathbb{Z}$
 \end{veta}
 \begin{dukaz}
 	$$z=a_0(-2)^0+a_1(-2)^1+a_2(-2)^2+\dots+a_n(-2)^n$$
 	$$(z-a_0)=a_1(-2)+a_2(-2)^2+\dots+a_n(-2)^n\quad /:(-2)$$
 	$$\left(\frac{z-a_0+2a_1}{-2}\right)=a_2(-2)+\dots+a_n(-2)^{n-1} \quad /:(-2)$$
 	$$\left(\frac{z-a_0+2a_1-4a_2}{4}\right)=\dots+a_n(-2)^{n-2}\quad /:(-2)$$
-	$$\dots$$
+	$$\vdots$$
 	$$\left(\frac{z-a_0+2a_1-4a_2+\dots-a_n(-2)^n}{(-2)^n}\right)=0$$
-	Nutně platí, že pro každé $z\in\mathbb{Z}$ existuje posloupnost $\{a_i\}_{i=0}^n$, která je v relaci s číslem z v negabinární číselné soustavě na okruhu $\mathbb{Z}$
-\end{dukaz}\newpage
+	Nutně platí, že pro každé $z\in\mathbb{Z}$ existuje posloupnost $\{a_i\}_{i=0}^n$, která je v relaci s číslem z v negabinární číselné soustavě na okruhu $\mathbb{Z}$.\newline
+	Takovou posloupnost najdeme vždy pomocí algoritmu:
+	\begin{enumerate}
+		\item Provedeme první iteraci operace dělení $z_0=z\quad z_i/(-2)=z_{i+1}\;zb.\;a_i$, kde $ a_i\in\{0,1\}, 
+		z_i\in\mathbb{Z}$
+		\item Opakujeme operaci dokud $z_{i+1}\ne0$
+		\item $\posla$, kde $a_i=0$ pro každé $i>n$, splňuje požadavek $z=
+		 \sum_{i=0}^{\infty}a_i\cdot(-2)^i$
+	\end{enumerate}
+	Pozor! zbytek musí vždy patřit do množiny $\{0,1\}$, proto někdy musíme neintuitivně volit $z_{i+1}$ tak, aby platilo $z_i=z_{i+1}\cdot(-2)+a_i$
+\end{dukaz}
 \begin{pr}
 	$$z=13$$
 	$$13:(-2)=-6\,zb.\,1$$
@@ -325,21 +342,11 @@ $$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): a_i = 0 $$
 	Negabinární číselná soustava je jednoznačná číselná soustava na okruhu celých čísel
 \end{veta}
 
-Dokážeme, že negabinární číselná soustava je jednoznačná číselná soustava
-$\varphi:\mathbb{Z}\to B$, kde
-$$B=\{\{a_n\}_{n=0}^\infty,a_n \in \{0,1\} \}$$
-Musíme ukázat, že $\varphi$ je zobrazení na $\mathbb{Z}$. To jest, že $D(\varphi)=\mathbb{Z}$ a že každé celé číslo z je možné vyjádřit jediným způsobem ve tvaru $z=\sum_{i=0}^\infty a_i(-2)^i$.\newline Nejprve ale dokážeme, že v negabinární číselné soustavě má každé celé číslo ciferný zápis s konečným počtem nenulových cifer. 
-
-\newpage
-Podle Úmluvy \ref{u1} v negabinární číselné soustavě zapisujeme:
-$$\varphi(x) = (\posla,\poslb)_{-2}$$
-
-
 \begin{pr}
-	Jestliže $\varphi$ je negabinární číselná soustava, pak platí:
+	Pro negabinární číselnou soustavu platí:
 	$$\varphi(1\cdot-2^6+1\cdot-2^4+1\cdot-2^1)=(\{a_i\})=(64+16+(-2))$$
 	$${a_i}=(0,1,0,0,1,0,1,\dots) $$
-	%78 = 1010010_{-2}
+	$$78 =(1010010)_{-2}$$
 \end{pr}
 
 % TODO neni treba dokazat ze + a * funguji i po zobrazeni??
@@ -399,22 +406,59 @@ $$\varphi(x) = (\posla,\poslb)_{-2}$$
 \chapter{Faktoriálová}
 
 \begin{definice}
-	Faktoriálová číselná soustava je číselná soustava na okruhu o základu $\{(i-1)!\}_{i=0}^\infty$ s množinou cifer $C=\mathbb{N}_0$\newline
+	Faktoriálová číselná soustava je číselná soustava na okruhu $\mathbb{Z}$ o základu $\{(i+1)!\}_{i=0}^\infty$ s množinou cifer $C=\mathbb{N}_0$ a mmnožinou všech posloupností
+	$B=\{\{a_n\}_{n=0}^\infty,a_n \in C \}$.\newline
+	Podle Úmluvy \ref{u1} v negabinární číselné soustavě zapisujeme:
+	$\varphi(x) = 	\begin{cases} (\posla)_! &x\ge0 \\
+	-(\posla)_! & x<0 \end{cases}$
+	\newline
 	Faktoriálová číselná soustava je relace:
 	$\varphi:\mathbb{Z}\to B$
-	$$B=\{\{a_n\}_{n=0}^\infty,a_n \in \{0,1\} \}$$
-\end{definice}
-
-\begin{definice}
-	Omezená množina velikosti i\newline
-	$$C_i=\{k,k\le i\}=\{0,\dots,i\}$$
 \end{definice}
 
 \begin{veta}
-	Pro vyjádření libovolného z $\in\mathbb{Z}$ nám postačí omezená množina $C_i\subseteq\mathbb{N}_0$. Pro každé i $\in \mathbb{N}_0$ pro faktoriálovou číselnou soustavu platí $C=C_i$. To jest, každé číslo z $\in\mathbb{Z}$ lze vyjádřit následovně:
-	$$z=\sum_{i=0}^{\infty}a_i(i-1)!,\quad a_i\in C_i$$
+	Pro každé $z \in \mathbb{Z} \quad \exists\{a_n\}_{n=0}^\infty:z=
+	\begin{cases} \sum_{i=0}^{\infty}a_i\cdot(i+1)! &z\ge0 \\
+	-\sum_{i=0}^{\infty}a_i\cdot(i+1)! & z<0 \end{cases}$
+	To jest $D(\varphi)=\mathbb{Z}$
 \end{veta}
-
+\begin{dukaz}
+	$$z=a_0\cdot1!+a_1\cdot2!+a_2\cdot3!+\dots+a_n\cdot(n+1)!$$
+	$$(z-a_0-2a_1)=6a_2+\dots+(n+1)!\cdot a_n\quad /:2$$
+	$$\frac{z-a_0-2a_1-6a_2}{2!}=\dots+\frac{(n+1)!}{2!}\cdot a_n\quad /:3$$
+	$$\vdots$$
+	$$\frac{z-a_0-2a_1-6a_2-\dots(n)!a_{n-1}}{n!}=(n+1)\cdot a_n\quad /:(n+1)$$
+	$$\frac{z-a_0-2a_1-6a_2-\dots(n+1)!a_{n}}{(n+1)!}=0$$
+	Nutně platí, že pro každé $z\in\mathbb{Z}$ existuje posloupnost $\{a_i\}_{i=0}^n$, která je v relaci s číslem z v negabinární číselné soustavě na okruhu $\mathbb{Z}$.\newline
+	Takovou posloupnost najdeme vždy pomocí algoritmu:
+	\begin{enumerate}
+		\item Najdeme nejvyšší n, pro které platí: $n! < |z|$
+		\item Provedeme první iteraci operace dělení $z_0=|z|\quad z_i/(n-i)!=a_{n-i-1}\;zb.\;z_{i+1}$, kde $ a_i\in\mathbb{N}_0, 
+		z_i\in\mathbb{N}_0$
+		\item Opakujeme operaci dokud $i<n$
+		\item $\posla$, kde $a_i=0$ pro každé $i>n$, splňuje požadavek $z=
+		\begin{cases} \sum_{i=0}^{\infty}a_i\cdot(i+1)! &z\ge0 \\
+		-\sum_{i=0}^{\infty}a_i\cdot(i+1)! & z<0 \end{cases}$
+	\end{enumerate}
+\end{dukaz}
+\begin{pr}
+	$$z=77$$
+	$$77:4!=3\,zb.\,5$$
+	$$5:3!=0\,zb.\,5$$
+	$$5:2!=2\,zb.\,1$$
+	$$1:1!=1\,zb.\,0$$
+	$$\implies a_0=1, a_1=2,a_2=0,a_3=3$$
+	$$0=\frac{z-a_0-2a_1-6a_2-24a_3}{24}$$
+	$$0=\frac{77-1-4-72}{24}$$
+\end{pr}
+\begin{definice}
+	Omezená množina velikosti i\newline
+	$$C_i=\{k,k\le i+1\}=\{0,\dots,i+1\}$$
+\end{definice}
+\begin{veta}
+	Pro vyjádření libovolného z $\in\mathbb{Z}$ nám postačí omezená množina $C_i\subseteq\mathbb{N}_0$. Pro každé i $\in \mathbb{N}_0$ pro faktoriálovou číselnou soustavu platí $C=C_i$. To jest, každé číslo z $\in\mathbb{Z}$ lze vyjádřit následovně:
+	$$z=\sum_{i=0}^{\infty}a_i(i+1)!,\quad a_i\in C_i$$
+\end{veta}
 
 %\chapter{Eulerovo cislo}
 
