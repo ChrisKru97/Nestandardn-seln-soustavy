@@ -120,8 +120,8 @@ Následující definici jsme převzali z \cite{aa}
 	\end{itemize}
 \end{definice}
 
-\begin{definice} \textbf{(Číselná soustava na tělese)}
-	Nechť $(A,+,\cdot)$ je těleso; $\poslalpha$ a $\poslbeta$ jsou posloupnosti na množině $A$; $C\subseteq A$ a $B$ je množina všech posloupností na množině $C$.
+\begin{definice}\label{d2} \textbf{(Číselná soustava na tělese)}
+	Nechť $(A,+,\cdot)$ je těleso; $\poslalpha$ a $\poslbeta$ jsou posloupnosti na množině $A$; $C\subseteq A$ a $B$ je množina všech posloupností prvků z $C$.
 	\textbf{Číselnou soustavou na tělese $(A,+,\cdot)$} o základu $\poslalpha$ a $\poslbeta$ s ciframi z $C$ nazveme libovolnou relaci $\varphi : A \rightarrow B\times B$, kde 	$\varphi(x)=\left(\{a_{i}\}_{i=0}^{\infty},\{b_{i}\}_{i=1}^{\infty}\right)$ právě když
 	
 	$$x = \sum_{i=0}^{\infty} a_{i}\alpha_{i} + \sum_{i=1}^{\infty} b_{i}\beta_{i}$$
@@ -129,7 +129,13 @@ Následující definici jsme převzali z \cite{aa}
 	Množinu $C$ označujeme jako \textbf{množinu cifer} číselné soustavy $\varphi$. Budeme používat značení $\varphi(x) = \left(\{a_{i}\}_{i=0}^{\infty},\{b_{i}\}_{i=1}^{\infty}\right) = (\dots a_2,a_1,a_0;b_1, b_2, b_3, \dots)_{\varphi}$ a pokud nebude možno dojít k omylu, pak také $(\dots a_2,a_1,a_0;b_1, b_2, b_3, \dots)_{\varphi} = (\dots a_2,a_1,a_0;b_1, b_2, b_3, \dots) = (\dots a_2a_1a_0,b_1 b_2 b_3 \dots)$
 \end{definice}
 
-Všimněme si, že nevyžadujeme, aby $\varphi$ bylo zobrazení. Číselná soustava nemusí vyjadřovat každý prvek z $A$ a ty prvky z $A$, které jsou v relaci $\varphi$, nemusí být vyjádřeny jediným způsobem. Uvažujme například obvyklou desítkovou číselnou soustavu na tělese reálných čísel. Jde o číselnou soustavu, kde $C = \{0, 1, 2, \dots, 9\}$ a základem jsou konstantní posloupnosti na : $\poslalpha = \{10^n\}_{n = 0}^{\infty}$ a $\poslbeta = \{\frac{1}{10^n}\}_{n = 1}^{\infty}$ na množině $C$. Potom ($\lfloor x\rfloor$ je celočíselná část reálného čísla $x$)  
+Všimněme si, že nevyžadujeme, aby $\varphi$ bylo zobrazení. Číselná soustava nemusí vyjadřovat každý prvek z $A$ a ty prvky z $A$, které jsou v relaci $\varphi$, nemusí být vyjádřeny jediným způsobem. Uvažujme například obvyklou desítkovou číselnou soustavu na tělese reálných čísel. Jde o číselnou soustavu, kde $C = \{0, 1, 2, \dots, 9\}$ a základem jsou konstantní posloupnosti na : $\poslalpha = \{10^n\}_{n = 0}^{\infty}$ a $\poslbeta = \{\frac{1}{10^n}\}_{n = 1}^{\infty}$ na množině $C$. 
+
+\begin{enumerate}
+	
+\item[I.] Vyjadřujeme jen nezáporná čísla, např. číslo $x = 1\cdot10^2 + 2\cdot10^1 + 3\cdot10^0 \implies \varphi(x) = (\dots123,000\dots)$, ale $\varphi(-x)$ neexistuje. Pomocí cifer z $C=\{0,\dots,9\}$ při základu $\{10^i\}_{i=0}^{\infty}$ nelze vyjádřit záporné číslo
+
+\item[II.] ($\lfloor x\rfloor$ je celočíselná část reálného čísla $x$)  
 
 $$\varphi(1) = \left(  \left\{ \left\lfloor\frac{1}{n+1} \right\rfloor \right\}_{n = 0}^{\infty} , \left\{ 0 \right\}_{n = 0}^{\infty} \right) = \left(\dots 001,000 \dots \right),$$
 
@@ -137,11 +143,11 @@ ale také
 
 $$\varphi(1) = \left(  \left\{ 0 \right\}_{n = 0}^{\infty} , \left\{ 9 \right\}_{n = 0}^{\infty} \right) = \left(\dots 000,999 \dots \right).$$
 
-
+\end{enumerate}
 Analogicky jako na tělese definujeme číselnou soustavu na okruhu.
 
 
-\begin{definice} \textbf{(Číselná soustava na okruhu)}
+\begin{definice}\label{d3} \textbf{(Číselná soustava na okruhu)}
 	Nechť $(A,+,\cdot)$ je okruh; $\poslalpha$ je posloupnost prvků z $A$; $C\subseteq A$ a $B$ je množina všech posloupností prvků z $C$.
 	\textbf{Číselnou soustavou na okruhu $(A,+,\cdot)$} o základu $\poslalpha$ s ciframi z $C$ nazveme libovolnou relaci $\varphi : A \rightarrow B$, kde 	$\varphi(x)= \{a_{i}\}_{i=0}^{\infty}$ právě když
 	
@@ -149,6 +155,10 @@ Analogicky jako na tělese definujeme číselnou soustavu na okruhu.
 	
 	Množinu $C$ označujeme jako \textbf{množinu cifer} číselné soustavy $\varphi$. Budeme používat značení $\varphi(x) = \{a_{i}\}_{i=0}^{\infty} = (\dots a_2,a_1,a_0)_{\varphi}$ a pokud nebude možno dojít k omylu, pak také $(\dots a_2,a_1,a_0)_{\varphi} = (\dots a_2,a_1,a_0) = \dots a_2a_1a_0$
 \end{definice}
+
+\begin{pozn}
+	V Definici \ref{d2} a Definici \ref{d3} předpokládáme, že na tělese, respektive okruhu $(A,+,\cdot)$ jsou definovány nekonečné součty
+\end{pozn}
 
 \begin{pozn}
 	Všimněme si, že číselná soustava $\varphi$, ať již na tělese, nebo na okruhu, splňuje:
@@ -161,10 +171,10 @@ Analogicky jako na tělese definujeme číselnou soustavu na okruhu.
 \end{pozn}
 
 \begin{definice}
-	Jestliže pro číselnou soustavu $\varphi$ na tělese $(A,+,\cdot)$ platí, že $\varphi$ je zobrazení s definičním oborem $A$, pak tuto soustavu nazveme \textbf{Jednoznačnou číselnou soustavou na tělese $(A,+,\cdot)$}. Analogicky, jestliže pro číselnou soustavu $\varphi$ na okruhu $(A,+,\cdot)$ platí, že $\varphi$ je zobrazení s definičním oborem $A$, pak tuto soustavu nazveme \textbf{Jednoznačnou číselnou soustavou na okruhu $(A,+,\cdot)$}.
+	Jestliže pro číselnou soustavu $\varphi$ na tělese $(A,+,\cdot)$ platí, že $\varphi$ je zobrazení, pak tuto soustavu nazveme \textbf{jednoznačnou číselnou soustavou na tělese $(A,+,\cdot)$}. Analogicky, jestliže pro číselnou soustavu $\varphi$ na okruhu $(A,+,\cdot)$ platí, že $\varphi$ je zobrazení, pak tuto soustavu nazveme \textbf{jednoznačnou číselnou soustavou na okruhu $(A,+,\cdot)$}.
 \end{definice}
 
-Jednoznačnou číselnou soustavou na tělese (respektive okruhu), tedy nazveme každou číselnou soustavu v níž dokážeme vyjádřit libovolný prvek tělesa (okruhu), přičemž je toto vyjádření jediné možné. Proto platí:	
+Jednoznačnou číselnou soustavou na tělese (respektive okruhu), tedy nazveme každou číselnou soustavu v níž dokážeme vyjádřit libovolný prvek tělesa (okruhu), přičemž je toto vyjádření jediné možné. V takovém případě platí:	
 
 $$(\forall x \in A) (\exists!(\posla,\poslb)\in\textbf{B}\times\textbf{B}): x = \sum_{i=0}^{\infty} a_{i}\alpha_{i} + \sum_{i=1}^{\infty} b_{i}\beta_{i},$$
 
@@ -175,17 +185,19 @@ $$(\forall x \in A) (\exists! \posla \in \textbf{B}): x = \sum_{i=0}^{\infty} a_
 \begin{umluva}\label{u1} \textbf \newline
 	\begin{itemize}
 		\item Nechť $\poslalpha$ a $\poslbeta$  jsou posloupnosti, které jsou základem číselné soustavy na tělese $(A,+,\cdot)$. Jestliže $\exists n \in \mathbb{A}$, pro které platí:
-		      $$ (\forall i \in \mathbb{N} : \alpha_i = n^i,\beta_i = n^{-i}) \land (\alpha_{0} = 1)$$
-		      pak prvek \textbf{n} nazýváme také základem této číselné soutavy (1 označuje neutrální prvek tělesa $(A,+,\cdot)$ vzhledem k násobení).
+		      $$ (\forall i \in \mathbb{N} : \alpha_i = n^i,\beta_i = n^{-i}) \land (\alpha_{0} = 1),$$
+		      pak prvek \textbf{n} také nazýváme základem této číselné soutavy (1 označuje neutrální prvek tělesa $(A,+,\cdot)$ vzhledem k násobení).
 		\item Nechť $\varphi(x) = (\posla,\poslb)$ je číselná soustava na tělese o základu \textbf{n}.\newline Pokud $(\exists n_1 \in \mathbb{N}) (\forall m \in \mathbb{N},m>n_1):a_m = 0$, a pokud $(\exists n_2 \in \mathbb{N}) (\forall m \in \mathbb{N},m>n_2):b_m = 0$, budeme zapisovat: $\varphi(x) = (a_{n_1} \dots a_0,b_1 \dots b_{n_2})_n$
 		\item V případě n=10 píšeme pouze $\varphi(x) = a_{n_1} \dots a_0,b_1 \dots b_{n_2}$
 		\item Nechť $\poslalpha$ je posloupnost, která je základem číselné soustavy na okruhu $(A,+,\cdot)$ s jedničkou. Jestliže $\exists n \in \mathbb{A}$, pro které platí:
 		      $$ (\forall i \in \mathbb{N}_0 : \alpha_i = n^i)$$
-		      pak prvek \textbf{n} nazýváme také základem této číselné soutavy $($1 je jedničkou v okruhu $(A,+,\cdot))$.
-		\item Neexistuje-li takový prvek, můžeme pro jednoduchost označit základem soustavy definovaný znak charakterizující tuto soustavu. Např. pro faktoriálovou soustavu bude základem znak \textbf{!} a pro Fibonacciho soustavu bude základem znak \textbf{F}
+		      pak prvek \textbf{n} nazýváme také základem této číselné soutavy $(n^0=1$ je jedničkou v okruhu $(A,+,\cdot))$.
+		%\item Neexistuje-li takový prvek, můžeme pro jednoduchost označit základem soustavy definovaný znak charakterizující tuto soustavu. Např. pro faktoriálovou soustavu bude základem znak \textbf{!} a pro Fibonacciho soustavu bude základem znak \textbf{F}
+		%TODO vyresit u jednotlivych soustav
 		\item Nechť $\varphi(x) = (\posla)$ je číselná soustava na okruhu o základu \textbf{n}.\newline Pokud $(\exists n_1 \in \mathbb{N}) (\forall m \in \mathbb{N},m>n_1):a_m = 0$, budeme zapisovat: $\varphi(x) = (a_{n_1} \dots a_0)_n$
-		\item Jestliže je číselná soustava $\varphi$ na okruhu $\mathbb{N}_0$ jednoznačnou číselnou soustavou na okruhu $\mathbb{N}_0$, pak můžeme $D(\varphi)$ rozšířit na $\mathbb{Z}$ a zapisovat následovně: $\varphi(x) = 	\begin{cases} (a_{n_1} \dots a_0)_n &x\ge0 \\
-		-(a_{n_1} \dots a_0)_n & x<0 \end{cases}$
+		%\item Jestliže je číselná soustava $\varphi$ na okruhu $\mathbb{N}_0$ jednoznačnou číselnou soustavou na okruhu $\mathbb{N}_0$, pak můžeme $D(\varphi)$ rozšířit na $\mathbb{Z}$ a zapisovat následovně: $\varphi(x) = 	\begin{cases} (a_{n_1} \dots a_0)_n &x\ge0 \\
+		%-(a_{n_1} \dots a_0)_n & x<0 \end{cases}$
+		%TODO vyresit u jednotlivych soustav
 		\item Pokud zmíníme, že číslo z je v relaci s posloupností $a_n$ pro číselnou soustavu na okruhu o základu $\{\alpha_i\}_{i=0}^\infty$, pak dle definice číselné soustavy na okruhu jistě platí $z = \sum_{i=0}^{\infty} a_{i}\alpha_{i}$
 	\end{itemize}
 \end{umluva}
@@ -195,9 +207,10 @@ $$(\forall x \in A) (\exists! \posla \in \textbf{B}): x = \sum_{i=0}^{\infty} a_
 Pro lepší představu definice číselné soustavy si ji předveďme na příkladu
 \begin{pr}
 	Uvažujme těleso reálných čísel $(\mathbb{R},+,\cdot)$. Tj. zvolili jsme A = $\mathbb{R}$. Obvyklý desetinný zápis reálných čísel je vlastně číselná soustava na tělese $(\mathbb{R},+,\cdot)$ o základu $\poslalpha=\{{10^i\}}_{i=0}^{\infty}$, $\poslbeta=\{{10^{-i}\}}_{i=1}^{\infty}$ a C = $\{0,1,2,3,4,5,6,7,8,9\}$. Podle dohody můžeme říci, že jde o číselnou soustavu na tělese o základu 10 a platí:
-	$$\varphi(3\cdot10^2+2\cdot10^1+5\cdot10^0+6\cdot10^-1)=(\posla,\poslb),$$kde
-	$\posla=(5,2,3,0,0,\dots)$ a $\poslb = (6,0,0,\dots)$.\newline Podle Úmluvy \ref{u1} můžeme psát $$\varphi(3\cdot10^2+2\cdot10^1+5\cdot10^0+6\cdot10^-1)=325,6$$
-	
+	$$\varphi(3\cdot10^2+2\cdot10^1+5\cdot10^0+6\cdot10^{-1})=(\posla,\poslb),$$kde
+	$\posla=(5,2,3,0,0,\dots)$ a $\poslb = (6,0,0,\dots)$.\newline Podle Úmluvy \ref{u1} můžeme psát $$\varphi(3\cdot10^2+2\cdot10^1+5\cdot10^0+6\cdot10^-1)=325.6$$
+	Označme $x=3\cdot10^2+2\cdot10^1+5\cdot10^0+6\cdot10^{-1}$\newline
+	$\varphi(-x) = \varphi(-(3\cdot10^2+2\cdot10^1+5\cdot10^0+6\cdot10^{-1}))$ neexistuje, ale prvek $-x$ ovykle značíme $-x=-\varphi(x)=-325.6$, neboť obvykle nerozlišujeme mezi číslem a jeho ciferným zápisem, tj. mezi $-x$ a $\varphi(-x)$.
 	
 	
 	%\textbf{Desítková soustava}\\
@@ -216,21 +229,21 @@ Pro lepší představu definice číselné soustavy si ji předveďme na příkl
 	%	\end{itemize}
 \end{pr}
 
-\newpage
-Pozorování:
+%\newpage
+%Pozorování:
 
 %Mohutnost C musí být co nejmenší potřebná pro vyjádření celého A.
 
 %Je-li nosná množina tělesa $A \subseteq \mathbb{Z}$, pak posloupnoust $\forall i \in \mathbb{N} : b_i = 0$ (tj. je není třeba vyjadřovat zlomkovou část čísla)\newline \newline
-Je li základem soustavy racionální číslo či posloupnost čísel
-$$\forall i \in \mathbb{N} : \alpha_i \in \mathbb{Q} \land \beta_i \in \mathbb{Q}$$
-pak:
-$$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): b_i = 0 $$
-(tj. zlomková část lze vyjádřit konečným počtem prvků \textbf{b})\newline \newline
+%Je li základem soustavy racionální číslo či posloupnost čísel
+%$$\forall i \in \mathbb{N} : \alpha_i \in \mathbb{Q} \land \beta_i \in \mathbb{Q}$$
+%pak:
+%$$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): b_i = 0 $$
+%(tj. zlomková část lze vyjádřit konečným počtem prvků \textbf{b})\newline \newline
 
-Pro každou soustavu platí
-$$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): a_i = 0 $$
-(tj. celočíselná část musí být  z konečného počtu prvků \textbf{a})
+%Pro každou soustavu platí
+%$$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): a_i = 0 $$
+%(tj. celočíselná část musí být  z konečného počtu prvků \textbf{a})
 
 
 %\chapter{Fibonacciho kódování}
@@ -242,7 +255,7 @@ $$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): a_i = 0 $$
 \chapter{Negabinární}
 
 \begin{definice}
-	Negabinární číselná soustava je číselná soustava na okruhu $\mathbb{Z}$ o základu -2 s množinou cifer $C=\{0,1\}$ a mmnožinou všech posloupností
+	Negabinární číselná soustava je číselná soustava na okruhu $(\mathbb{Z},+,\cdot)$ o základu -2 s množinou cifer $C=\{0,1\}$ a mmnožinou všech posloupností
 	$B=\{\{a_n\}_{n=0}^\infty,a_n \in \{0,1\} \}$.\newline
 	Podle Úmluvy \ref{u1} v negabinární číselné soustavě zapisujeme:
 	$\varphi(x) = (\posla)_{-2}$\newline
@@ -252,24 +265,48 @@ $$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): a_i = 0 $$
 \begin{veta}
 	Pro každé $z \in \mathbb{Z} \quad \exists\{a_n\}_{n=0}^\infty:z=\sum_{i=0}^{\infty}a_i\cdot(-2)^i$. To jest $D(\varphi)=\mathbb{Z}$
 \end{veta}
-\begin{dukaz}
-	$$z=a_0(-2)^0+a_1(-2)^1+a_2(-2)^2+\dots+a_n(-2)^n$$
-	$$(z-a_0)=a_1(-2)+a_2(-2)^2+\dots+a_n(-2)^n\quad /:(-2)$$
-	$$\left(\frac{z-a_0+2a_1}{-2}\right)=a_2(-2)+\dots+a_n(-2)^{n-1} \quad /:(-2)$$
-	$$\left(\frac{z-a_0+2a_1-4a_2}{4}\right)=\dots+a_n(-2)^{n-2}\quad /:(-2)$$
-	$$\vdots$$
-	$$\left(\frac{z-a_0+2a_1-4a_2+\dots-a_n(-2)^n}{(-2)^n}\right)=0$$
-	Nutně platí, že pro každé $z\in\mathbb{Z}$ existuje posloupnost $\{a_i\}_{i=0}^n$, která je v relaci s číslem z v negabinární číselné soustavě na okruhu $\mathbb{Z}$.\newline
-	Takovou posloupnost najdeme vždy pomocí algoritmu:
+\begin{dukaz}\label{negaDF}
+	Protože $(\mathbb{Z},+,\cdot)$ je euklidovský obor integrity, jistě existují čísla $z_i\in\mathbb{Z}, a_i\in\{0,1\}$ taková, že:
+	$$ z=z_0=z_1\cdot(-2)+a_0,\quad a_0\in\{0,1\}$$
+	$$ z_1=z_2\cdot(-2)+a_1,\quad a_1\in\{0,1\}$$
+	$$ z_{k-1}=z_k\cdot(-2)+a_{k-1}$$
+	$$ z_{n-2}=z_{n-1}\cdot(-2)+a_{n-2}$$
+	$$ z_{n-1}=z_n\cdot(-2)+a_{n-1}$$
+	$$ z_n=z_{n+1}\cdot(-2)+a_n$$
 	\begin{enumerate}
-		\item Provedeme první iteraci operace dělení $z_0=z\quad z_i/(-2)=z_{i+1}\;zb.\;a_i$, kde $ a_i\in\{0,1\}, 
-		z_i\in\mathbb{Z}$
-		\item Opakujeme operaci dokud $z_{i+1}\ne0$
-		\item $\posla$, kde $a_i=0$ pro každé $i>n$, splňuje požadavek $z=
-		 \sum_{i=0}^{\infty}a_i\cdot(-2)^i$
+		\item[$\alpha)$] $z_1=0 \implies z=z_0=a_0(-2)^0=a_0\in\{0,1\}$
+		\item[$\beta)$]  $z_i \ne 0 \implies \forall k \ge 1:$
+		$$|z_k|=\left|\frac{z_{k-1}-a_{k-1}}{-2}\right|\le \frac{|z_{k-1}|+1}{2}$$
+		$$|z_{k-1}|\le\frac{|z_{k-2}|+1}{2}\le\frac{\frac{|z_{k-2}|+1}{2}+1}{2}=\frac{|z_{k-2}|}{2^2}+\frac{1}{2}+\frac{1}{4}$$
+		$$\vdots$$
+		$$|z_k|\le\frac{|z_0|}{2^k}+\sum_{i=1}^{k}\left(\frac{1}{2}\right)^i=\left[\frac{|z_0|}{2^k}+1-\left(\frac{1}{2}\right)^k \right]\to 1 $$
+		$$ pro\; k \to \infty $$
+		
+		Pro dost velké $k_0 \quad |z_{k_0}|\le1,5 \implies \exists k_0:z_{k_0}\in\{1,0,-1\}$
+		\begin{enumerate}
+			\item[a)] $\underline{z_{k_0}=0}$
+			\item[b)]$z_{k_0}=1$
+			$$\implies 1=z_{k_0}=z_{k_0+1}\cdot(-2)+a_{k_0}\implies \underline{z_{k_0+1}=0}$$
+			\item[c)]$z_{k_0}=-1$
+			$$\implies -1=z_{k_0}=z_{k_0+1}\cdot(-2)+a_{k_0}\implies z_{k_0+1}=1\implies \underline{z_{k_0+2}=0}$$ 
+			\end{enumerate}
+		$\implies \exists z_{n+1}$ takové, že $z_{n+1}=0$\newline
+		$\implies z_n = a_n \implies z_{n-1}=a_n\cdot(-2)^1+a_{n-1}\implies \dots$
+		$$\implies z=z_0=a_n\cdot(-2)^n+a_{n-1}\cdot(-2)^{n-1}+\dots+a_0$$
 	\end{enumerate}
-	Pozor! zbytek musí vždy patřit do množiny $\{0,1\}$, proto někdy musíme neintuitivně volit $z_{i+1}$ tak, aby platilo $z_i=z_{i+1}\cdot(-2)+a_i$
 \end{dukaz}
+
+\begin{pozn} Algoritmus pro hledání reprezentace čísla v negabinární číselné soustavě\newline
+		\begin{enumerate}
+		\item Nechť $z$ je číslo, které chceme reprezentovat, $z_0 = z$ a $i=0$ je počáteční hodnota algoritmu
+		\item Provedeme následující operaci:\newline $z_i/(-2)=z_{i+1}\;zb.\;a_i$, kde $ a_i\in\{0,1\}, 
+		z_i\in\mathbb{Z}$
+		\item Opakujeme operaci dokud $z_{i+1}\ne0$, nechť $n$ je počet iterací. ($n$ je jistě konečné, viz. \ref{negaDF})
+		\item $\posla$, kde $a_i=0$ pro každé $i>n$, splňuje požadavek $z=
+		\sum_{i=0}^{\infty}a_i\cdot(-2)^i$
+	\end{enumerate}
+	Pozor! zbytek musí vždy patřit do množiny $\{0,1\}$, proto musíme volit $z_{i+1}$ tak, aby platilo: $$z_i=z_{i+1}\cdot(-2)+a_i$$
+\end{pozn}
 \begin{pr}
 	$$z=13$$
 	$$13:(-2)=-6\,zb.\,1$$
@@ -278,8 +315,8 @@ $$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): a_i = 0 $$
 	$$-1:(-2)=1\,zb.\,1$$
 	$$1:(-2)=0\,zb.\,1$$
 	$$\implies a_0=1, a_1=0,a_2=1,a_3=1,a_4=1$$
-	$$0=\frac{z-a_0+2a_1-4a_2+8a_3-16a_4}{(-2)^4}$$
-	$$0=\frac{13-1-4+8-16}{16}$$
+	$$ 13 = 1\cdot(-2)^0 + 1 \cdot(-2)^2+1\cdot(-2)^3+1\cdot(-2)^4$$
+	$$ 13 = 1 + 4-8+16\quad \checkmark$$
 \end{pr}
 \begin{veta}
 	Jestliže $z=\sum_{i=0}^{\infty}a_i(-2)^i$, pak $(\exists n_0 \in \mathbb{N})(\forall n>n_0):a_n=0$
@@ -383,64 +420,119 @@ $$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): a_i = 0 $$
 %$$1.03_{2i} = 0.0003_{2i} = \left(\frac{1}{5}\right)_{10}$$
 
 
-%\chapter{Complex (i-1)}
+\chapter{Komplexní}
 
-%\begin{definice}
-%	Complex(i-1) číselná soustava je injektivní číselná soustava na okruhu $(\mathbb{Z}_{[i]},+,\cdot)$ o základu $1-i$, kde množina cifer $C = \{0,1\}$
-%\end{definice}
+\begin{umluva}
+	Pozor! V této kapitole symbolem $i$ značíme imaginární část komplexního čísla\newline
+	Protože $a$ již používame pro značení posloupnosti budeme komplexní číslo $z = a +bi$ značit $z=u+vi$, kde u je celočíselná část a v je imaginární část komplexního čísla.
+	\end{umluva}
 
-%Podle Úmluvy \ref{u1} v negabinární číselné soustavě zapisujeme:
-%$$\varphi(x) = (\posla,\poslb)_{1-i}$$
+\begin{definice}
+	Komplexní číselná soustava je číselná soustava na okruhu $(\mathbb{Z}[i],+,\cdot)$ o základu $\{(1-i)^j\}_{j=0}^\infty$ s množinou cifer $C=\{0,1\}$\newline
+	\newline
+	Komplexní číselná soustava je relace:
+	$\varphi:\mathbb{Z}[i]\to B$
+\end{definice}
 
-
-%\begin{pr}
-%	Jestliže $\varphi$ je negabinární číselná soustava, pak platí:
-%	$$\varphi(1\cdot(1-i)^7+1\cdot(1-i)^6+1\cdot(1-i)^3+1\cdot(1-i)^1)=$$
-%	$$=\varphi(1\cdot(8+i)+1\cdot(8i)+1\cdot(-2-2i)+1\cdot(1-i))=$$
-%	$$=(\{a_i\})=(7+13i)$$
-%	$${a_i}=(0,1,0,1,0,0,1,1,...) $$
-%78 = 1010010_{-2}
-%\end{pr}
+\begin{veta}
+	Pro každé $z \in \mathbb{Z}[i] \quad \exists\{a_n\}_{n=0}^\infty:z=
+	\sum_{j=0}^{\infty}a_j\cdot(1-i)^j$
+	To jest $D(\varphi)=\mathbb{Z}[i]$
+\end{veta}
+\begin{dukaz}\label{kompDF}
+	...
+	$$\frac{u+vi}{1-i}=\frac{u+vi}{1-i}\cdot\frac{1+i}{1+i} = \frac{(u+vi)\cdot(1+i)}{(1+i)\cdot(1-2)}=\frac{(u-v)+(u+v)i}{2}$$
+\end{dukaz}
+\begin{pozn} Algoritmus pro hledání reprezentace čísla v komplexní číselné soustavě
+	\begin{enumerate}
+		\item Nechť $z$ je číslo, které chceme reprezentovat, $z_0 = z$ a $j=0$ je počáteční hodnota algoritmu	
+		\item Provedeme následující operaci:\newline
+		$x = \frac{(u_j-v_j)+(u_j+v_j)i}{2}$\newline
+		Jestliže $x \in \mathbb{Z}[i]$, pak $z_{j+1} = x \quad a_{j+1}=0$\newline
+		V opačném případě $z_{j+1} = \frac{(u_j-v_j-1)+(u_j+v_j-1)i}{2}\quad a_{j+1}=1$
+		\item Opakujeme operaci dokud $z_{j+1}\ne0$, nechť $n$ je počet iterací. ($n$ je jistě konečné, viz. \ref{kompDF})
+		\item $\{a_j\}_{j=0}^{\infty}$, kde $a_j=0$ pro každé $j>n$, splňuje požadavek $z=
+		\sum_{j=0}^{\infty}a_j\cdot(1-i)^j$
+	\end{enumerate}
+\end{pozn}
 
 
 \chapter{Faktoriálová}
 
 \begin{definice}
-	Faktoriálová číselná soustava je číselná soustava na okruhu $\mathbb{Z}$ o základu $\{(i+1)!\}_{i=0}^\infty$ s množinou cifer $C=\mathbb{N}_0$ a mmnožinou všech posloupností
-	$B=\{\{a_n\}_{n=0}^\infty,a_n \in C \}$.\newline
-	Podle Úmluvy \ref{u1} v negabinární číselné soustavě zapisujeme:
-	$\varphi(x) = 	\begin{cases} (\posla)_! &x\ge0 \\
-	-(\posla)_! & x<0 \end{cases}$
+	Faktoriálová číselná soustava je číselná soustava na okruhu $(\mathbb{N}_0,+,\cdot)$ o základu $\{(i+1)!\}_{i=0}^\infty$ s množinou cifer $C=\mathbb{N}_0$\newline
 	\newline
 	Faktoriálová číselná soustava je relace:
-	$\varphi:\mathbb{Z}\to B$
+	$\varphi:\mathbb{N}_0\to B$
 \end{definice}
 
 \begin{veta}
-	Pro každé $z \in \mathbb{Z} \quad \exists\{a_n\}_{n=0}^\infty:z=
-	\begin{cases} \sum_{i=0}^{\infty}a_i\cdot(i+1)! &z\ge0 \\
-	-\sum_{i=0}^{\infty}a_i\cdot(i+1)! & z<0 \end{cases}$
-	To jest $D(\varphi)=\mathbb{Z}$
+	Pro každé $x \in \mathbb{N}_0 \quad \exists\{a_n\}_{n=0}^\infty:x=
+	 \sum_{i=0}^{\infty}a_i\cdot(i+1)!$
+	To jest $D(\varphi)=\mathbb{N}_0$
 \end{veta}
-\begin{dukaz}
-	$$z=a_0\cdot1!+a_1\cdot2!+a_2\cdot3!+\dots+a_n\cdot(n+1)!$$
-	$$(z-a_0-2a_1)=6a_2+\dots+(n+1)!\cdot a_n\quad /:2$$
-	$$\frac{z-a_0-2a_1-6a_2}{2!}=\dots+\frac{(n+1)!}{2!}\cdot a_n\quad /:3$$
-	$$\vdots$$
-	$$\frac{z-a_0-2a_1-6a_2-\dots(n)!a_{n-1}}{n!}=(n+1)\cdot a_n\quad /:(n+1)$$
-	$$\frac{z-a_0-2a_1-6a_2-\dots(n+1)!a_{n}}{(n+1)!}=0$$
-	Nutně platí, že pro každé $z\in\mathbb{Z}$ existuje posloupnost $\{a_i\}_{i=0}^n$, která je v relaci s číslem z v negabinární číselné soustavě na okruhu $\mathbb{Z}$.\newline
-	Takovou posloupnost najdeme vždy pomocí algoritmu:
+\begin{dukaz}\label{faktDF}
 	\begin{enumerate}
-		\item Najdeme nejvyšší n, pro které platí: $n! < |z|$
-		\item Provedeme první iteraci operace dělení $z_0=|z|\quad z_i/(n-i)!=a_{n-i-1}\;zb.\;z_{i+1}$, kde $ a_i\in\mathbb{N}_0, 
-		z_i\in\mathbb{N}_0$
-		\item Opakujeme operaci dokud $i<n$
-		\item $\posla$, kde $a_i=0$ pro každé $i>n$, splňuje požadavek $z=
-		\begin{cases} \sum_{i=0}^{\infty}a_i\cdot(i+1)! &z\ge0 \\
-		-\sum_{i=0}^{\infty}a_i\cdot(i+1)! & z<0 \end{cases}$
+		\item[$\alpha)$] $x=0 \implies \forall i \in \mathbb{N}:a_i=0$
+		\item[$\beta)$] Je zřejmé, že pro libovolné $x \in \mathbb{N}$ existuje právě jedno $n\in\mathbb{N}:n!\le x<(n+1)!$\newline
+		Protože $(\mathbb{N}_0,+,\cdot)$ ??je?? euklidovský obor integrity, jistě existují čísla $x_i\in\mathbb{N}_0, a_i\in\mathbb{N}_0$ taková, že:
+		$$ x = x_0 = a_0 \cdot n! + x_1,\quad a_0 \in \mathbb{N}$$
+		$$ x_1 = a_1 \cdot(n-1)! + x_2,\quad a_1 \in \mathbb{N}_0$$
+		$$ x_2 = a_2 \cdot(n-2)! + x_3,\quad a_2 \in \mathbb{N}_0$$
+		$$ x_{k-1} = a_k \cdot (n-k+1)! + x_{k}$$
+		$$ x_{n-1} = a_{n-1} \cdot 1! + x_{n}$$
+		$$ x_{n} = a_{n} \cdot 0!$$
+		
+		$\forall k \ge 1:$
+		$$x_k=x_{k-1}-a_n\cdot(n-k+1)!$$
+		$a_n \in \mathbb{N}_0 \implies$ buď $a_n = x_{k-1}$, pak jistě
+		$$x_k \le x_{k-1}-a_n(n-k+1)! \le 0,$$
+		protože $(n-k+1)! \le 1$\newline
+		Pro dost velké $k_0: x_{k_0} = 0$
+		$$\implies x = x_0 = a_n\cdot(0)!+a_{n-1}\cdot(1)!+\dots+a_0$$
 	\end{enumerate}
 \end{dukaz}
+\begin{pozn} Algoritmus pro hledání reprezentace čísla v faktoriálové číselné soustavě
+	\begin{enumerate}
+		\item Nechť $x$ je číslo, které chceme reprezentovat, $x_0 = x$ a $i=0$ je počáteční hodnota algoritmu
+		\item Najdeme nejvyšší n, pro které platí: $n! < x$		
+		\item Provedeme následující operaci:\newline $x_i/(n-i)!=a_{n-i-1}\;zb.\;x_{i+1}$, kde $ a_i,x_i\in\mathbb{N}_0$
+		\item Opakujeme operaci dokud $x_{i+1}\ne0$, nechť $n$ je počet iterací. ($n$ je jistě konečné, viz. \ref{faktDF})
+		\item $\posla$, kde $a_i=0$ pro každé $i>n$, splňuje požadavek $x=
+		\sum_{i=0}^{\infty}a_i\cdot(i+1)!$
+	\end{enumerate}
+\end{pozn}
+\begin{veta}
+	Jestliže $x=\sum_{i=0}^{\infty}a_i\cdot(i+1)!$, pak $(\exists n_0 \in \mathbb{N})(\forall n>n_0):a_n=0$
+\end{veta}
+\begin{dukaz}
+	Sporem: \newline Nechť existuje taková posloupnost, že pro libovolné $n$ najdeme vždy $n_0$ větší$:a_{n_0}\ne0$\newline
+	Pak $x=\sum_{i=0}^\infty a_i\cdot(i+1)! \notin \mathbb{N}_0$, protože suma řady diverguje k $+\infty$
+	\end{dukaz}
+\begin{definice}
+	Omezená množina velikosti i\newline
+	$$C_i=\{k,k\in\mathbb{N}_0,k\le i\}=\{0,\dots,i\}$$
+	Např. $C_5 = \{0,1,2,3,4,5\}$
+\end{definice}
+\begin{veta}
+	Pro vyjádření libovolného x $\in\mathbb{N}_0$ nám postačí omezená množina $C_i\subseteq\mathbb{N}_0$. Pro každé i $\in \mathbb{N}_0$ pro faktoriálovou číselnou soustavu platí $C=C_i$. To jest, každé číslo x $\in\mathbb{N}_0$ lze vyjádřit následovně:
+	$$x=\sum_{i=0}^{\infty}a_i(i+1)!,\quad a_i\in C_i$$
+\end{veta}
+\begin{dukaz}
+...
+\end{dukaz}
+\begin{veta}
+	Jestliže $a_i \in C_{i+1}$, pak je faktoriálová číselná soustava jednoznačná
+\end{veta}
+\begin{dukaz}
+	...
+\end{dukaz}
+\begin{umluva}
+	V faktoriálové číselné soustavě zapisujeme:
+	$\varphi(x) =  (\posla)_!$\newline
+	Pokud bychom chtěli vyjádřit záporné číslo (které logicky nemůže patřit do $D(\varphi)$), pak budeme podobně jak jsme zvyklí v desítkové soustavě zapisovat $\varphi(x) = - (\posla)_!$
+\end{umluva}
+
 \begin{pr}
 	$$z=77$$
 	$$77:4!=3\,zb.\,5$$
@@ -448,17 +540,9 @@ $$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): a_i = 0 $$
 	$$5:2!=2\,zb.\,1$$
 	$$1:1!=1\,zb.\,0$$
 	$$\implies a_0=1, a_1=2,a_2=0,a_3=3$$
-	$$0=\frac{z-a_0-2a_1-6a_2-24a_3}{24}$$
-	$$0=\frac{77-1-4-72}{24}$$
+	$$ 77 = 1 \cdot 1! + 2 \cdot 2! + 3\cdot 4!$$
+	$$ 77 = 1 + 4 + 72 \quad \checkmark$$
 \end{pr}
-\begin{definice}
-	Omezená množina velikosti i\newline
-	$$C_i=\{k,k\le i+1\}=\{0,\dots,i+1\}$$
-\end{definice}
-\begin{veta}
-	Pro vyjádření libovolného z $\in\mathbb{Z}$ nám postačí omezená množina $C_i\subseteq\mathbb{N}_0$. Pro každé i $\in \mathbb{N}_0$ pro faktoriálovou číselnou soustavu platí $C=C_i$. To jest, každé číslo z $\in\mathbb{Z}$ lze vyjádřit následovně:
-	$$z=\sum_{i=0}^{\infty}a_i(i+1)!,\quad a_i\in C_i$$
-\end{veta}
 
 %\chapter{Eulerovo cislo}
 
