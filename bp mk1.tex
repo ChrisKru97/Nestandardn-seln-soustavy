@@ -246,7 +246,152 @@ Pro lepší představu definice číselné soustavy si ji předveďme na příkl
 %(tj. celočíselná část musí být  z konečného počtu prvků \textbf{a})
 
 
-%\chapter{Fibonacciho kódování}
+\chapter{Fibonacciho}
+
+\begin{definice}
+	Fibonacciho číselná soustava je číselná soustava na okruhu $(\mathbb{N}_0,+,\cdot)$ o základu $\{F_i\}_{i=0}^{\infty}$(kde $F_i$ je i-tý člen fibonacciho posloupnosti) s množinou cifer $C=\{0,1\}$ a mmnožinou všech posloupností
+	$B=\{\{a_n\}_{n=0}^\infty,a_n \in \{0,1\} \}$.\newline
+	Fibonacciho číselná soustava je relace:
+	$\varphi:\mathbb{N}_0\to B$
+\end{definice}
+\begin{definice} Fibonacciho posloupnost\newline
+	Je nekonečná posloupnost přirozených čísel definována rekurentní formulí:
+	$$F_0 = 0,\quad F_1 = 1,\quad F_n = F_{n-1}+ F_{n-2}$$
+\end{definice}
+\begin{pr}
+	$$F_2 = F_1+F_0 =  1 + 0=1$$$$F_3 = F_2+F_1 =  1 + 1= 2$$$$\vdots$$
+	$$ \{F_i\}_{i=0}^{\infty} = \{0,1,1,2,3,5,8,13,\dots\}$$
+\end{pr}
+\begin{umluva}
+	V fibonacciho číselné soustavě zapisujeme:
+	$\varphi(x) =  (\posla)_F$\newline
+	Pokud bychom chtěli vyjádřit záporné číslo (které logicky nemůže patřit do $D(\varphi)$), pak budeme podobně jak jsme zvyklí v desítkové soustavě zapisovat $\varphi(x) = - (\posla)_F$
+\end{umluva}
+\begin{veta}
+	Pro každé $x \in \mathbb{N}_0 \quad \exists\{a_n\}_{n=0}^\infty:x=\sum_{i=0}^{\infty}a_i\cdot F_i\quad$ To jest $D(\varphi)=\mathbb{N}_0$
+\end{veta}
+\begin{dukaz}\label{fiboDF}
+	Protože je fibonacciho posloupnost nekonečná a rostoucí posloupnost, je zřejmé, že pro libovolné $n\in\mathbb{N}_0$ vždy najdeme právě jedno $i\in\mathbb{N}_0$ pro které platí: $F_i\le n<F_{i+1}$
+	
+	Protože $(\mathbb{Z},+,\cdot)$ je euklidovský obor integrity, jistě existují čísla $z_i\in\mathbb{Z}, a_i\in\{0,1\}$ taková, že:
+	$$ z=z_0=z_1\cdot(-2)+a_0,\quad a_0\in\{0,1\}$$
+	$$ z_1=z_2\cdot(-2)+a_1,\quad a_1\in\{0,1\}$$
+	$$ z_{k-1}=z_k\cdot(-2)+a_{k-1}$$
+	$$ z_{n-2}=z_{n-1}\cdot(-2)+a_{n-2}$$
+	$$ z_{n-1}=z_n\cdot(-2)+a_{n-1}$$
+	$$ z_n=z_{n+1}\cdot(-2)+a_n$$
+	\begin{enumerate}
+		\item[$\alpha)$] $z_1=0 \implies z=z_0=a_0(-2)^0=a_0\in\{0,1\}$
+		\item[$\beta)$]  $z_i \ne 0 \implies \forall k \ge 1:$
+		$$|z_k|=\left|\frac{z_{k-1}-a_{k-1}}{-2}\right|\le \frac{|z_{k-1}|+1}{2}$$
+		$$|z_{k-1}|\le\frac{|z_{k-2}|+1}{2}\le\frac{\frac{|z_{k-2}|+1}{2}+1}{2}=\frac{|z_{k-2}|}{2^2}+\frac{1}{2}+\frac{1}{4}$$
+		$$\vdots$$
+		$$|z_k|\le\frac{|z_0|}{2^k}+\sum_{i=1}^{k}\left(\frac{1}{2}\right)^i=\left[\frac{|z_0|}{2^k}+1-\left(\frac{1}{2}\right)^k \right]\to 1 $$
+		$$ pro\; k \to \infty $$
+		
+		Pro dost velké $k_0 \quad |z_{k_0}|\le1,5 \implies \exists k_0:z_{k_0}\in\{1,0,-1\}$
+		\begin{enumerate}
+			\item[a)] $\underline{z_{k_0}=0}$
+			\item[b)]$z_{k_0}=1$
+			$$\implies 1=z_{k_0}=z_{k_0+1}\cdot(-2)+a_{k_0}\implies \underline{z_{k_0+1}=0}$$
+			\item[c)]$z_{k_0}=-1$
+			$$\implies -1=z_{k_0}=z_{k_0+1}\cdot(-2)+a_{k_0}\implies z_{k_0+1}=1\implies \underline{z_{k_0+2}=0}$$ 
+		\end{enumerate}
+		$\implies \exists z_{n+1}$ takové, že $z_{n+1}=0$\newline
+		$\implies z_n = a_n \implies z_{n-1}=a_n\cdot(-2)^1+a_{n-1}\implies \dots$
+		$$\implies z=z_0=a_n\cdot(-2)^n+a_{n-1}\cdot(-2)^{n-1}+\dots+a_0$$
+	\end{enumerate}
+\end{dukaz}
+
+\begin{pozn} Algoritmus pro hledání reprezentace čísla v negabinární číselné soustavě\newline
+	\begin{enumerate}
+		\item Nechť $z$ je číslo, které chceme reprezentovat, $z_0 = z$ a $i=0$ je počáteční hodnota algoritmu
+		\item Provedeme následující operaci:\newline $z_i/(-2)=z_{i+1}\;zb.\;a_i$, kde $ a_i\in\{0,1\}, 
+		z_i\in\mathbb{Z}$
+		\item Opakujeme operaci dokud $z_{i+1}\ne0$, nechť $n$ je počet iterací. ($n$ je jistě konečné, viz. \ref{negaDF})
+		\item $\posla$, kde $a_i=0$ pro každé $i>n$, splňuje požadavek $z=
+		\sum_{i=0}^{\infty}a_i\cdot(-2)^i$
+	\end{enumerate}
+	Pozor! zbytek musí vždy patřit do množiny $\{0,1\}$, proto musíme volit $z_{i+1}$ tak, aby platilo: $$z_i=z_{i+1}\cdot(-2)+a_i$$
+\end{pozn}
+\begin{pr}
+	$$z=13$$
+	$$13:(-2)=-6\,zb.\,1$$
+	$$-6:(-2)=3\,zb.\,0$$
+	$$3:(-2)=-1\,zb.\,1$$
+	$$-1:(-2)=1\,zb.\,1$$
+	$$1:(-2)=0\,zb.\,1$$
+	$$\implies a_0=1, a_1=0,a_2=1,a_3=1,a_4=1$$
+	$$ 13 = 1\cdot(-2)^0 + 1 \cdot(-2)^2+1\cdot(-2)^3+1\cdot(-2)^4$$
+	$$ 13 = 1 + 4-8+16\quad \checkmark$$
+\end{pr}
+\begin{veta}
+	Jestliže $z=\sum_{i=0}^{\infty}a_i(-2)^i$, pak $(\exists n_0 \in \mathbb{N})(\forall n>n_0):a_n=0$
+\end{veta}
+\begin{dukaz}
+	Předpokládejme, že takové číslo $z$ existuje, pak uvažujme tři případy:
+	\begin{itemize}
+		\item[$a)$]
+		Každý sudý člen posloupnosti $a_n$ má hodnotu 1 a existuje $n_0\in\mathbb{N}$, pro který platí že všechny liché členy posloupnosti dále od tohoto $n_0$ mají hodnotu 0.
+		Je zřejmé, že suma diverguje a $z=\infty$, a proto $z \notin \mathbb{Z}$
+		\item[$b)$]Každý lichý člen posloupnosti $a_n$ má hodnotu 1 a existuje $n_0\in\mathbb{N}$, pro který platí že všechny sudé členy posloupnosti dále od tohoto $n_0$ mají hodnotu 0.
+		Je zřejmé, že suma diverguje a $z=-\infty$, a proto $z \notin \mathbb{Z}$
+		\item[$c)$] Posloupnost je nekonečná a pro libovolné liché $n_1$ vždy najdeme sudé $n_2$, kde $ n_2>n_1 \land a_{n_2}=1$
+		\begin{center}$ n_2 \; $sudé$ \; \implies (-2)^{n_2} = 2^{n_2}$\end{center}
+		$$-\left(\sum_{n=0}^{n_2-1}2^n\right)+(-2)^{n_2}\leq \left(\sum_{n=0}^{n_2-1}a_n(-2)^n\right)+(-2)^{n_2}  \leq\left(\sum_{n=0}^{n_2-1}2^n\right)+(-2)^{n_2}$$
+		$$-\left(\frac{2^{n_2}-1}{2-1}\right)+2^{n_2}\leq z \leq\left(\frac{2^{n_2}-1}{2-1} \right)+2^{n_2}$$
+		$$1\leq z\leq 2\cdot2^{n_2}-1$$
+		$$z\ge1$$
+		Analogicky pro libovolné sudé $n_1$ vždy najdeme liché $n_2$ větší, kde $ n_2>n_1 \land a_{n_2}=1$
+		\begin{center}$ n_2 \; $liché$ \; \implies (-2)^{n_2} = -2^{n_2}$\end{center}
+		$$-\left(\sum_{n=0}^{n_2-1}2^n\right)+(-2)^{n_2}\leq \left(\sum_{n=0}^{n_2-1}a_n(-2)^n\right)+(-2)^{n_2}  \leq\left(\sum_{n=0}^{n_2-1}2^n\right)+(-2)^{n_2}$$
+		$$-\left(\frac{2^{n_2}-1}{2-1}\right)-2^{n_2}\leq   z \leq\left(\frac{2^{n_2}-1}{2-1} \right)-2^{n_2}$$
+		$$-2\cdot2^{n_2}+1\leq z\leq -1$$
+		$$z\le-1$$
+		
+	\end{itemize}
+	Je zřejmé, že ani v posledním případě suma nekonverguje, protože vždy najdeme případ, kdy suma je menší než -1 a zároveň případ, kdy suma je větší než 1 $\implies$ \textbf{spor!}
+	
+\end{dukaz}
+
+\begin{veta}
+	Pro každé $z\in\mathbb{Z}\quad\exists!\{a_n\}_{i=0}^\infty:z=\sum_{i=0}^{\infty}a_i(-2)^i$
+\end{veta}
+\begin{dukaz}
+	Dokazujeme sporem, a proto předpokládejme že existuje celé číslo z, které je v relaci s posloupností $\mathbf{a_n}$ a zároveň v relaci s jinou posloupností $\mathbf{b_n}$. Pokud takové číslo existuje, tak $\varphi(z)$ jistě není zobrazení.
+	$$\{a_n\}_{n=0}^\infty \ne \{b_n\}_{n=0}^\infty$$ $$z=\sum_{n=0}^{k}a_n(-2)^n = \sum_{n=0}^{k}b_n(-2)^n$$
+	definujme posloupnost $C_n$ splňující: $$C_n = a_n - b_n$$
+	$$\sum_{n=0}^k C_n(-2)^n = 0 , C_n \in \{-1, 0 ,1\}$$
+	Abychom došli ke sporu, předpokládejme, že $\exists n_0 \in \{0,\dots,k\}: C_n \ne 0$
+	\begin{itemize}
+		\item[$\alpha)$]$C_{n_0} = 1$
+		\begin{itemize}
+			\item[I.)] $\mathbf{n_0}$ je liché
+			$$-\left(\sum_{n=0}^{n_0-1}2^n\right)+(-2)^{n_0}\leq \left(\sum_{n=0}^{n_0-1}C_n(-2)^n\right)+C_{n_0}\cdot(-2)^{n_2}  \leq\left(\sum_{n=0}^{n_0-1}2^n\right)+(-2)^{n_0}$$
+			$$1\leq \left(\sum_{n=0}^{n_0-1}C_n(-2)^n\right)+C_{n_0}\cdot(-2)^{n_2}  \leq 2^{n_0 + 1}-1$$
+			Takové číslo je jistě kladné $\implies$ \textbf{z} nemůže být v relaci s posloupností $\mathbf{a_n}$ a zároveň v relaci s posloupností $\mathbf{b_n}$
+			\item[II.)]  $\mathbf{n_0}$ je sudé
+			$$-\left(\sum_{n=0}^{n_0-1}2^n\right)+(-2)^{n_0}\leq \left(\sum_{n=0}^{n_0-1}C_n(-2)^n\right)+C_{n_0}\cdot(-2)^{n_2}  \leq\left(\sum_{n=0}^{n_0-1}2^n\right)+(-2)^{n_0}$$
+			$$-2^{n_0+1}+1\leq \left(\sum_{n=0}^{n_0-1}C_n(-2)^n\right)+C_{n_0}\cdot(-2)^{n_2}  \leq -1$$
+			Takové číslo je jistě záporné $\implies$ \textbf{z} nemůže být v relaci s posloupností $\mathbf{a_n}$ a zároveň v relaci s posloupností $\mathbf{b_n}$
+			
+		\end{itemize}
+		\item[$\beta)$]$C_{n_0} = -1$\newline
+		Důkaz je úplně stejný, ať je $C_{n_0}$ liché nebo sudé, nikdy se suma rovnat 0 jistě nebude.
+	\end{itemize}
+	
+\end{dukaz}
+
+\begin{veta}
+	Negabinární číselná soustava je jednoznačná číselná soustava na okruhu celých čísel
+\end{veta}
+
+\begin{pr}
+	Pro negabinární číselnou soustavu platí:
+	$$\varphi(1\cdot-2^6+1\cdot-2^4+1\cdot-2^1)=(\{a_i\})=(64+16+(-2))$$
+	$${a_i}=(0,1,0,0,1,0,1,\dots) $$
+	$$78 =(1010010)_{-2}$$
+\end{pr}
 
 
 %\chapter{Zlatý řez}

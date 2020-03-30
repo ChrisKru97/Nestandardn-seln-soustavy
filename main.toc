@@ -1,0 +1,27 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {czech}{}
+\babel@toc {czech}{}
+\babel@toc {czech}{}
+\babel@toc {czech}{}
+\babel@toc {english}{}
+\babel@toc {czech}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Seznam pou\IeC {\v z}it\IeC {\'y}ch zkratek a symbol\IeC {\r u}}{7}{Doc-Start}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}\IeC {\'U}vod}{8}{section.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Definice}{8}{subsection.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}N\IeC {\'a}zorn\IeC {\'e} p\IeC {\v r}\IeC {\'\i }klady}{11}{subsection.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Negabin\IeC {\'a}rn\IeC {\'\i }}{12}{section.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Komplexn\IeC {\'\i }}{17}{section.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Fibonacciho}{18}{section.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Faktori\IeC {\'a}lov\IeC {\'a}}{23}{section.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{26}{section.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Odkazy}{27}{section.6}% 
