@@ -2009,7 +2009,8 @@
   <bcf:bibdata section="0">
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">aa</bcf:citekey>
+    <bcf:citekey order="1">a</bcf:citekey>
+    <bcf:citekey order="2">b</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

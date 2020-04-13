@@ -18,10 +18,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Komplexn\IeC {\'\i }}{17}{section.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Fibonacciho}{18}{section.4}% 
+\contentsline {section}{\numberline {4}Fibonacciho}{20}{section.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Faktori\IeC {\'a}lov\IeC {\'a}}{23}{section.5}% 
+\contentsline {section}{\numberline {5}Faktori\IeC {\'a}lov\IeC {\'a}}{25}{section.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{26}{section.6}% 
+\contentsline {section}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{28}{section.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Odkazy}{27}{section.6}% 
+\contentsline {section}{Odkazy}{29}{section.6}% 

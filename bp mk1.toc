@@ -1,8 +1,0 @@
-\babel@toc {czech}{}
-\contentsline {chapter}{\numberline {1}\IeC {\'U}vod}{7}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}Definice}{7}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}N\IeC {\'a}zorn\IeC {\'e} p\IeC {\v r}\IeC {\'\i }klady}{11}{section.1.2}% 
-\contentsline {chapter}{\numberline {2}Fibonacciho}{13}{chapter.2}% 
-\contentsline {chapter}{\numberline {3}Negabin\IeC {\'a}rn\IeC {\'\i }}{19}{chapter.3}% 
-\contentsline {chapter}{\numberline {4}Komplexn\IeC {\'\i }}{25}{chapter.4}% 
-\contentsline {chapter}{\numberline {5}Faktori\IeC {\'a}lov\IeC {\'a}}{27}{chapter.5}% 
