@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.28)  13 APR 2020 12:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.28)  14 APR 2020 02:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -503,30 +503,31 @@ Language: czech 2008/07/06 v3.1a Czech support from the babel system
 \c@theorem=\count129
 \c@remark=\count130
 \c@agreement=\count131
+\c@consequence=\count132
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/thb.sty
 File: thb.sty 2014/10/28 v2.2c Theorem extension package (FMi)
 )
-\c@Dipl@examplebody=\count132
-Package hyperref Info: Option `unicode' set `true' on input line 518.
-Package hyperref Info: Option `colorlinks' set `true' on input line 518.
-\c@figure@totc=\count133
-\c@table@totc=\count134
-\c@lstlisting@totc=\count135
+\c@Dipl@examplebody=\count133
+Package hyperref Info: Option `unicode' set `true' on input line 519.
+Package hyperref Info: Option `colorlinks' set `true' on input line 519.
+\c@figure@totc=\count134
+\c@table@totc=\count135
+\c@lstlisting@totc=\count136
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count136
+\etb@tempcnta=\count137
 )
-\csq@reset=\count137
-\csq@gtype=\count138
-\csq@glevel=\count139
-\csq@qlevel=\count140
-\csq@maxlvl=\count141
-\csq@tshold=\count142
+\csq@reset=\count138
+\csq@gtype=\count139
+\csq@glevel=\count140
+\csq@qlevel=\count141
+\csq@maxlvl=\count142
+\csq@tshold=\count143
 \csq@ltx@everypar=\toks46
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.def
@@ -546,52 +547,52 @@ Package: biblatex 2018/11/02 v3.12 programmable bibliographies (PK/MW)
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count143
+\lrq@indent=\count144
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count144
-\c@listtotal=\count145
-\c@listcount=\count146
-\c@liststart=\count147
-\c@liststop=\count148
-\c@citecount=\count149
-\c@citetotal=\count150
-\c@multicitecount=\count151
-\c@multicitetotal=\count152
-\c@instcount=\count153
-\c@maxnames=\count154
-\c@minnames=\count155
-\c@maxitems=\count156
-\c@minitems=\count157
-\c@citecounter=\count158
-\c@maxcitecounter=\count159
-\c@savedcitecounter=\count160
-\c@uniquelist=\count161
-\c@uniquename=\count162
-\c@refsection=\count163
-\c@refsegment=\count164
-\c@maxextratitle=\count165
-\c@maxextratitleyear=\count166
-\c@maxextraname=\count167
-\c@maxextradate=\count168
-\c@maxextraalpha=\count169
-\c@abbrvpenalty=\count170
-\c@highnamepenalty=\count171
-\c@lownamepenalty=\count172
-\c@maxparens=\count173
-\c@parenlevel=\count174
-\blx@tempcnta=\count175
-\blx@tempcntb=\count176
-\blx@tempcntc=\count177
-\blx@maxsection=\count178
-\blx@maxsegment@0=\count179
-\blx@notetype=\count180
-\blx@parenlevel@text=\count181
-\blx@parenlevel@foot=\count182
-\blx@sectionciteorder@0=\count183
-\blx@entrysetcounter=\count184
+\c@tabx@nest=\count145
+\c@listtotal=\count146
+\c@listcount=\count147
+\c@liststart=\count148
+\c@liststop=\count149
+\c@citecount=\count150
+\c@citetotal=\count151
+\c@multicitecount=\count152
+\c@multicitetotal=\count153
+\c@instcount=\count154
+\c@maxnames=\count155
+\c@minnames=\count156
+\c@maxitems=\count157
+\c@minitems=\count158
+\c@citecounter=\count159
+\c@maxcitecounter=\count160
+\c@savedcitecounter=\count161
+\c@uniquelist=\count162
+\c@uniquename=\count163
+\c@refsection=\count164
+\c@refsegment=\count165
+\c@maxextratitle=\count166
+\c@maxextratitleyear=\count167
+\c@maxextraname=\count168
+\c@maxextradate=\count169
+\c@maxextraalpha=\count170
+\c@abbrvpenalty=\count171
+\c@highnamepenalty=\count172
+\c@lownamepenalty=\count173
+\c@maxparens=\count174
+\c@parenlevel=\count175
+\blx@tempcnta=\count176
+\blx@tempcntb=\count177
+\blx@tempcntc=\count178
+\blx@maxsection=\count179
+\blx@maxsegment@0=\count180
+\blx@notetype=\count181
+\blx@parenlevel@text=\count182
+\blx@parenlevel@foot=\count183
+\blx@sectionciteorder@0=\count184
+\blx@entrysetcounter=\count185
 \labelnumberwidth=\skip54
 \labelalphawidth=\skip55
 \biblabelsep=\skip56
@@ -602,9 +603,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip61
 \blx@bcfin=\read2
 \blx@bcfout=\write4
-\c@mincomprange=\count185
-\c@maxcomprange=\count186
-\c@mincompwidth=\count187
+\c@mincomprange=\count186
+\c@maxcomprange=\count187
+\c@mincompwidth=\count188
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -619,76 +620,76 @@ File: iso-numeric.dbx 2017/04/25 v0.3.2 biblatex data model extension
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count188
-\c@savedafterword=\count189
-\c@annotator=\count190
-\c@savedannotator=\count191
-\c@author=\count192
-\c@savedauthor=\count193
-\c@bookauthor=\count194
-\c@savedbookauthor=\count195
-\c@commentator=\count196
-\c@savedcommentator=\count197
-\c@editor=\count198
-\c@savededitor=\count199
-\c@editora=\count266
-\c@savededitora=\count267
-\c@editorb=\count268
-\c@savededitorb=\count269
-\c@editorc=\count270
-\c@savededitorc=\count271
-\c@foreword=\count272
-\c@savedforeword=\count273
-\c@holder=\count274
-\c@savedholder=\count275
-\c@introduction=\count276
-\c@savedintroduction=\count277
-\c@namea=\count278
-\c@savednamea=\count279
-\c@nameb=\count280
-\c@savednameb=\count281
-\c@namec=\count282
-\c@savednamec=\count283
-\c@translator=\count284
-\c@savedtranslator=\count285
-\c@shortauthor=\count286
-\c@savedshortauthor=\count287
-\c@shorteditor=\count288
-\c@savedshorteditor=\count289
-\c@supervisor=\count290
-\c@savedsupervisor=\count291
-\c@labelname=\count292
-\c@savedlabelname=\count293
-\c@institution=\count294
-\c@savedinstitution=\count295
-\c@lista=\count296
-\c@savedlista=\count297
-\c@listb=\count298
-\c@savedlistb=\count299
-\c@listc=\count300
-\c@savedlistc=\count301
-\c@listd=\count302
-\c@savedlistd=\count303
-\c@liste=\count304
-\c@savedliste=\count305
-\c@listf=\count306
-\c@savedlistf=\count307
-\c@location=\count308
-\c@savedlocation=\count309
-\c@organization=\count310
-\c@savedorganization=\count311
-\c@origlocation=\count312
-\c@savedoriglocation=\count313
-\c@origpublisher=\count314
-\c@savedorigpublisher=\count315
-\c@publisher=\count316
-\c@savedpublisher=\count317
-\c@language=\count318
-\c@savedlanguage=\count319
-\c@origlanguage=\count320
-\c@savedoriglanguage=\count321
-\c@pageref=\count322
-\c@savedpageref=\count323
+\c@afterword=\count189
+\c@savedafterword=\count190
+\c@annotator=\count191
+\c@savedannotator=\count192
+\c@author=\count193
+\c@savedauthor=\count194
+\c@bookauthor=\count195
+\c@savedbookauthor=\count196
+\c@commentator=\count197
+\c@savedcommentator=\count198
+\c@editor=\count199
+\c@savededitor=\count266
+\c@editora=\count267
+\c@savededitora=\count268
+\c@editorb=\count269
+\c@savededitorb=\count270
+\c@editorc=\count271
+\c@savededitorc=\count272
+\c@foreword=\count273
+\c@savedforeword=\count274
+\c@holder=\count275
+\c@savedholder=\count276
+\c@introduction=\count277
+\c@savedintroduction=\count278
+\c@namea=\count279
+\c@savednamea=\count280
+\c@nameb=\count281
+\c@savednameb=\count282
+\c@namec=\count283
+\c@savednamec=\count284
+\c@translator=\count285
+\c@savedtranslator=\count286
+\c@shortauthor=\count287
+\c@savedshortauthor=\count288
+\c@shorteditor=\count289
+\c@savedshorteditor=\count290
+\c@supervisor=\count291
+\c@savedsupervisor=\count292
+\c@labelname=\count293
+\c@savedlabelname=\count294
+\c@institution=\count295
+\c@savedinstitution=\count296
+\c@lista=\count297
+\c@savedlista=\count298
+\c@listb=\count299
+\c@savedlistb=\count300
+\c@listc=\count301
+\c@savedlistc=\count302
+\c@listd=\count303
+\c@savedlistd=\count304
+\c@liste=\count305
+\c@savedliste=\count306
+\c@listf=\count307
+\c@savedlistf=\count308
+\c@location=\count309
+\c@savedlocation=\count310
+\c@organization=\count311
+\c@savedorganization=\count312
+\c@origlocation=\count313
+\c@savedoriglocation=\count314
+\c@origpublisher=\count315
+\c@savedorigpublisher=\count316
+\c@publisher=\count317
+\c@savedpublisher=\count318
+\c@language=\count319
+\c@savedlanguage=\count320
+\c@origlanguage=\count321
+\c@savedoriglanguage=\count322
+\c@pageref=\count323
+\c@savedpageref=\count324
 \shorthandwidth=\skip62
 \shortjournalwidth=\skip63
 \shortserieswidth=\skip64
@@ -714,13 +715,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
-\c@textcitecount=\count324
-\c@textcitetotal=\count325
-\c@textcitemaxnames=\count326
-\c@biburlnumpenalty=\count327
-\c@biburlucpenalty=\count328
-\c@biburllcpenalty=\count329
-\c@smartand=\count330
+\c@textcitecount=\count325
+\c@textcitetotal=\count326
+\c@textcitemaxnames=\count327
+\c@biburlnumpenalty=\count328
+\c@biburlucpenalty=\count329
+\c@biburllcpenalty=\count330
+\c@smartand=\count331
 )
 Package biblatex Info: Trying to load bibliography style 'iso-numeric'...
 Package biblatex Info: ... file 'iso-numeric.bbx' found.
@@ -807,13 +808,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count331
+\inf@bad=\count332
 LaTeX Info: Redefining \frac on input line 223.
-\uproot@=\count332
-\leftroot@=\count333
+\uproot@=\count333
+\leftroot@=\count334
 LaTeX Info: Redefining \overline on input line 385.
-\classnum@=\count334
-\DOTSCASE@=\count335
+\classnum@=\count335
+\DOTSCASE@=\count336
 LaTeX Info: Redefining \ldots on input line 482.
 LaTeX Info: Redefining \dots on input line 485.
 LaTeX Info: Redefining \cdots on input line 606.
@@ -822,15 +823,15 @@ LaTeX Info: Redefining \cdots on input line 606.
 \big@size=\dimen150
 LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
-\macc@depth=\count336
-\c@MaxMatrixCols=\count337
+\macc@depth=\count337
+\c@MaxMatrixCols=\count338
 \dotsspace@=\muskip11
-\c@parentequation=\count338
-\dspbrk@lvl=\count339
+\c@parentequation=\count339
+\dspbrk@lvl=\count340
 \tag@help=\toks49
-\row@=\count340
-\column@=\count341
-\maxfields@=\count342
+\row@=\count341
+\column@=\count342
+\maxfields@=\count343
 \andhelp@=\toks50
 \eqnshift@=\dimen151
 \alignsep@=\dimen152
@@ -881,7 +882,11 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 ))
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `NBv3e4' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
@@ -940,16 +945,16 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count343
+\scratchcounter=\count344
 \scratchdimen=\dimen157
 \scratchbox=\box37
-\nofMPsegments=\count344
-\nofMParguments=\count345
+\nofMPsegments=\count345
+\nofMParguments=\count346
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count346
+\MPscratchCnt=\count347
 \MPscratchDim=\dimen158
-\MPnumerator=\count347
-\makeMPintoPDFobject=\count348
+\MPnumerator=\count348
+\makeMPintoPDFobject=\count349
 \everyMPtoPDFconversion=\toks54
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -968,7 +973,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count349
+\c@lstlisting=\count350
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
@@ -984,7 +989,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count350
+\c@section@level=\count351
 )
 LaTeX Info: Redefining \ref on input line 41.
 LaTeX Info: Redefining \pageref on input line 41.
@@ -1046,7 +1051,7 @@ Package biblatex Info: Reference segment=0 on input line 41.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<data/assignment1.jpg, id=51, 1244.65pt x 1761.58125pt>
+<data/assignment1.jpg, id=63, 1244.65pt x 1761.58125pt>
 File: data/assignment1.jpg Graphic file (type jpg)
 <use data/assignment1.jpg>
 Package pdftex.def Info: data/assignment1.jpg  used on input line 43.
@@ -1137,62 +1142,65 @@ lmr/m/n/10.95 = ([] \OML/lmm/m/it/10.95 a[]; a[]; a[]\OT1/lmr/m/n/10.95 )[]$ \T
 10.95 ([] \OML/lmm/m/it/10.95 a[]; a[]; a[]\OT1/lmr/m/n/10.95 )[] =
  []
 
-[9]
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 124.
- [10] [11] [12
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 118.
+[9] [10] [11] [12
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-
- []
-
-[13] [14] [15] [16]
-
-LaTeX Warning: Citation 'b' on page 17 undefined on input line 339.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 343--347
+] [13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 377--379
 
  []
 
-[17
-
-] [18] [19] [20
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 476--477
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 411--413
 
  []
 
-[21] [22] [23] [24]
-Underfull \hbox (badness 10000) in paragraph at lines 573--577
+[16] [17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
 
  []
 
-[25
+[19] [20]
+
+LaTeX Warning: Citation 'b' on page 21 undefined on input line 643.
+
+
+Overfull \hbox (2.18082pt too wide) detected at line 661
+[] \OT1/lmr/m/n/10.95 = [] = [] \OMS/lmsy/m/n/10.95 ^^A [] \OT1/lmr/m/n/10.95 =
+ [] = [] = []
+ []
+
+[21
+
+] [22] [23] [24] [25
+
+] [26
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 623--624
+Underfull \hbox (badness 10000) in paragraph at lines 851--852
 
  []
 
-[26] [27] [28
+[27] [28] [29
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 668.
- [29
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 891.
+ [30
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 668.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 891.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 668.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 668.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 891.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 891.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 856A188E80259D45CDCDF697CCB1486F;1099.
+(rerunfilecheck)             Checksum: A9A7E62994CC4051BD84F04700785EB6;2537.
 
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -1202,40 +1210,42 @@ Package biblatex Warning: Please (re)run Biber on the file:
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 668.
- ) 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 891.
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 278 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 24695 strings out of 492616
- 383451 string characters out of 6129481
- 843697 words of memory out of 5000000
- 28163 multiletter control sequences out of 15000+600000
- 80242 words of font info for 56 fonts, out of 8000000 for 9000
+ 24738 strings out of 492616
+ 383945 string characters out of 6129481
+ 878811 words of memory out of 5000000
+ 28193 multiletter control sequences out of 15000+600000
+ 62495 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,13n,40p,978b,2325s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/
-texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/20
-19/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-d
-ist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2019/texmf-dist/fonts/
-enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/l
-m/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.p
-fb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/lo
-cal/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texli
-ve/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/te
-xmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/f
-onts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/
-public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/l
-mr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/te
-xlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/t
-exmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/
-fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type
-1/public/lm/lmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm
-/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symb
-ols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
-symbols/msbm10.pfb>
-Output written on main.pdf (29 pages, 829913 bytes).
+ 44i,9n,40p,978b,10485s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.en
+c}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/
+texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/20
+19/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2019/texmf-d
+ist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/
+type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publ
+ic/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx
+i10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/
+texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/201
+9/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dis
+t/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/typ
+e1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/l
+m/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2
+019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-d
+ist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (30 pages, 824361 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 104 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 426 PDF objects out of 1000 (max. 8388607)
+ 123 named destinations out of 1000 (max. 500000)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 

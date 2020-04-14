@@ -274,7 +274,8 @@
 {\par\noindent\textbf{\proofname}}
 {\mbox{}\hspace*{5pt}\hfill\hbox{\vrule height5pt depth0pt width5pt}\par\medskip}
 {\theorembodyfont{\rmfamily}\newtheorem{remark}{\Dipl@LanguageDependentText{Poznámka}{Poznámka}{Remark}}}
-{\theorembodyfont{\rmfamily}\newtheorem{agreement}{\Dipl@LanguageDependentText{Úmluva}{Úmluva}{Agreement}}}
+{\theorembodyfont{\rmfamily}\newtheorem{agreement}{\Dipl@LanguageDependentText{Úmluva}{Dohoda}{Agreement}}}
+{\theorembodyfont{\rmfamily}\newtheorem{consequence}{\Dipl@LanguageDependentText{Důsledek}{Dôsledok}{Consequence}}
 {\theoremstyle{break}\theorembodyfont{\rmfamily}\newtheorem{Dipl@examplebody}{\Dipl@LanguageDependentText{Příklad}{Príklad}{Example}}}
 \newenvironment{example}
 {\begin{Dipl@examplebody}}

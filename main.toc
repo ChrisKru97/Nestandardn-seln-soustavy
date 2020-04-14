@@ -14,14 +14,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2}N\IeC {\'a}zorn\IeC {\'e} p\IeC {\v r}\IeC {\'\i }klady}{11}{subsection.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Negabin\IeC {\'a}rn\IeC {\'\i }}{12}{section.2}% 
+\contentsline {section}{\numberline {2}Negabin\IeC {\'a}rn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{12}{section.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Komplexn\IeC {\'\i }}{17}{section.3}% 
+\contentsline {subsection}{\numberline {2.1}S\IeC {\v c}\IeC {\'\i }t\IeC {\'a}n\IeC {\'\i } cel\IeC {\'y}ch \IeC {\v c}\IeC {\'\i }sel v negabin\IeC {\'a}rn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{17}{subsection.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Fibonacciho}{20}{section.4}% 
+\contentsline {subsection}{\numberline {2.2}Nalezen\IeC {\'\i } \IeC {\v c}\IeC {\'\i }sla opa\IeC {\v c}n\IeC {\'e}ho v negabin\IeC {\'a}rn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{18}{subsection.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Faktori\IeC {\'a}lov\IeC {\'a}}{25}{section.5}% 
+\contentsline {subsection}{\numberline {2.3}N\IeC {\'a}soben\IeC {\'\i } v negabin\IeC {\'a}rn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{19}{subsection.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{28}{section.6}% 
+\contentsline {section}{\numberline {3}Komplexn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{21}{section.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Odkazy}{29}{section.6}% 
+\contentsline {section}{\numberline {4}Fibonacciho \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{25}{section.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Faktori\IeC {\'a}lov\IeC {\'a} \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{26}{section.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{29}{section.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Odkazy}{30}{section.6}% 
