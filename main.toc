@@ -24,10 +24,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Komplexn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{21}{section.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Fibonacciho \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{25}{section.4}% 
+\contentsline {subsection}{\numberline {3.1}S\IeC {\v c}\IeC {\'\i }t\IeC {\'a}n\IeC {\'\i } gaussovsk\IeC {\'y}ch cel\IeC {\'y}ch \IeC {\v c}\IeC {\'\i }sel v komplexn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{26}{subsection.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Faktori\IeC {\'a}lov\IeC {\'a} \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{26}{section.5}% 
+\contentsline {subsection}{\numberline {3.2}Nalezen\IeC {\'\i } opa\IeC {\v c}n\IeC {\'e}ho \IeC {\v c}\IeC {\'\i }sla v komplexn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{27}{subsection.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{29}{section.6}% 
+\contentsline {subsection}{\numberline {3.3}N\IeC {\'a}soben\IeC {\'\i } v komplexn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{28}{subsection.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Odkazy}{30}{section.6}% 
+\contentsline {section}{\numberline {4}Negafibonacciho \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{30}{section.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}S\IeC {\v c}\IeC {\'\i }t\IeC {\'a}n\IeC {\'\i } cel\IeC {\'y}ch \IeC {\v c}\IeC {\'\i }sel v negafibonacciho \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{32}{subsection.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Faktori\IeC {\'a}lov\IeC {\'a} \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{35}{section.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{38}{section.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Odkazy}{39}{section.6}% 

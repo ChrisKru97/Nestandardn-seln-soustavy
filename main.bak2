@@ -1,7 +1,6 @@
 \documentclass[czech,bachelor,dept470,male]{diploma}
 \usepackage[autostyle=true,czech=quotes]{csquotes}
 \usepackage[backend=biber, style=iso-numeric, alldates=iso]{biblatex}
-\usepackage{enumitem}
 \usepackage{amsfonts,amssymb,amsmath}
 
 \ThesisAuthor{Christian Krutsche}
@@ -501,11 +500,11 @@ Sčítání čísel v negabinární číselné soustavě můžeme provádět pod
 	      \begin{equation}\label{NBprsoucT5}
 		      \begin{tabular}{|c|c|c|c|c|c|c|c|}
 			      \hline
-			      0 & 0              & 1              & 1 & 0 & 0             & 1              & a   \\ \hline
-			      0 & 0              & 1              & 0 & 1 & 1             & 1              & b   \\ \hline \hline
-			      0 & 0              & \underline{||} & | & | & \underline{|} & \underline{||} & a+b \\
-			      0 & \underline{-|} & 0              & | & | & 0             & 0              & a+b \\
-			      | & |              & 0              & | & | & 0             & 0              & a+b \\
+			      0 & 0  & 1  & 1 & 0 & 0 & 1  & a   \\ \hline
+			      0 & 0  & 1  & 0 & 1 & 1 & 1  & b   \\ \hline \hline
+			      0 & 0  & \underline{||} & | & | & \underline{|} & \underline{||} & a+b \\
+			      0 & \underline{-|} & 0  & | & | & 0 & 0  & a+b \\
+			      | & |  & 0  & | & | & 0 & 0  & a+b \\
 			      \hline
 		      \end{tabular}
 	      \end{equation}
@@ -517,10 +516,10 @@ Sčítání čísel v negabinární číselné soustavě můžeme provádět pod
 	      \begin{equation}\label{NBprsoucT5B}
 		      \begin{tabular}{|c|c|c|c|c|}
 			      \hline
-			      1              & 1              & 0             & 1              & a   \\ \hline
-			      1              & 1              & 1             & 1              & b   \\ \hline \hline
+			      1  & 1  & 0 & 1  & a   \\ \hline
+			      1  & 1  & 1 & 1  & b   \\ \hline \hline
 			      \underline{||} & \underline{||} & \underline{|} & \underline{||} & a+b \\
-			      |              & 0              & 0             & 0              & a+b \\
+			      |  & 0  & 0 & 0  & a+b \\
 			      \hline
 		      \end{tabular}
 	      \end{equation}
@@ -633,12 +632,12 @@ Demonstrujeme na příkladech
 \section{Komplexní číselná soustava}
 
 \begin{agreement}
-	Pozor! Na rozdíl od jiných kapitol, v kterých se $i$ objevuje jako index posloupnosti, budeme v této kapitole symbolem $i$ značit imaginární část komplexního čísla.\newline
+	Pozor! Narozdíl od jiných kapitol, v kterých se $i$ objevuje jako index posloupnosti, budeme v této kapitole symbolem $i$ značit imaginární část komplexního čísla.\newline
 	Protože $a$ již používame pro značení posloupnosti budeme komplexní číslo místo obvyklého značení $z = a +bi$ značit ve většině případů $z=u+vi$, kde u je celočíselná část a v je imaginární část komplexního čísla.
 \end{agreement}
 
 \begin{definition}
-	Množinu $\mathbb{Z}[i]$ nazýváme množinou Gauusovských celých čísel. Je definována následovně:
+	Množinu $\mathbb{Z}[i]$ nazýváme množinou Gauusovských celý čísel. Je definována následovně:
 	$$ \mathbb{Z}[i]=\{a+bi:a,b\in\mathbb{Z}\}$$
 	\cite{b}
 \end{definition}
@@ -647,56 +646,46 @@ Demonstrujeme na příkladech
 	Komplexní číselná soustava je číselná soustava na okruhu $(\mathbb{Z}[i],+,\cdot)$ o základu $\{(-1+i)^j\}_{j=0}^\infty$ s množinou cifer $C=\{0,1\}$.
 \end{definition}
 
-Komplexní číselná soustava je tedy relace $\varphi$ mezi gaussovskými celými čísly a posloupnostmi jedniček a nul, kde $z \in \mathbb{Z}[i]$ je v relaci s posloupností $\posla$ právě tehdy, když 
+Komplexní číselná soustava je tedy relace $\varphi$ mezi gaussovskými celými čísly a posloupnostmi jedniček a nul, kde $z \in \mathbb{Z}[i]$ je v relaci s posloupností $\posla$ právě thedy, když 
 $$z=\sum_{j=0}^{\infty}a_i\cdot(-1+i)^j.$$
 
-Ciferným zápisem Gaussova celého čísla v komplexní číselné soustavě je posloupnost čísel z množiny $C=\{0,1\}$. Fakt, že $\varphi(z) = \posla$, kde $a_i = 0$ pro $i > k$, budeme symbolicky zapisovat $\varphi(z) = (a_k\,\dots\, a_0)_{(-1+i)}$. Pokud nebude moci dojít k omylu, tento zápis ještě zjednodušíme na $z = (a_k\,\dots\, a_0)_{(-1+i)}$. Například $7-2i = (101001)_{(-1+i)}$, neboť $7-2i = 1\cdot(-1+i)^5 +0\cdot(-1+i)^5+0\cdot(-1+i)^4+1\cdot(-1+i)^3+0\cdot-1+i)^2+0\cdot(-1+i)^1+1\cdot(-1+i)^0=(4-4i)+(2+2i)+1=7-2i$.
+Ciferným zápisem Gaussova celého čísla v komplexní číselné soustavě je posloupnost čísel z množiny $C=\{0,1\}$. Fakt, že $\varphi(z) = \posla$, kde $a_i = 0$ pro $i > k$, budeme symbolicky zapisovat $\varphi(z) = (a_k\,\dots\, a_0)_{(1-i)}$. Pokud nebude moci dojít k omylu, tento zápis ještě zjednodušíme na $z = (a_k\,\dots\, a_0)_{(1-i)}$. Například $7-2i = (1001001)_{(-1+i)}$, neboť $7-2i = 1\cdot(1-i)^6 +0\cdot(1-i)^5+0\cdot(1-i)^4+1\cdot(1-i)^3+0\cdot(1-i)^2+0\cdot(1-i)^1+1\cdot(1-i)^0=8i+(-2-2i)+1=-1$.
 
 
 Prozkoumáme základní vlastnosti této číselné soustavy. Nejprve ukážeme, že v komplexní číselné soustavě dokážeme najít ciferný zápis pro libovolné gaussovské celé číslo.
 
-\begin{remark} Dělení v $\mathbb{Z}[i]$ základem soustavy provádíme následovně:
+\begin{definition} Dělení v $\mathbb{Z}[i]$ základem soustavy provádíme následovně:
 	$$\forall z \in \mathbb{Z}[i]:\quad \frac{z}{-1+i}= \frac{(v-u)-(u+v)i}{2}$$
 	Protože:
 	$$\frac{z}{-1+i}=\frac{u+vi}{-1+i}=\frac{u+vi}{-1+i}\cdot\frac{1+i}{1+i} = \frac{(u+vi)\cdot(1+i)}{(-1+i)\cdot(1+i)}=\frac{(u-v)+(u+v)i}{-2}=\frac{(v-u)-(u+v)i}{2}$$
-\end{remark}
-Protože jsme zatím gaussovská celá čísla neprozkoumali, definujme jako zbytek libovolné číslo z gaussovských celých čísel bez omezení, na rozdíl od dělení se zbytkem u celých čísel, kde zbytek musí být menší než dělitel. U gaussovských celých čísel jsme totiž nedefinovali relaci měnší/větší. Všimněme si, že pro libovolné $a+bi \in \mathbb{Z}[i]$ a $c+di \in \mathbb{Z}[i]$ existují $e+fi \in \mathbb{Z}[i]$  a $g\in \mathbb{Z}[i]$ takové, že 
-$$a+bi = (c+di)(e+fi) + g. $$
-Číslo $e+fi$ můžeme zvolit libovolně a $g\in \mathbb{Z}[i]$ je pak dáno jednoznačně rovností $g = (a+bi) - (c+di)(e+fi)$
-\begin{definition}\label{KDZ}			(Zbytek po dělení číslem v $\mathbb{Z}[i]$)\newline
-	Jestliže podíl dvou gaussovských celých čísel nepatří do množiny gaussovských celých čísel, pak si můžeme vypomoci zbytkem po dělení, který v této kapitole označujeme $g \in \mathbb{Z}[i]$. Nechť $a+bi$ a $c+di$ jsou gaussovská celá čísla.			 Nechť $a+bi$, $c+di$ a $e+fi$ jsou gaussovská celá čísla. Zbytkem po dělení čísla $a+bi$ číslem $c+di$ nazveme číslo $g \in \mathbb{Z}[i]$ splňující
-	$$\frac{a+bi}{c+di}=e+fi \quad zb.\;g$$			$$a+bi = (c+di)(e+fi) + g. $$	\end{definition}
-Můžeme si rozmyslet, existuje nekonečně mnoho zbytků po dělení čísla $a+bi$ číslem $c+di$, neboť máme nekonečně mnoho možností jak zvolit číslo $e+fi$.
-Proto zavedeme horní celou část komplexního čísla.
-\begin{definition}
-	(Horní celá část v $\mathbb{C}$) Nechť $\left\lceil x \right\rceil$ je horní celá část reálného čísla $x$. Horní ceou částí komplexního čísla $x+yi$ nazveme gaussovské celé číslo, které budeme značit $\left\lceil x+yi \right\rceil$, splňující
-	$$\left\lceil x+yi \right\rceil = \left\lceil x \right\rceil + \left\lceil y \right\rceil i $$
+\end{definition}
+Protože jsme zatím gaussovská celá čísla neprozkoumali, definujme jako zbytek libovolné číslo z gaussovských celých čísel bez omezení. Narozdíl od dělení se zbytkem u celých čísel, kde zbytek musí být menší než dělitel. U gaussovských celých čísel jsme totiž nedefinovali relaci měnší/větší.
+\begin{definition}\label{KDZ}
+	Zbytek po dělení číslem $z\in\mathbb{Z}[i]$.\newline 
+	Jestliže podíl dvou gaussovských celých čísel nepatří do množiny gaussovských celých čísel, pak si můžeme vypomoci zbytkem po dělení, který v této kapitole označujeme $g \in \mathbb{Z}[i]$. Nechť $a+bi$ a $c+di$ jsou gaussovská celá čísla.
+	$$\frac{a+bi}{c+di}=e+fi \quad zb.\;g$$
+	Můžeme si rozmyslet, že vždy najdeme nekonečně mnoho $g \in \mathbb{Z}[i]$, tak aby platilo následující:
+	$$(e+fi)\in\mathbb{Z}[i] \quad\land \quad(a+bi)=(c+di)\cdot(e+fi)+g$$
 \end{definition}
 \begin{theorem}
-	Nechť $a+bi$, $e+fi$ a $g$ jsou gaussovská celá čísla splňující 
-	$a+bi = (-1+i)(e+fi) + g$. Jestliže 
-	$$ e+fi = \left\lceil\frac{a+bi}{-1+i}\right\rceil\quad\quad((e+fi)\in\mathbb{Z}[i]),$$
-	pak zbytek $g \in \{0,1\}$.
+	Jestliže dělitelem je $(-1+i)$ a výsledný podíl spočítáme takto:
+	$$ e+fi = \left\lceil\frac{a+bi}{-1+i}\right\rceil\quad\quad((e+fi)\in\mathbb{Z}[i])$$
+	Pak zbytek z Definice \ref{KDZ} je z množiny $\{0,1\}$
 \end{theorem}
-\begin{proof}\label{kompCeilProof}
-	Pro takto definovaný zbytek $g$ platí:
-	$$a+bi = (-e-f)+(e-f)i+g$$
-	
-	Odtud 
-	
-	\begin{equation}\label{Ke1}
-		g=(a+f+e)+(f+b-e)i
-	\end{equation}
+\begin{proof}
+	Pro takto definovaný zbytek platí:
+	$$(ec-fd)+(ed+fc)i+g=a+bi$$
+	$$g=(a+fd-ce)-(cf+de-b)i$$
+	Protože dělitel$(c+di)=(-1+i)$, můžeme přepsat
+	$$g=(a+f+e)-(-f+e-b)i=(a+f+e)+(f+b-e)i$$
 	Vyjádříme $e$ a $f$:
-	$$e+fi = \left\lceil\frac{a+bi}{-1+i}\right\rceil=\left\lceil\frac{(b-a)-(a+b)i}{2}\right\rceil=\left\lceil\frac{b-a}{2}\right\rceil+\left\lceil\frac{-a-b}{2}\right\rceil i$$Proto
-	$$  e =  \left\lceil\frac{b-a}{2}\right\rceil\quad \land\quad f = \left\lceil\frac{-a-b}{2}\right\rceil$$
-	Po dosazení $f$ a $e$ do rovnice (\ref{Ke1}) dostáváme:
+	$$e+fi = \left\lceil\frac{a+bi}{-1+i}\right\rceil=\left\lceil\frac{(b-a)-(a+b)i}{2}\right\rceil=\left\lceil\frac{b-a}{2}\right\rceil+\left\lceil\frac{-a-b}{2}\right\rceil i$$
+	$$ \Rightarrow\quad e =  \left\lceil\frac{b-a}{2}\right\rceil\quad \land\quad f = \left\lceil\frac{-a-b}{2}\right\rceil$$
+	Po dosazení $f$ a $e$ do rovnice se zbytkem dostáváme:
 	$$g=\left(a +\left\lceil\frac{-a-b}{2}\right\rceil+\left\lceil\frac{b-a}{2}\right\rceil\right)+\left(b-\left\lceil\frac{b-a}{2}\right\rceil+\left\lceil\frac{-a-b}{2}\right\rceil\right)i$$
 	jelikož $b\in\mathbb{Z}$, můžeme si dovolit zapsat:
 	$$b-\left\lceil\frac{b-a}{2}\right\rceil = -\left\lceil\frac{b-a}{2} -b\right\rceil = -\left\lceil\frac{-a-b}{2}\right\rceil$$
 	a proto: $$g=\left(a +\left\lceil\frac{-a-b}{2}\right\rceil+\left\lceil\frac{b-a}{2}\right\rceil\right)+\left(-\left\lceil\frac{-a-b}{2}\right\rceil+\left\lceil\frac{-a-b}{2}\right\rceil\right)i$$$$g=\left(a +\left\lceil\frac{-a-b}{2}\right\rceil+\left\lceil\frac{b-a}{2}\right\rceil\right)$$
-	$$g=\left(\left\lceil\frac{-a-b}{2}\right\rceil+\left\lceil\frac{b+a}{2}\right\rceil\right)$$
-	A protože pro libovolné reálné $x$ platí $\left\lceil -x \right\rceil = - \left\lfloor x \right\rfloor$ ,
 	$$g=\left(-\left\lfloor\frac{a+b}{2}\right\rfloor+\left\lceil\frac{b+a}{2}\right\rceil\right)$$
 	nemusíme dlouho přemýšlet a všimneme si, že se jedná o rozdíl horní celé části a dolní celé části racionálního čísla $\frac{a+b}{2}$ a tudíž pro zbytek jistě platí:
 	$$g=\begin{cases}
@@ -707,10 +696,9 @@ Proto zavedeme horní celou část komplexního čísla.
 \begin{definition}Norma gaussovského celého čísla\newline
 	$N(z) = N(u+vi) = \sqrt{u^2+v^2}$\newline
 	Normu si můžeme představit jako vzdálenost v komplexní rovině od $0+0i$.
-	Absolutní hodnota je ekvivalent normy pro jednu dimenzi. Zapisujeme-li gaussovské celé číslo do absolutní hodnoty, hledáme její normu.
 \end{definition}
 \begin{remark}
-	Stejně jako při umocnění nenulového celého čísla roste jeho norma (vzdálenost od $0$), tak i při umocnění nenulového gaussovského čísla roste jeho norma. Plyne to okamžitě ze vztahu pro umocňování komplexních čísel v goniometrickém tvaru a toho, že norma nenulového gaussovského celého čísla je rovna nejméně odmocnině ze dvou
+	Stejně jako při umocnění celého čísla ($\ne0$) roste jeho norma (vzdálenost od $0$), tak i při umocnění gaussovského čísla ($\ne0+0i$) roste jeho norma.
 \end{remark}
 Ukažme si to na příkladu
 \begin{example}
@@ -726,7 +714,7 @@ Ukažme si to na příkladu
 		\end{tabular}
 	\end{equation}
 \end{example}
-\begin{remark}\label{divisionNormRemark}
+\begin{remark}
 	Uvědomme si, že stejně jako u dělení celých čísel, tak i při dělení gaussovských celých čísel platí následující:
 	Jestliže je norma dělitele větší než $1$, pak výsledný podíl bude mít jistě menší normu než dělenec. Norma podílu je podíl norem dělence a dělitele.
 \end{remark}Proveďme příklad pro znázornění.
@@ -737,65 +725,35 @@ Ukažme si to na příkladu
 	$N\left(\frac{3+2i}{1+2i}\right)=\sqrt{\frac{65}{25}}=\sqrt{\frac{13}{5}}=\frac{N(a)}{N(b)}<\sqrt{13}$
 \end{example}
 \begin{theorem}
-	Pro každé $z \in \mathbb{Z}[i]$ existuje posloupnost $\{a_n\}_{n=0}^\infty:z=
-		\sum_{j=0}^{\infty}a_j\cdot(-1+i)^j$.\newline
+	Pro každé $z \in \mathbb{Z}[i]$existuje posloupnost $\{a_n\}_{n=0}^\infty:z=
+		\sum_{j=0}^{\infty}a_j\cdot(1-i)^j$.\newline
 	To jest $D(\varphi)=\mathbb{Z}[i]$
 \end{theorem}
 \begin{proof}\label{kompDF}
-	Z důkazu \ref{kompCeilProof} již víme, že při správném postupu při děleni jsme schopni zajistit, aby byl zbytek po dělení číslem $(-1+i)$ vždy $\in\{0,1\}$.\newline
-	Protože $(\mathbb{Z}[i],+,\cdot)$ je euklidovský obor integrity, jistě existují čísla $z_i\in\mathbb{Z}[i], a_i\in\{0,1\}$ taková, že:
-	
-	\begin{equation}\label{KMe1}
-		\begin{array}{rcl}
-			z = z_0 & =      & z_1\cdot(-1+i) + a_0       \\
-			        &        &                            \\
-			z_1     & =      & z_2\cdot(-1+i) + a_1       \\
-			        &        &                            \\
-			z_2     & =      & z_3\cdot(-1+i) + a_2       \\
-			        & \vdots &                            \\
-			z_{k-1} & =      & z_{k}\cdot(-1+i) + a_{k-1} \\
-			        & \vdots &                            \\
-		\end{array}
-	\end{equation}
-	
-	V případě, že $z_1=0$, je jasné, že $z = a_0 = a_0(-2)^0$, kde $a_0\in\{0,1\}$. Dokazované tvrzení tak v tomto případě platí. Co když ale $z_0 \neq 0$?
-	
-	Dokážeme, že pro dost velké $n$ je $z_{n+1} = 0$.  Z (\ref{KMe1}) je zřejmé, že pro libovolné $k \in \mathbb{N}$ platí
-	
-	\begin{equation}\label{KMe2}
-		|z_k|=\left|\frac{z_{k-1}-a_{k-1}}{-1+i}\right|
-	\end{equation}
-	
-	Z poznámky \ref{divisionNormRemark} vyplývá následující:
-	
-	Dokud $|z_{k-1}-a_{k-1}|>|-1+i|$, pak se pro každé $k$ bude norma $|z_k|$ zmenšovat.
-	Co se stane v případě, že $|z_{k-1}-a_{k-1}| \le |-1+i|$? Takových případů je $9$.
-	\begin{enumerate}[label=(\alph*)]
-		\item $z_k = 0$
-		\item $z_k = 1$, pak $z_{k+1}=0 \quad a_{k+1}=1$, viz. (a)
-		\item $z_k = i$, pak $z_{k+1}=1 \quad a_{k+1}=1$, viz. (b)
-		\item $z_k = -1+i$, pak $z_{k+1}=1 \quad a_{k+1}=0$, viz. (b)
-		\item $z_k = -i$, pak $z_{k+1}=i \quad a_{k+1}=1$, viz. (c)
-		\item $z_k = -1-i$, pak $z_{k+1}=i \quad a_{k+1}=0$, viz. (c)
-		\item $z_k = 1+i$, pak $z_{k+1}=-i \quad a_{k+1}=0$, viz. (e)
-		\item $z_k = -1$, pak $z_{k+1}=1+i \quad a_{k+1}=1$, viz. (g)
-		\item $z_k = 1-i$, pak $z_{k+1}=-1 \quad a_{k+1}=0$, viz. (h)
-	\end{enumerate}
-	
-	Dokázali jsme, že existuje $n \in \mathbb{N}$ takové, že $z_{n+1} = 0$. Z toho plyne, že $z_n = a_n$, odtud $z_{n-1} = a_n\cdot(-2)^1 + a_{n-1}$, \dots, $z = z_0 = a_n\cdot(-2)^n + a_{n-1}\cdot(-2)^{n-1} + \cdots + a_0$. Pokud zvolíme $a_i = 0$ pro $i > n$, pak $z=\sum_{i=0}^{\infty}a_i\cdot(-2)^i$.
-	
-	
+	Buď $z\in\mathbb{Z}[i]$ dáno.
+	\begin{itemize}
+		\item $z=0+0i\Rightarrow N(z)=0$ \newline
+		      $z$ je v relaci například s $\posla$, kdy pro každé $i\in\mathbb{N}: a_i = 0$\newline
+		      jistě tedy platí $z=\sum_{j=0}^{\infty}0\cdot(-1+i)^j$
+		\item $z \ne 0+0i \Rightarrow N(z) > 0 $
+		      \begin{equation}
+			      \begin{tabular}{c c c}
+				       &  & z=z= \\
+				      $\vdots$
+			      \end{tabular}
+		      \end{equation}
+	\end{itemize}
 \end{proof}
 \begin{remark} Algoritmus pro hledání reprezentace čísla v komplexní číselné soustavě
 	\begin{enumerate}
 		\item Nechť $z$ je číslo, které chceme reprezentovat, $z_0 = z$ a $j=0$ je počáteční hodnota algoritmu
 		\item Provedeme následující operaci:\newline
-		      $x = \frac{(v_j-u_j)-(u_j+v_j)i}{2}$\newline
+		      $x = \frac{(u_j-v_j)+(u_j+v_j)i}{2}$\newline
 		      Jestliže $x \in \mathbb{Z}[i]$, pak $z_{j+1} = x \quad a_{j+1}=0$\newline
-		      V opačném případě $z_{j+1} = \left\lceil\frac{(v_j-u_j)-(u_j+v_j)i}{2}\right\rceil\quad a_{j+1}=1$
+		      V opačném případě $z_{j+1} = \frac{(u_j-v_j-1)+(u_j+v_j-1)i}{2}\quad a_{j+1}=1$
 		\item Opakujeme operaci dokud $z_{j+1}\ne0$, nechť $n$ je počet iterací. ($n$ je jistě konečné, viz. \ref{kompDF})
 		\item $\{a_j\}_{j=0}^{\infty}$, kde $a_j=0$ pro každé $j>n$, splňuje požadavek $z=
-			      \sum_{j=0}^{\infty}a_j\cdot(-1+i)^j$
+			      \sum_{j=0}^{\infty}a_j\cdot(1-i)^j$
 	\end{enumerate}
 \end{remark}
 
@@ -804,82 +762,82 @@ Ukažme si to na příkladu
 Sčítání čísel v komplexní číselné soustavě můžeme provádět podle schématu popsaného v následujícím příkladu.
 
 \begin{remark}
-	Budeme postupovat obdobně jak u negabinární číselné soustavy. Určíme si pravidla, která platí pro komplexní číselnou soustavu a následně nám ulehčí sčítání.\newline
+	Budeme postupovat obdobně jak u negebinární číselné soustavy. Určíme si pravidla, která platí pro komplexní číselnou soustavu a následně nám ulehčí sčítání.\newline
 	Pro lehčí orientaci v rovnostech si ukažme tabulku pár mocnin čísla $(-1+i)$ a zároveň se pro přehlednost domluvme, že toto číslo budeme v některých případech po zbytek kapitoly značit $\beta$.
 	\begin{equation}
-		\begin{tabular}{|c|c|c|c|c|}
-			\hline
-			$\beta^0$ & $\beta^1 $ & $\beta^2$ & $\beta^3$ & $ \beta^4$ \\ \hline
-			1         & -1+i       & -2i       & 2+2i      & -4         \\
-			\hline
-		\end{tabular}
+	\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	$\beta^0$ & $\beta^1 $& $\beta^2$ & $\beta^3$ &$ \beta^4$ \\ \hline
+	1 & -1+i & -2i & 2+2i & -4 \\
+	\hline
+	\end{tabular}
 	\end{equation}
 	
 	
 	Protože $4\cdot\beta^k+\beta^{k+4}=4\cdot\beta^k+(-4)\cdot\beta^k=0$, platí následující:
 	
 	\begin{equation}\label{KompAddA}
-		\begin{tabular}{|c|c|c|c|c|c|}
-			\hline
-			| & 0 & 0 & 0 & |||| & a+b \\ \hline
-			0 & 0 & 0 & 0 & 0    & a+b \\
-			\hline
-		\end{tabular}
+	\begin{tabular}{|c|c|c|c|c|c|}
+	\hline
+	|&0&0&0 & |||| & a+b \\ \hline
+	0&0&0&0 & 0  & a+b \\
+	\hline
+	\end{tabular}
 	\end{equation}
 	
 	Protože $2\cdot\beta^k+2\cdot\beta^{k+1}+\beta^{k+2}=2\cdot\beta^k+(-2+2i)\cdot\beta^k+(-2i)\beta^k=0$, platí následující:
 	
 	\begin{equation}\label{KompAddB}
-		\begin{tabular}{|c|c|c|c|}
-			\hline
-			| & || & || & a+b \\ \hline
-			0 & 0  & 0  & a+b \\
-			\hline
-		\end{tabular}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	|&|| & || & a+b \\ \hline
+	0&0 & 0  & a+b \\
+	\hline
+	\end{tabular}
 	\end{equation}
 	
 	Protože $2\cdot\beta^k-\beta^{k+2}-\beta^{k+3}=2\cdot\beta^k-(-2i)\cdot\beta^k-(2+2i)\cdot\beta^k=0$, platí následující:
 	
 	\begin{equation}\label{KompAddC}
-		\begin{tabular}{|c|c|c|c|c|}
-			\hline
-			0 & 0 & 0 & || & a+b \\ \hline
-			| & | & 0 & 0  & a+b \\
-			\hline
-		\end{tabular}
+	\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	0&0&0 & || & a+b \\ \hline
+	|&|&0 & 0  & a+b \\
+	\hline
+	\end{tabular}
 	\end{equation}
-\end{remark}
+	\end{remark}
 
 \begin{itemize}
 	\item Zvolme $a = 4+3i$ a $b = 3-4i$. Dle výše uvedeného algoritmu nalezneme ciferný zápis těchto gaussovských celých čísel $4+3i =  (1100111)_{(-1+i)}$ a $3-4i =  (111101)_{(-1+i)}$. Cifry zapíšeme pod sebe do tabulky a do řádku pod nimi naznačíme pomocí čárek, kolik má součet $a+b$ příslušných mocnin čísla $(-1+i)$:
-	      
-	      \begin{equation}\label{KompAddT1}
-		      \begin{tabular}{|c|c|c|c|c|c|c|c|}
-			      \hline
-			      1 & 1  & 0 & 0 & 1  & 1 & 1  & a   \\ \hline
-			      0 & 1  & 1 & 1 & 1  & 0 & 1  & b   \\ \hline \hline
-			      | & || & | & | & || & | & || & a+b \\   
-			      \hline
-		      \end{tabular}
-	      \end{equation}
-	      
-	      Vzhledem k (\ref{KompAddA}), (\ref{KompAddB}) a (\ref{KompAddC}) můžeme v úpravách Tabulky (\ref{KompAddT1}) pokračovat následujícím způsobem:
-	      
-	      \begin{equation}\label{KompAddT2}
-		      \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
-			      \hline
-			      0             & 0             & 1 & 1              & 0             & 0              & 1               & 1 & 1              & a   &                  \\ \hline
-			      0             & 0             & 0 & 1              & 1             & 1              & 1               & 0 & 1              & b   &                  \\ \hline \hline
-			      0             & 0             & | & ||             & |             & \underline{|}  & \underline{||}  & | & \underline{||} & a+b & (\ref{KompAddC}) \\   
-			      0             & 0             & | & ||             & \underline{|} & \underline{||} & \underline{|||} & | & 0              & a+b & (\ref{KompAddB}) \\   
-			      \underline{0} & \underline{0} & | & \underline{||} & 0             & 0              & |               & | & 0              & a+b & (\ref{KompAddB}) \\  
-			      |             & |             & | & 0              & 0             & 0              & |               & | & 0              & a+b &                  \\ 
-			      \hline
-		      \end{tabular}
-	      \end{equation}
-	      
-	      Z posledního řádku vyčteme, že $a + b = (111000110)_{(-1+i)}$.\newline A opravdu, $\beta^8+\beta^7+\beta^6+\beta^2+\beta^1=16-8-8i+8i-2i-1+i=\underline{7-i}=4+3i+3-4i$
-	      
+	
+	\begin{equation}\label{KompAddT1}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|}
+	\hline
+	1&1&0  & 0 & 1 & 1 & 1  & a   \\ \hline
+	0&1&1  & 1 & 1 & 0 & 1  & b   \\ \hline \hline
+ | & || & | & | & || & | & || & a+b \\   
+	\hline
+	\end{tabular}
+	\end{equation}
+	
+	Vzhledem k (\ref{KompAddA}), (\ref{KompAddB}) a (\ref{KompAddC}) můžeme v úpravách Tabulky (\ref{NBprsoucT1}) pokračovat následujícím způsobem:
+	
+	\begin{equation}\label{KompAddT2}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+	\hline
+	0&0&1&1&0  & 0 & 1 & 1 & 1  & a  & \\ \hline
+	0&0&0&1&1  & 1 & 1 & 0 & 1  & b  & \\ \hline \hline
+	0&0&| & || & | & \underline{|} & \underline{||} & | & \underline{||} & a+b &(\ref{KompAddC})\\   
+	0&0&| & || & \underline{|} & \underline{||} & \underline{|||} & | & 0 & a+b &(\ref{KompAddB})\\   
+	\underline{0}&\underline{0}&| & \underline{||} & 0 & 0 & | & | & 0 & a+b &(\ref{KompAddB})\\  
+	|&|&| &0  & 0 & 0 & | & | & 0 & a+b &\\ 
+	\hline
+	\end{tabular}
+	\end{equation}
+	
+	Z posledního řádku vyčteme, že $a + b = (111000110)_{(-1+i)}$.\newline A opravdu, $\beta^8+\beta^7+\beta^6+\beta^2+\beta^1=16-8-8i+8i-2i-1+i=\underline{7-i}=4+3i+3-4i$
+	
 \end{itemize}
 
 
@@ -892,27 +850,27 @@ Uvědomme si, že násobení mocninou čísla $(-1+i)^k, k\in\mathbb{N}_0$ zname
 
 \begin{itemize}
 	\item Nalezneme číslo opačné k číslu $z = -1+2i = (11001)_{(-1+i)}$.
-	      \begin{equation}\label{KompSoucA}
-		      \begin{tabular}{|c|c|c|c|c|c|c|c|}
-			      \hline
-			      0             & 0               & 1               & 1             & 0              & 0              & 1 & $z$              \\ \hline
-			      0             & 1               & 1               & 0             & 0              & 1              & 0 & $\beta\cdot z$   \\ \hline
-			      0             & 1               & 1               & 0             & 0              & 1              & 0 & $\beta\cdot z$   \\ \hline
-			      1             & 1               & 0               & 0             & 1              & 0              & 0 & $\beta^2\cdot z$ \\ \hline \hline
-			      \underline{|} & \underline{|||} & \underline{|||} & \underline{|} & \underline{|}  & \underline{||} & | & $-z$             \\\hline
-			      0             & \underline{|}   & \underline{|}   & 0             & \underline{-|} & 0              & | & $-z$             \\
-			      \hline
-			      0             & 0               & 0               & 0             & |              & 0              & | & $-z$             \\
-			      \hline
-		      \end{tabular}
-	      \end{equation}
-	      
-	      Proto $-z = (101)_{(-1+i)}$. A opravdu, $\beta^0 + \beta^2 = \underline{1-2i} = -(z)=-(-1+2i)$.
+	\begin{equation}\label{KompSoucA}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|}
+	\hline
+	0&0 & 1 & 1 & 0 & 0 & 1 & $z$   \\ \hline
+	0&1 & 1 & 0 & 0 & 1 & 0 & $\beta\cdot z$ \\ \hline
+	0&1 & 1 & 0 & 0 & 1 & 0 & $\beta\cdot z$ \\ \hline
+	1&1 & 0 & 0 & 1 & 0 & 0 & $\beta^2\cdot z$ \\ \hline \hline
+	\underline{|}&\underline{|||} & \underline{|||} & \underline{|} & \underline{|} & \underline{||} & | & $-z$  \\\hline
+	0&\underline{|} & \underline{|} & 0 & \underline{-|} & 0 & | & $-z$  \\
+	\hline
+	0&0 &0 & 0 & | & 0 & | & $-z$  \\
+	\hline
+	\end{tabular}
+	\end{equation}
+	
+	Proto $-z = (101)_{(-1+i)}$. A opravdu, $\beta^0 + \beta^2 = \underline{1-2i} = -(z)=-(-1+2i)$.
 \end{itemize}
 
 \begin{remark}
-	Jistě některé z čtenářů napadne otázka, zda-li by nějak jednoduše šlo najít k gaussovskému číslu jeho číslo komplexně sdružené v reprezentaci komplexní číselné soustavy. Bez převádění do desítkové soustavy a zpět bychom se však při takovém pokusu bohužel neobešli. Uvědomíme-li si, že na rozdíl od hledání opačného čísla, kde stačí číslo vynásobit číslem $-1$, u hledání komplexně sdruženého čísla je proces těžší. Číslo, kterým bychom naše gaussovské číslo museli přenásobit je závisle právě na tomto číslu. Nelze najít obecnou formuli jako v případě hledání opačného čísla (vynásob číslo číslem $-1$).
-\end{remark}
+	Jistě některé z čtenářů napadne otázka, zda-li by nějak jednoduše šlo najít k gaussovskému číslu jeho číslo komplexně sdružené v reprezentaci komplexní číselné soustavy. Bez převádění do desítkové soustavy a zpět bychom se však při takovém pokusu bohužel neobešli. Uvědomíme-li si, že narozdíl od hledání opačného čísla, kde stačí číslo vynásobit číslem $-1$, u hledání komplexně sdruženého čísla je proces těžší. Číslo, kterým bychom naše gaussovské číslo museli přenásobit je závisle právě na tomto číslu. Nelze najít obecnou formuli jako v případě hledání opačného čísla (vynásob číslo číslem $-1$).
+	\end{remark}
 
 \subsection{Násobení v komplexní číselné soustavě}
 
@@ -923,250 +881,88 @@ $$(1, \underbrace{0, \dots, 0}_{k\text{ nul}})_{(-1+i)}\cdot(a_n, \dots, a_0)_{(
 Proto pro součin čísel $a = (a_n, \dots, a_0)_{(-1+i)}$ a $b = (b_k, \dots, b_0)_{(-1+i)}$ platí
 
 \begin{equation}\label{NBnase1}
-	a\cdot b = \sum_{i=0}^{k} a_i\cdot(b_k, \dots, b_0, \underbrace{0, \dots, 0}_{i\text{ nul}} )_{-2}
+a\cdot b = \sum_{i=0}^{k} a_i\cdot(b_k, \dots, b_0, \underbrace{0, \dots, 0}_{i\text{ nul}} )_{-2}
 \end{equation}
 
 Demonstrujeme na příkladech
 
 \begin{itemize}
 	\item Vynásobíme čísla $a = (4-i) = (111010111)_{(-1+i)}$ a $b = (1-2i) = (101)_{(-1+i)}$.\newline
-	      \begin{center}
-		      \begin{tabular}{ccccccccccccc}
-			              &   &   & 1 & 1 & 1 & 0                 & 1 & 0 & 1 & 1 & 1 & (=a)     \\
-			      $\cdot$ &   &   &   &   &   &                   &   &   & 1 & 0 & 1 & (=b)     \\ \hline
-			              &   &   & 1 & 1 & 1 & 0                 & 1 & 0 & 1 & 1 & 1 & (=$x_1$) \\ 
-			      +       &   &   &   &   &   &                   &   &   &   & 0 &   & (=$x_2$) \\
-			      +       & 1 & 1 & 1 & 0 & 1 & 0                 & 1 & 1 & 1 &   &   & (=$x_3$) \\&&&&&&&&&&&&\\
-			              &   &   &   &   &   & $\Leftrightarrow$ &   &   &   &   &   &          \\
-		      \end{tabular}
-	      \end{center}
-	      $$ (111010111)_{(-1+i)} \cdot(101)_{(-1+i)} $$$$=$$$$ 1\cdot(111010111)_{(-1+i)} + 0 \cdot(1110101110)_{(-1+i)} + 1\cdot (11101011100)_{(-1+i)} $$$$=$$$$ (111010111)_{(-1+i)} +  (11101011100)_{(-1+i)}$$
-	      
-	      Můžeme sečíst schematicky:
-	      
-	      
-	      \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
-		      \hline
-		      0             & 0              & 1               & 1             & 1              & 0             & 1               & 0 & 1              & 1 & 1 & $x_1$       \\ \hline
-		      1             & 1              & 1               & 0             & 1              & 0             & 1               & 1 & 1              & 0 & 0 & $x_3$       \\ \hline \hline
-		      |             & \underline{|}  & \underline{|}|  & |             & \underline{||} & \underline{0} & \underline{||}  & | & \underline{||} & | & | & $x_1 + x_3$ \\ \hline
-		      |             & ||             & \underline{|||} & |             & 0              & |             & \underline{|||} & | & 0              & | & | & $x_1 + x_3$ \\ \hline
-		      \underline{|} & \underline{||} & \underline{||}  & |             & 0              & |             & -|              & | & 0              & | & | & $x_1 + x_3$ \\ \hline
-		      0             & 0              & 0               & \underline{|} & \underline{0}  & |             & \underline{-|}  & | & 0              & | & | & $x_1 + x_3$ \\ \hline
-		      0             & \underline{0}  & \underline{0}   & 0             & \underline{-|} & |             & |               & | & 0              & | & | & $x_1 + x_3$ \\ \hline
-		      0             & \underline{-|} & \underline{-|}  & 0             & |              & |             & |               & | & 0              & | & | & $x_1 + x_3$ \\ \hline
-		      |             & |              & |               & 0             & |              & |             & |               & | & 0              & | & | & $x_1 + x_3$ \\ \hline
-		      
-	      \end{tabular}
-	      
-	      Výpočtem ověřme.\newline $(11101111011)_{(-1+i)}=(-32i)+(-16+16i)+(16)+(8i)+(4-4i)+(-4)+(2+2i)+(-1+i)+(1)=\underline{2-9i}=4-2-i-8i=(4-i)\cdot(1-2i)=a\cdot b$\newline  Výsledek je správně.
+	\begin{center}
+		\begin{tabular}{ccccccccccccc}
+		&&&1&1&1&0	& 1  &   0& 1                 & 1 & 1 & (=a)     \\
+			$\cdot$&&&&&& &   &   & 1                 & 0 & 1 & (=b)     \\ \hline
+&&&	1&1&1&	0	& 1  &   0& 1                 & 1 & 1 & (=$x_1$) \\ 
+			+&&&&&&       &   &   &                   & 0 &   & (=$x_2$) \\
+			+    & 1&1&1&	0	& 1  &   0& 1                 & 1 & 1 &   && (=$x_3$) \\&&&&&&&&&&&&\\
+			&   &  &&& & $\Leftrightarrow$ &   &   &    &&&      \\
+		\end{tabular}
+	\end{center}
+	$$ (111010111)_{(-1+i)} \cdot(101)_{(-1+i)} $$$$=$$$$ 1\cdot(111010111)_{(-1+i)} + 0 \cdot(1110101110)_{(-1+i)} + 1\cdot (11101011100)_{(-1+i)} $$$$=$$$$ (111010111)_{(-1+i)} +  (11101011100)_{(-1+i)}$$
+	
+	Můžeme sečíst schematicky:
+	
+	
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+	0&0&	1&1&1&0	& 1  &   0& 1                 & 1 & 1& $x_1$       \\ \hline
+		1&1&1&0	& 1  &   0& 1                 & 1 & 1&0&0& $x_3$       \\ \hline \hline
+		|&\underline{|}&\underline{|}|&|&\underline{||}&\underline{0}&\underline{||}&|&\underline{||}&|&|& $x_1 + x_3$ \\ \hline
+		|&||&\underline{|||}&|&0&|&\underline{|||}&|&0&|&|& $x_1 + x_3$ \\ \hline
+		\underline{|}&\underline{||}&\underline{||}&|&0&|&-|&|&0&|&|& $x_1 + x_3$ \\ \hline
+		0&0&0&\underline{|}&\underline{0}&|&\underline{-|}&|&0&|&|& $x_1 + x_3$ \\ \hline
+		0&\underline{0}&\underline{0}&0&\underline{-|}&|&|&|&0&|&|& $x_1 + x_3$ \\ \hline
+		0&\underline{-|}&\underline{-|}&0&|&|&|&|&0&|&|& $x_1 + x_3$ \\ \hline
+		|&|&|&0&|&|&|&|&0&|&|& $x_1 + x_3$ \\ \hline
+		
+	\end{tabular}
+	
+	Výpočtem ověřme.\newline $(11101111011)_{(-1+i)}=(-32i)+(-16+16i)+(16)+(8i)+(4-4i)+(-4)+(2+2i)+(-1+i)+(1)=\underline{2-9i}=4-2-i-8i=(4-i)\cdot(1-2i)=a\cdot b$\newline  Výsledek je správně.
 \end{itemize}
 
-\section{Negafibonacciho číselná soustava}
+%\begin{remark}
+%	Když tedy umíme násobit, co kdybychom si zkusili vyjádřit $-1$ a násobili tímto číslem pro nalezení čísla opačného? $-1 = (11101)_{(_1+i)}$. 
+	
+%	\end{remark}
+
+\section{Fibonacciho číselná soustava}
 
 \begin{definition}
-	Negafibonacciho číselná soustava je číselná soustava na okruhu $(\mathbb{Z},+,\cdot)$ o základu $\{F_{-(i+1)}\}_{i=0}^{\infty}$ (kde $F_{-i}$ je i-tý člen negafibonacciho posloupnosti) s množinou cifer $C=\{0,1\}$.
+	Fibonacciho číselná soustava je číselná soustava na okruhu $(\mathbb{Z},+,\cdot)$ o základu $\{F_i\}_{i=0}^{\infty}$ (kde $F_i$ je i-tý člen fibonacciho posloupnosti) s množinou cifer $C=\{0,1\}$.
 \end{definition}
-\begin{remark}
-	Nenechme se zmást symbolem \textbf{'$-$'} u indexu členu negafibonacciho posloupnosti. Používá se pro odlišení od členů fibonacciho posloupnosti. Nejde však o záporný index! Proto píšeme relativní indexy (např.  $(i+1)$) do závorky.
-	\end{remark}
-\begin{definition}\label{fiboDef} NegaFibonacciho posloupnost\newline
+\begin{definition} Fibonacciho posloupnost\newline
 	Je nekonečná posloupnost přirozených čísel definována rekurentní formulí:
-	$$F_{-0} = 0,\quad F_{-1} = 1,\quad F_{-n} = F_{-(n-2)} - F_{-(n-1)}$$
+	$$F_0 = 0,\quad F_1 = 1,\quad F_n = F_{n-1}+ F_{n-2}$$
 \end{definition}
-	Z definice \ref{fiboDef} si lehce rozmyslíme, že každý další člen bude střídavě záporný kladný a jeho absolutní hodnota bude větší než u předchozích členů.\newline
-	NegaFibonacciho posloupnost je velice podobná Fibonacciho posloupnosti.
-	$$F_{-n} = (-1)^{n+1}\cdot F_n$$
 \begin{example}
-	$$F_{-2} = F_{-0} - F_{-1} =  0 - 1  =  -1$$$$F_{-3 }= F_{-1}-F_{-2} = 1-(-1)=2$$$$F_{-4} = F_{-2} - F_{-3} =  -1 -2 =  -3$$$$\vdots$$
-	$$ \{F_{-(i+1)}\}_{i=0}^{\infty} = \{1,-1,2,-3,5,-8,13,-21,34,-55,89,\dots\}$$
+	$$F_2 = F_1+F_0 =  1 + 0=1$$$$F_3 = F_2+F_1 =  1 + 1= 2$$$$\vdots$$
+	$$ \{F_i\}_{i=0}^{\infty} = \{0,1,1,2,3,5,8,13,\dots\}$$
 \end{example}
 \begin{agreement}
-	V negafibonacciho číselné soustavě zapisujeme:
+	V fibonacciho číselné soustavě zapisujeme:
 	$\varphi(x) =  (\posla)_F$\newline
+	Hledáme-li relaci k zápornému číslu, pak podobně jak jsme zvyklí v desítkové číselné soustavě, najdeme reprezentaci čísla opačného a zapíšeme znaménko $-$ před reprezentaci: $\varphi(x) = - (\posla)_F$
 \end{agreement}
-\begin{remark}
-	Podle definice se jedná o nejednoznačnou číselnou soustavu, což si ukážeme v následujícím příkladu. Pokud však správně zavedeme podmínku pro reprezentaci čísla v této číselné soustavě, dostaneme jednoznačnou číšelnou soustavu. Viz. důkaz.
-\end{remark}
-\begin{example}
-	Každé číslo, vezměme si například $27$, můžeme zapsat více způsoby (nekonečně mnoha).\newline
-	\begin{center}\begin{tabular}{c c c c c}
-			$27$ & = & $34-8+1$         & = & $ (100100001)_F$     \\
-			     & = & $34-21+13+1$     & = & $ (111000001)_F$     \\
-			     & = & $89-55-8+1$      & = & $ (11000100001)_F$   \\
-			     & = & $233-144-55-8+1$ & = & $ (1101000100001)_F$ \\
-		\end{tabular}\end{center}
-\end{example}
 \begin{theorem}
-	Obměna Zeckendorfovy věty pro fibonacciho kód. \cite{d}\newline
-	Pro každé celé číslo existuje právě jedna posloupnost $\{a_n\}_{n=0}^\infty$ kdy
-	\begin{itemize}
-		\item $x=
-		\sum_{i=0}^{\infty}a_i\cdot F_{-(i+1)}$, tj. $D(\varphi) = \mathbb{Z}$
-		\item $a_k\cdot a_{k+1}=0$ ( tj. v posloupnosti nejsou nikdy dvě jedničky vedle sebe)
-	\end{itemize} 
+	Pro každé $x \in \mathbb{Z} \quad \exists\{a_n\}_{n=0}^\infty:x=\begin{cases}
+			\sum_{i=0}^{\infty}a_i\cdot F_i  & \mbox{ pro } x\ge0 \\
+			-\sum_{i=0}^{\infty}a_i\cdot F_i & \mbox{ pro } x<0
+		\end{cases}\quad$ To jest $D(\varphi)=\mathbb{Z}$
 \end{theorem}
 \begin{proof}\label{fiboDF}
-	Buď libovolné $z\in\mathbb{Z}$ dáno. Rozdělme si jej na případy.
-	\begin{itemize}
-		\item $z=0$ V tomhle případě klademe každý člen posloupnosti $a_i = 0$
-		\item $z<0$ Označme $n \in \mathbb{N}$ nejmenší index, pro který platí $z>-F_{-n}$ a položme $a_{n-2}=1$ ( poznámka : $(n-2)$ namísto $(n-1$), protože základ je posunut $\{F_{-(i+1)}\}_{i=0}^{\infty}$ ). Takový index jistě najdeme, protože z negafibonacciho posloupnosti lze vybrat posloupnost vybranou, která je nekonečná a klesající. Nyní uvažujme o čísle $z_{1} = -F_{-(n-1)}+z$.
-		Uvědomme si, že $F_{-(n-1)}$ je záporné, protože $F_{-n}$ je kladné ( $z>-F_{-n}$ ). Zároveň víme, že $-F_{-(n-1)}$ je menší než $-2z$. Jak toto víme? Dokážeme sporem. Předpokládejme, že
-		$$-F_{-(n-1)} \ge -2z$$
-		$$F_{-(n-1)} \le 2z$$
-		$$-F_{-(n-2)}\le\frac{F_{-(n-1)}}{2}\le z$$
-		Zde vidíme, že by existovalo $(n-2)$, pro které platí $z>-F_{-(n-2)}$, což je v rozporu s podmínkou, že $n$ musí být nejmenší. Když víme, že $-F_{-(n-1)}$ je menší než $-2z$, pak jistě bude platit $|z_1|<|z|$. S číslem $z_1$ provedeme znova stejnou úvahu, kde dvojice $z_1,z_2$ vystřídá dvojici $z, z_1$. Posloupnost čísel $z_{k}$ se v konečném počtu kroků předchozích úvah dostane k nule. V případě, že nějaké $z_i > 0$, se pomocí vysvětlivek v $z>0$ taky v následujícím kroku přiblížíme nule.
-		\item $z>0$ Označme $n \in \mathbb{N}$ nejmenší index, pro který platí $z\le-F_{-n}$ a položme $a_{n-2}=1$. Takový index jistě najdeme, protože z negafibonacciho posloupnosti lze vybrat posloupnost vybranou, která je nekonečná a roustoucí. Nyní uvažujme o čísle $z_{1} = -F_{-(n-1)}+z$.
-		Uvědomme si, že $F_{-(n-1)}$ je kladné, protože $F_{-n}$ je záporné ( $z\le-F_{-n}$ ). Zároveň víme, že $-F_{-(n-1)}$ je větší než $-2z$. Jak toto víme? Dokážeme sporem. Předpokládejme, že
-		$$-F_{-(n-1)} \le -2z$$
-		$$F_{-(n-1)} \ge 2z$$
-		$$-F_{-(n-2)}\ge\frac{F_{-(n-1)}}{2}\ge z$$
-		Zde vidíme, že by existovalo $(n-2)$, pro které platí $z\le-F_{-(n-2)}$, což je v rozporu s podmínkou, že $n$ musí být nejmenší. Když víme, že $-F_{-(n-1)}$ je větší než $-2z$, pak jistě bude platit $|z_1|<|z|$. 
-	\end{itemize}
-	Takto zkonstruována posloupnost $\posla$ nebude mít nikdy dvě jedničky vedle sebe. V případě kdyby byly, pak jsme volili špatně nejmenší $n$.\newline Protože $F_{-n}+F_{-(n-1)}=F_{-(n-2)}-F_{-(n-1)}+F_{-(n-1)}=F_{-(n-2)}$, tj. $(\dots011\dots)_F=(\dots100\dots)$
-	Snadno si rozmyslíme, že nejmenší $n$ lze zvolit v každém kroce jednoznačně, a proto je tato reprezentace jednoznačná.
+	
 \end{proof}
-
-\begin{remark} Algoritmus pro hledání reprezentace čísla v negafibonacciho číselné soustavě
-	\begin{enumerate}
-		\item Nechť $z$ je číslo, které chceme reprezentovat, $z_0 = z$ a $k=0$ je počáteční hodnota algoritmu
-		\item Jestliže je $z_0=0$, končíme a zapíšeme $0$
-		\item V případě, že $z_k$ je kladné, pak najdeme nejmenší $n$ pro které platí $z_k\le-F_{-n}$, v případě, že je záporné hledáme nejmenší $n$, pro které platí $z_k>-F_{-n}$.
-		\item Zapíšeme si na pozici $a_{n-2} = 1$.
-		\item Spočítáme si $z_{k+1} = -F_{-(n-1)}+z_k$. Jestliže je $z_{k+1}=0$, pak pro ostatní pozice posloupnosti zapíšeme $a_i=0$, kde $i>0$ a $i<(n-2)$.
-		\item V případě, že $z_{k+1}\ne 0$, algoritmus opakujeme.
-	\end{enumerate}
-\end{remark}
-
-\subsection{Sčítání celých čísel v negafibonacciho číselné soustavě}
-
-Sčítání čísel v negafibonacciho číselné soustavě můžeme provádět podle schématu popsaného v následujícím příkladu.
-
-\begin{remark}
-	Následující rovnosti nám pomůžou v sčítání čísel v negafibonacciho číselné soustavě.
-	
-	Protože $F_{-k}-F_{-(k+1)}-F_{-(k+2)}=0$ (z definice), platí následující:
-	
-	\begin{equation}\label{fiboAddA}
-		\begin{tabular}{|c|c|c|c|c|c|}
-			\hline
-			| & | & 0 & a+b \\ \hline
-			0 & 0 & | & a+b \\
-			\hline
-		\end{tabular}
-	\end{equation}
-	
-	Protože $\underline{F_{-(k+3)}-2\cdot F_{-(k+1)}+F_{-k}}=-F_{-(k+2)}+F_{-(k+1)}-2\cdot F_{-(k+1)}+F_{-k}=-F_{-(k+2)}-F_{-(k+1)}+F_{-k}=0$, platí následující:
-	
-	\begin{equation}\label{fiboAddB}
-		\begin{tabular}{|c|c|c|c|c|}
-			\hline
-			0 & 0 & || & 0 & a+b \\ \hline
-			| & 0 & 0  & | & a+b \\
-			\hline
-		\end{tabular}
-	\end{equation}
-	
-	Protože $$\underline{-F_{-(k+4)}+3\cdot F_{-(k+2)}-F_{-k}}=F_{-(k+3)}-F_{-(k+2)}+3\cdot F_{-(k+2)}-F_{-k}=$$$$=\underline{F_{-(k+3)}+2\cdot F_{-(k+2)}-F_{-k}}=2\cdot F_{-(k+2)}-F_{-(k+2)}+F_{-(k+1)}-F_{-k}=F_{-(k+2)}+F_{-(k+1)}-F_{-k}=0$$platí následující:
-	
-	\begin{equation}\label{fiboAddC}
-		\begin{tabular}{ccc}
-			\begin{tabular}{|c|c|c|c|c|c|}
-				\hline
-				0 & 0 & ||| & 0 & 0 & a+b \\ \hline
-				| & 0 & 0   & 0 & | & a+b \\
-				\hline
-			\end{tabular}
-			 & a & 
-			\begin{tabular}{|c|c|c|c|c|}
-				\hline
-				| & || & 0 & 0 & a+b \\ \hline
-				0 & 0  & 0 & | & a+b \\
-				\hline
-			\end{tabular}
-		\end{tabular}
-	\end{equation}
-\end{remark}
-
-\begin{itemize}
-	\item Zvolme například $a = 17$ a $b = 23$. Dle výše uvedeného algoritmu nalezneme ciferný zápis těchto celých čísel $17 =  (1010010)_F$ a $23 =  (100101000)_F$.
-	      
-	      \begin{equation}\label{fiboAddT1}
-		      \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
-			      \hline
-			        &   & 1 & 0 & 1 & 0 & 0 & 1 & 0 & a   \\ \hline
-			      1 & 0 & 0 & 1 & 0 & 1 & 0 & 0 & 0 & b   \\ \hline \hline
-			      | & 0 & | & | & | & | & 0 & | & 0 & a+b \\   
-			      \hline
-		      \end{tabular}
-	      \end{equation}
-	      
-	      Vzhledem k (\ref{fiboAddA}), (\ref{fiboAddB}) a (\ref{fiboAddC}) můžeme v úpravách Tabulky (\ref{fiboAddT1}) pokračovat následujícím způsobem:
-	      
-	      \begin{equation}\label{fiboAddT2}
-		      \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
-			      \hline
-			                    &   & 1               & 0             & 1             & 0             & 0             & 1             & 0 & a   &                  \\ \hline
-			      1             & 0 & 0               & 1             & 0             & 1             & 0             & 0             & 0 & b   &                  \\ \hline \hline
-			      |             & 0 & |               & |             & \underline{|} & \underline{|} & 0             & |             & 0 & a+b & (\ref{fiboAddA}) \\   
-			      \underline{|} & 0 & \underline{|}   & \underline{|} & 0             & 0             & |             & |             & 0 & a+b & (\ref{fiboAddB}) \\   
-			      0             & 0 & |||             & 0             & 0             & 0             & \underline{|} & \underline{|} & 0 & a+b & (\ref{fiboAddA}) \\  
-			      0             & 0 & \underline{|||} & 0             & 0             & 0             & 0             & 0             & | & a+b & (\ref{fiboAddC}) \\  
-			      |             & 0 & 0               & 0             & |             & 0             & 0             & 0             & | & a+b & (\ref{fiboAddC}) \\  
-			      \hline
-		      \end{tabular}
-	      \end{equation}
-	      
-	      Z posledního řádku vyčteme, že $a + b = (100010001)_F$.\newline A skutečně, $F_{-9}+F_{-5}+F_{-1}=34+5+1=\underline{40}=17+23$
-	      
-\end{itemize}
-\begin{remark}
-	Kvůli charakteru této soustavy nemůžeme hovořit o hledání opačného čísla ani o násobení čísel. V některých případech bychom se k opačnému číslu dobrali, ale postup nelze generalizovat a najít číslo vždy.\newline
-	Například si ukážeme jak najít číslo opačné pro číslo $6 = (10001)_F$
-	\begin{equation}
-		\begin{tabular}{|c|c|c|c|c|c|c|c|}
-			\hline
-			  & 1              & 0             & 0 & 0               & 1              & a  &                                            \\ \hline
-			  & -|             & 0             & 0 & 0               & \underline{-|} & -a & (\ref{fiboAddB})                           \\ 
-			  & \underline{-|} & \underline{|} & 0 & -||             & 0              & -a & (\ref{fiboAddA})                           \\   
-			| & 0              & 0             & 0 & \underline{-||} & 0              & -a & $-2\cdot F_{-2} = -2\cdot-1 = 2 = F_{-3} $ \\  
-			| & 0              & 0             & | & 0               & 0              & -a & $-2\cdot F_{-2} = -2\cdot-1 = 2 = F_{-3} $ \\   
-			\hline
-		\end{tabular}
-	\end{equation}
-	a opravdu $F_{-6}+F_{-3}=-8+2=-6=(100100)_F$
-\end{remark}
 
 \section{Faktoriálová číselná soustava}
 
 \begin{definition}
 	Faktoriálová číselná soustava je číselná soustava na okruhu $(\mathbb{Z},+,\cdot)$ o základu $\{(i+1)!\}_{i=0}^\infty$ s množinou cifer $C=\mathbb{N}_0$.
 \end{definition}
-\begin{remark}
-	Možná Vás jako čtenáře zarazila množina cifer $C$, a skutečně se nejedná o žert. Cílem této práce však není najít nejefektivnější řešení, ale prozkoumat teoretické možnosti. Je jasné, že neexistuje dostatek unikátních znaků pro pokrytí celé množiny $\mathbb{N}_0$, proto je tato soustava více teoretická a neuveditelná do praxe. Pro účely této práce nám bude stačit si postačíme s její podmnožinou.
-\end{remark}
-\begin{agreement}
-	Nechť v následující kapitole symboly $A = 10, B = 11, C = 12, ... Z = 35$ označují příslušnou cifru.
-	\end{agreement}
 \begin{agreement}
 	V faktoriálové číselné soustavě zapisujeme:
 	$\varphi(x) =  (\posla)_!$\newline
-	Hledáme-li relaci k zápornému číslu, pak podobně jak jsme zvyklí v desítkové číselné soustavě, najdeme reprezentaci čísla opačného a zapíšeme znaménko \textbf{`$-$`} před reprezentaci: \newline
-	$$x<0$$
-	$$\varphi(-x) =  (\posla)_!$$
-	$$\varphi(x) = - (\posla)_!$$
+	Hledáme-li relaci k zápornému číslu, pak podobně jak jsme zvyklí v desítkové číselné soustavě, najdeme reprezentaci čísla opačného a zapíšeme znaménko $-$ před reprezentaci: $\varphi(x) = - (\posla)_!$
 \end{agreement}
-\begin{remark}
-	Je dobré si uvědomit, že bez jistých omezení se nejedná o jednoznačnou číselnou soustavu. Předveďme si pár způsobů jak reprezentovat číslo $10$.
-	\begin{center}
-		\begin{tabular}{c c c c c}
-			$10$&=&$10\cdot1$&=&$(A)_!$\\
-			&&$5\cdot2$&=&$(50)_!$\\
-			&&$1\cdot6+2\cdot2$&=&$(120)_!$\\
-			&&\vdots&&
-		\end{tabular}
-	\end{center}
-	\end{remark}
 \begin{theorem}
 	Pro každé $x \in \mathbb{Z} \quad \exists\{a_n\}_{n=0}^\infty:x=\begin{cases}
 			\sum_{i=0}^{\infty}a_i\cdot (i+1)!  & \mbox{ pro } x\ge0 \\
@@ -1174,33 +970,63 @@ Sčítání čísel v negafibonacciho číselné soustavě můžeme provádět p
 		\end{cases}$ To jest $D(\varphi)=\mathbb{Z}$
 \end{theorem}
 \begin{proof}\label{faktDF}
-	Nechť $x\in\mathbb{Z}$ je dáno. Jestliže je $x=0$, pak je v relaci s $(0)_!$. Jestliže $x<0$, pak najdeme reprezentaci pro $-x$ a zapíšeme před reprezentaci symbol \textbf{`$-$`}. Nyní dokažme, že pro každé $x>0$ lze najít reprezentaci v faktoriálové číselné soustavě. Hledejme největší $n\in\mathbb{N}$, pro které platí: $n!\le x$. Takové jistě najdeme, protože posloupnost $\{(i+1)!\}_{i=0}^\infty$ je rostoucí a nekonečná. Následně si zapíšeme $a_{n-1}=\left\lfloor\frac{x}{n!}\right\rfloor$ ( protože základ soustavy je posunut o index ). Jelikož je $x\ge n!$, bude $a_{n-1}$ jistě rovno alespoň $1$. Následně uvažujme $x_1 = x - a_{n-1}\cdot n!$ (což je v podstatě zbytek po celočíselném dělení). Protože se jedná o zbytek po dělení, je jasné, že $x_1<x$, a proto po opakování konečného počtu kroků se dostaneme k $x_k=0$.  
+	Nechť $x\in\mathbb{Z}$ je dáno. Jelikož fibonacciho posloupnost je od $F_2$ rostoucí nekonečná posloupnost a její první člen $F_0 = 0$,pak $\lim_{\infty}F_n = \infty$. Je tedy zřejmé, že pro námi zvolené x najdeme právě jedno $i\in\mathbb{N}_0$, pro které platí $F_i\le x<F_{i+1}$. Označme naše $x$ jako $x_0$ a celočíselným dělením proveďme operaci $x/F_i$. Výsledek bude $1$ zb. $x_1$, $x_1 \in \mathbb{N}$. Pokud by výsledek byl $\ge 2$, pak $x\ge2\cdot F_i$, $F_i+F_i\ge F_i+F_{i-1}=F_{i+1}$ což je spor! protože bychom na začátku nevybrali ono počáteční $F_i$, ale $F_{i+1}$.\newline
+	$\vdots$
+	%TODO zde
+	\begin{enumerate}
+		\item[$\alpha)$] $x=0 \Rightarrow \forall i \in \mathbb{N}:a_i=0$
+		\item[$\beta)$] Je zřejmé, že pro libovolné $x \in \mathbb{N}$ existuje právě jedno $n\in\mathbb{N}:n!\le x<(n+1)!$\newline
+		      Protože $(\mathbb{N}_0,+,\cdot)$ ??je?? euklidovský obor integrity, jistě existují čísla $x_i\in\mathbb{N}_0, a_i\in\mathbb{N}_0$ taková, že:
+		      $$ x = x_0 = a_0 \cdot n! + x_1,\quad a_0 \in \mathbb{N}$$
+		      $$ x_1 = a_1 \cdot(n-1)! + x_2,\quad a_1 \in \mathbb{N}_0$$
+		      $$ x_2 = a_2 \cdot(n-2)! + x_3,\quad a_2 \in \mathbb{N}_0$$
+		      $$ x_{k-1} = a_k \cdot (n-k+1)! + x_{k}$$
+		      $$ x_{n-1} = a_{n-1} \cdot 1! + x_{n}$$
+		      $$ x_{n} = a_{n} \cdot 0!$$
+		      
+		      $\forall k \ge 1:$
+		      $$x_k=x_{k-1}-a_n\cdot(n-k+1)!$$
+		      $a_n \in \mathbb{N}_0 \Rightarrow$ buď $a_n = x_{k-1}$, pak jistě
+		      $$x_k \le x_{k-1}-a_n(n-k+1)! \le 0,$$
+		      protože $(n-k+1)! \le 1$\newline
+		      Pro dost velké $k_0: x_{k_0} = 0$
+		      $$\Rightarrow x = x_0 = a_n\cdot(0)!+a_{n-1}\cdot(1)!+\dots+a_0$$
+	\end{enumerate}
 \end{proof}
 \begin{remark} Algoritmus pro hledání reprezentace čísla v faktoriálové číselné soustavě
 	\begin{enumerate}
 		\item Nechť $x$ je číslo, které chceme reprezentovat, $x_0 = x$ a $i=0$ je počáteční hodnota algoritmu
 		\item Najdeme nejvyšší n, pro které platí: $n! < x$
 		\item Provedeme následující operaci:\newline $x_i/(n-i)!=a_{n-i-1}\;zb.\;x_{i+1}$, kde $ a_i,x_i\in\mathbb{N}_0$
-		\item Opakujeme operaci dokud $x_{i+1}\ne0$, nechť $n$ je počet iterací. ($n$ je jistě konečné, viz. důkaz \ref{faktDF})
+		\item Opakujeme operaci dokud $x_{i+1}\ne0$, nechť $n$ je počet iterací. ($n$ je jistě konečné, viz. \ref{faktDF})
+		\item $\posla$, kde $a_i=0$ pro každé $i>n$, splňuje požadavek $x=
+			      \sum_{i=0}^{\infty}a_i\cdot(i+1)!$
 	\end{enumerate}
 \end{remark}
+\begin{theorem}
+	Jestliže $x=\sum_{i=0}^{\infty}a_i\cdot(i+1)!$, pak $(\exists n_0 \in \mathbb{N})(\forall n>n_0):a_n=0$
+\end{theorem}
+\begin{proof}
+	Sporem: \newline Nechť existuje taková posloupnost, že pro libovolné $n$ najdeme vždy $n_0$ větší$:a_{n_0}\ne0$\newline
+	Pak $x=\sum_{i=0}^\infty a_i\cdot(i+1)! \notin \mathbb{N}_0$, protože suma řady diverguje k $+\infty$
+\end{proof}
 \begin{definition}
 	Omezená množina velikosti i\newline
 	$$C_i=\{k,k\in\mathbb{N}_0,k\le i\}=\{0,\dots,i\}$$
 	Např. $C_5 = \{0,1,2,3,4,5\}$
 \end{definition}
 \begin{theorem}
-	Jestliže omezíme množinu $C$ ( z které vybíráme $a_i$ ) následovně: $C=C_{i+1}$ pro $a_i$, pak bude vyjádření jednoznačné. To jest, každé číslo x $\in\mathbb{N}_0$ lze vyjádřit následovně:
-	$$x=\sum_{i=0}^{\infty}a_i(i+1)!,\quad a_i\in C_{i+1}$$
+	Pro vyjádření libovolného x $\in\mathbb{N}_0$ nám postačí omezená množina $C_i\subseteq\mathbb{N}_0$. Pro každé i $\in \mathbb{N}_0$ pro faktoriálovou číselnou soustavu platí $C=C_i$. To jest, každé číslo x $\in\mathbb{N}_0$ lze vyjádřit následovně:
+	$$x=\sum_{i=0}^{\infty}a_i(i+1)!,\quad a_i\in C_i$$
 \end{theorem}
 \begin{proof}
-	Pokusme se obecně vyjádřit následující číslo $x=n!-1$, takovým příkladem může být třeba $x=5!-1=120-1=119$. Po zvolení $a_i = max (C_{i+1})$ pro $i< n-1$ a $a_i=0$ pro $i\ge n-1$ dosáhneme výsledku. Z definice pak $x=\sum_{i=0}^{\infty}a_i\cdot(i+1)!=1\cdot1!+2\cdot2!+3\cdot3!+\dots+(n-2)\cdot(n-2)!$
-	Dokažme tuto skutečnost indukcí.
-	V prvních případech ($n\in\{0,1,2\}$) je to triviální, ukažme si to na $n=3$.\newline
-	$$x=3!-1=5=1\cdot1!+2\cdot2!=1+4=5$$
-	Jako indukční krok předpokládejme, že tvrzení platí pro $n$, tj. číslo je $x=n!-1$. Sumu omezme na $x=\sum_{i=0}^{n-2}a_i\cdot(i+1)!$\newline
-	Nedodělané
-	Myšlenka je ta, že ukážu na největší číslo vyjádřené určitým počtem cifer a volbou jejich maxima, a "přehoupnutí" na jeden řád výše. Nevím jak validní by to byl důkaz, spíš jde o to aby si to čtenář rozmyslel a uvědomil ... tak možná by to měla být poznámka a ne věta.
+	...
+\end{proof}
+\begin{theorem}
+	Jestliže $a_i \in C_{i+1}$, pak je faktoriálová číselná soustava jednoznačná
+\end{theorem}
+\begin{proof}
+	...
 \end{proof}
 \begin{example}
 	$$z=77$$
@@ -1223,7 +1049,6 @@ prací v daném roce nebo na práce řešené na externích pracovištích).
 	\bibitem{a} \href{https://homel.vsb.cz/~bou10/MA1/4.pdf}{Bouchala J., \emph{Matematická analýza ve Vesmíru}, strana 3}
 	\bibitem{b} \href{https://kconrad.math.uconn.edu/blurbs/ugradnumthy/Zinotes.pdf}{Keith C., \emph{The Gaussian integers}}
 	\bibitem{c} \href{https://dml.cz/handle/10338.dmlcz/142019}{Pelantová E. Starosta Š., \emph{Nestandardní zápisy čísel}}
-	\bibitem{d} Zeckendorfova věta ....
 \end{thebibliography}
 
 \end{document}
