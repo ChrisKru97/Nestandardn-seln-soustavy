@@ -1,6 +1,6 @@
 INFO: latexindent version 3.6, 2019-05-05, a script to indent .tex files
       latexindent lives here: /usr/local/texlive/2019/texmf-dist/scripts/latexindent/
-      Wed May  6 02:50:20 2020
+      Mon May 11 22:53:06 2020
       Filename: main.tex
 INFO: Processing switches:
       -w|--overwrite: Overwrite mode active, will make a back up of main.tex first
@@ -16,8 +16,15 @@ INFO: Backup procedure (-w flag active):
       ./main.bak1 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
       ./main.bak2 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
       ./main.bak3 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
-      copying main.tex to ./main.bak4
-      Backup file: ./main.bak4
+      ./main.bak4 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      ./main.bak5 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      ./main.bak6 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      ./main.bak7 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      ./main.bak8 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      ./main.bak9 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      ./main.bak10 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      copying main.tex to ./main.bak11
+      Backup file: ./main.bak11
       main.tex will be overwritten after indentation
 INFO: Phase 1: searching for objects
 INFO: Phase 2: finding surrounding indentation

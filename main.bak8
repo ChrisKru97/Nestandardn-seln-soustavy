@@ -10,21 +10,21 @@
 
 \EnglishThesisTitle{Non-Standard Numeral Systems}
 
-\SubmissionDate{15. května 2020}
+\SubmissionDate{1. dubna 2020}
+%TODO update
 
-\Thanks{Děkuji panu RNDr. Pavlu Jahodovi, Ph.D. za odborné vedení práce, věcné připomínky, dobré rady a vstřícnost při konzultacích a vypracovávání bakalářské práce.}
+\Thanks{Děkuji panu RNDr. Pavlu Jahodovi, Ph.D. za odborné vedení práce, věcné připomínky, dobré rady a vstřícnost při
+	konzultacích a vypracovávání bakalářské práce.}
 
 \ThesisAssignmentImagePath{data/assignment}
+%TODO update
 
 %\AuthorDeclarationImageFile{data/authorDeclaration.jpg}
 % TODO print and scan
 
 % TODO 10 radku
-\CzechAbstract{Cílem této práce je prozkoumat různé nestandardní možnosti reprezentace čísel. Každý zná desítkovou soustavu ( ne nutně pod tímto označením ). Poměrně známé jsou i soustavy, které se používají v praxi
-\begin{itemize}\item v každém technickém oboru - dvojková a šestnáctková 
-\item při práci s časem, úhly - šedesátková
-	\end{itemize}
-Kromě těchto standardních soustav, kterýchž základ tvoří posloupnost mocnin určitého přirozeného čísla, můžeme jako základ soustavy definovat jinou posloupnost. Cílem této práce je prozkoumání pár takových soustav a zjištění jejich vlastností. U každé soustavy si řekneme, jaký je její definiční obor, jakým způsobem do této soustavy čísla převádíme a případně jestli a jak se dá sčítat a násobit.}
+\CzechAbstract{Cílem této práce je prozkoumat různé nestandardní možnosti zápisu či kódování čísel. Kromě všem známých soustav s číselným základem (dvojková, šestnáctková,...), jsou zde i zvláštní soustavy s jiným základem. Práce nám přiblíží spektrum nestandardních soustav. U každé soustavy se zabývá důkazem jednoznačnosti vyjádření čísel v daném tvaru a důkazem schopnosti vyjádřit libovolně zvolené čísla. Práce zkoumá nejen soustavy s celočíselným základem, ale i se základem iracionálním, či dokonce komplexním.}
+% TODO kolik
 
 \CzechKeywords{číselná soustava}
 
@@ -138,14 +138,52 @@ Pro lepší představu definice číselné soustavy si ji předveďme na příkl
 	$\posla=(5,2,3,0,0,\dots)$ a $\poslb = (6,0,0,\dots)$.\newline Podle Úmluvy \ref{u1} můžeme psát $$\varphi(3\cdot10^2+2\cdot10^1+5\cdot10^0+6\cdot10^-1)=325.6$$
 	Označme $x=3\cdot10^2+2\cdot10^1+5\cdot10^0+6\cdot10^{-1}$\newline
 	$\varphi(-x) = \varphi(-(3\cdot10^2+2\cdot10^1+5\cdot10^0+6\cdot10^{-1}))$ neexistuje, ale prvek $-x$ ovykle značíme $-x=-\varphi(x)=-325.6$, neboť obvykle nerozlišujeme mezi číslem a jeho ciferným zápisem, tj. mezi $-x$ a $\varphi(-x)$.
+	
+	
+	%\textbf{Desítková soustava}\\
+	%Pro tuto (všem dobře známou) soustavu platí:
+	%\begin{itemize}
+	%	\item[1.] $\poslalpha = \{8^i\}_{i=0}^{\infty}$
+	%	\item[2.] $\poslbeta = \{8^{-i}\}_{i=1}^{\infty}$
+	%	\item[3.]Podle \textbf{definition 3} je $\textbf{n} = 8$ základ naší soustavy
+	%	\item[4.]$A = \mathbb{R} \Rightarrow (A,+,\cdot) = (\mathbb{R},+,\cdot)$
+	%	\item[5.]$C = \{0, 1, 2, ... 7\}$
+	%	\item[6.]$B = \{0, 1, 2, ... 7, 10, 11, ... 17, 20, 21, ... 77, 100, ...\}$
+	%	\item[7.]$\varphi(113_{10}) = ....000161,000... = 161_8$
+	%	\item[8.]$ 113 = \sum_{i=0}^{\infty} a_{i}\alpha_{i} + \sum_{i=1}^{\infty} b_{i}\beta_{i}$ \newline $a_0=1 \land a_1=6 \land a_2=1 \land (\forall i \in \mathbb{N}-\{1,2\}): a_i=0 \land (\forall i \in \mathbb{N}): b_i=0$ \newline
+	%	$ \alpha_0 = 1 \land \alpha_1 = 8 \land \alpha_2 = 64$\newline
+	%	$ \Rightarrow 113 = 1*1 + 6*8 + 1*64$
+	%	\end{itemize}
 \end{example}
+
+%\newpage
+%Pozorování:
+
+%Mohutnost C musí být co nejmenší potřebná pro vyjádření celého A.
+
+%Je-li nosná množina tělesa $A \subseteq \mathbb{Z}$, pak posloupnoust $\forall i \in \mathbb{N} : b_i = 0$ (tj. je není třeba vyjadřovat zlomkovou část čísla)\newline \newline
+%Je li základem soustavy racionální číslo či posloupnost čísel
+%$$\forall i \in \mathbb{N} : \alpha_i \in \mathbb{Q} \land \beta_i \in \mathbb{Q}$$
+%pak:
+%$$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): b_i = 0 $$
+%(tj. zlomková část lze vyjádřit konečným počtem prvků \textbf{b})\newline \newline
+
+%Pro každou soustavu platí
+%$$ (\exists k \in \mathbb{N} )(\forall i \in \mathbb{N}, i>k): a_i = 0 $$
+%(tj. celočíselná část musí být  z konečného počtu prvků \textbf{a})
+
+
 \section{Negabinární číselná soustava}
+
 \begin{definition}
 	Negabinární číselná soustava je číselná soustava na okruhu $(\mathbb{Z},+,\cdot)$ o základu -2 s množinou cifer $C=\{0,1\}$.
 \end{definition}
+
 Negabinární číselná soustava je tedy relace $\varphi$ mezi celými čísly a posloupnostmi jedniček a nul, kde $z \in \mathbb{Z}$ je v relaci s posloupností $\posla$ právě thedy, když 
 $$z=\sum_{i=0}^{\infty}a_i\cdot(-2)^i.$$
+
 Ciferným zápisem celého čísla v negabinární číselné soustavě je posloupnost čísel z množiny $C=\{0,1\}$. Fakt, že $\varphi(z) = \posla$, kde $a_i = 0$ pro $i > k$, budeme symbolicky zapisovat $\varphi(z) = (a_k\,\dots\, a_0)_{-2}$. Pokud nebude moci dojít k omylu, tento zápis ještě zjednodušíme na $z = (a_k\,\dots\, a_0)_{-2}$. Například $5 = (101)_{-2}$, neboť $5 = 1\cdot(-2)^2 + 0\cdot(-2)^1 + 1\cdot(-2)^0$.
+
 Prozkoumáme základní vlastnosti této číselné soustavy. Nejprve ukážeme, že v negabinární číselné soustavě dokážeme najít ciferný zápis pro libovolné celé číslo.
 
 \begin{theorem}\label{negaDF}
@@ -675,44 +713,47 @@ Ukažme si to na příkladu
 	\begin{equation*}
 		\begin{tabular}{|c|c|c|c|c|c||c|c|c|c|c|c|}\hline
 			    & $z_k$ & $z_{k+1}$ & $a_{k+1}$ & $n:z_n=0$ & viz. &     & $z_k$ & $z_{k+1}$ & $a_{k+1}$ & $n:z_n=0$ & viz. \\ \hline \hline
-			1.  & 0     &           &           & 0         &      & 36. & -3+2i & 3+i       & 1         & 9         & 30.  \\\hline
-			2.  & 1     & 0         & 1         & 1         & 1.   & 37. & -3+i  & 2+i       & 0         & 4         & 14.  \\\hline
-			3.  & i     & 1         & 1         & 2         & 2.   & 38. & -3-i  & 1+2i      & 0         & 7         & 15.  \\\hline
-			4.  & -1+i  & 1         & 0         & 2         & 2.   & 39. & -3-2i & 1+3i      & 1         & 5         & 33.  \\\hline
-			5.  & -i    & i         & 1         & 2         & 3.   & 40. & -2-3i & 3i        & 1         & 7         & 27.  \\\hline
-			6.  & -1-i  & i         & 0         & 3         & 3.   & 41. & -1-3i & -1+2i     & 0         & 6         & 16.  \\\hline
-			7.  & 1+i   & -i        & 0         & 3         & 5.   & 42. & 1-3i  & -2+i      & 0         & 5         & 17.  \\\hline
-			8.  & -1    & 1+i       & 1         & 4         & 7.   & 43. & 2-3i  & -2+i      & 1         & 5         & 17.  \\\hline
-			9.  & 1-i   & -1        & 0         & 5         & 8.   & 44. & 3-2i  & -2        & 1         & 5         & 12.  \\\hline
-			10. & 2     & -1-i      & 0         & 4         & 6.   & 45. & 3-i   & -2-i      & 0         & 8         & 18.  \\\hline
-			11. & 2i    & 1-i       & 0         & 6         & 9.   & 46. & 3+3i  & -3i       & 0         & 7         & 29.  \\\hline
-			12. & -2    & 1+i       & 0         & 4         & 7.   & 47. & -3+3i & 3         & 0         & 5         & 26.  \\\hline
-			13. & -2i   & -1+i      & 0         & 3         & 4.   & 48. & -3-3i & 3i        & 0         & 7         & 27.  \\\hline
-			14. & 2+i   & -i        & 1         & 3         & 5.   & 49. & 3-3i  & -3        & 0         & 6         & 28.  \\\hline
-			15. & 1+2i  & 1-i       & 1         & 6         & 9.   & 50. & 4     & -2-2i     & 0         & 8         & 24.  \\\hline
-			16. & -1+2i & 2         & 1         & 5         & 10.  & 51. & 4i    & 2-2i      & 0         & 6         & 25.  \\\hline
-			17. & -2+i  & 2+i       & 1         & 4         & 14.  & 52. & -4    & 2+2i      & 0         & 5         & 22.  \\\hline
-			18. & -2-i  & 1+2i      & 1         & 7         & 15.  & 53. & -4i   & -2+2i     & 0         & 6         & 23.  \\\hline
-			19. & -1-2i & 2i        & 1         & 7         & 11.  & 54. & 4+i   & -1-2i     & 1         & 8         & 19.  \\\hline
-			20. & 1-2i  & -1+i      & 1         & 3         & 4.   & 55. & 4+2i  & -1-3i     & 0         & 7         & 41.  \\\hline
-			21. & 2-i   & -1        & 1         & 5         & 8.   & 56. & 2+4i  & 1-3i      & 0         & 6         & 42.  \\\hline
-			22. & 2+2i  & -2i       & 0         & 4         & 13.  & 57. & 1+4i  & 2-2i      & 1         & 6         & 25.  \\\hline
-			23. & -2+2i & 2         & 0         & 5         & 10.  & 58. & -1+4i & 3-i       & 1         & 9         & 45.  \\\hline
-			24. & -2-2i & 2i        & 0         & 7         & 11.  & 59. & -2+4i & 3-i       & 0         & 9         & 45.  \\\hline
-			25. & 2-2i  & -2        & 0         & 5         & 12.  & 60. & -4+2i & 3+i       & 0         & 9         & 30.  \\\hline
-			26. & 3     & -1-i      & 1         & 4         & 6.   & 61. & -4+i  & 3+2i      & 1         & 5         & 31.  \\\hline
-			27. & 3i    & 2-i       & 1         & 6         & 21.  & 62. & -4-i  & 2+3i      & 1         & 5         & 32.  \\\hline
-			28. & -3    & 2+2i      & 1         & 5         & 22.  & 63. & -4-2i & 1+3i      & 0         & 5         & 33.  \\\hline
-			29. & -3i   & -1+2i     & 1         & 6         & 16.  & 64. & -2-4i & -1+3i     & 0         & 7         & 34.  \\\hline
-			30. & 3+i   & -1-2i     & 0         & 8         & 19.  & 65. & -1-4i & -1+3i     & 1         & 7         & 34.  \\\hline
-			31. & 3+2i  & -2i       & 1         & 4         & 13.  & 66. & 1-4i  & -2+2i     & 1         & 6         & 23.  \\\hline
-			32. & 2+3i  & 1-2i      & 1         & 4         & 20.  & 67. & 2-4i  & -3+i      & 0         & 5         & 37.  \\\hline
-			33. & 1+3i  & 1-2i      & 0         & 4         & 20.  & 68. & 4-2i  & -3-i      & 0         & 8         & 38.  \\\hline
-			34. & -1+3i & 2-i       & 0         & 6         & 21.  & 69. & 4-i   & -2-i      & 1         & 8         & 18.  \\\hline
-			35. & -2+3i & 3         & 1         & 5         & 26.  &     &       &           &           &           &      \\\hline
+			1.  & 0     &           &           & 0         &      & 36. & -3+2i & 2           &           &          &   \\\hline
+			2.  & 1     & 0         & 1         & 1         & 1.   & 37. & -3+i  & 2            &           &           &   \\\hline
+			3.  & i     & 1         & 1         & 2         & 2.   & 38. & -3-i  &           &           &           &  \\\hline
+			4.  & -1+i  & 1         & 0         & 2         & 2.   & 	39. & -3-2i  &           &           &           & 28.  \\\hline
+			5.  & -i    & i         & 1         & 2         & 3.   & 40. & -2-3i  &           &           &           & 28.  \\\hline
+			6.  & -1-i  & i         & 0         & 3         & 3.   & 41. & -1-3i   &           &           &           & 28.  \\\hline
+			7.  & 1+i   & -i        & 0         & 3         & 5.   & 42. & 1-3i   &           &           &           & 28.  \\\hline
+			8.  & -1    & 1+i       & 1         & 4         & 7.   &43. & 2-3i &           &           &           & 28.  \\\hline
+			9.  & 1-i   & -1        & 0         & 5         & 8.   & 44. & 3-2i  &           &           &           & 28.  \\\hline
+			10. & 2     & -1-i      &           & 4         & 6.   & 45. & 3-i  &           &           &           & 28.  \\\hline
+			11. & 2i    & 1-i       &           & 6         & 9.   &  46. & 3+3i     &           &           &           & 28.  \\\hline
+			12. & -2    & 1+i       &           & 4         & 7.   & 47. & -3+3i   &           &           &           & 28.  \\\hline
+			13. & -2i   & -1+i      &           & 3         & 4.   & 48. & -3-3i  &           &           &           & 28.  \\\hline
+			14. & 2+i   & -i        &           & 3         & 5.   & 49. & 3-3i    &           &           &           & 28.  \\\hline
+			15. & 1+2i  & 1-i       &           & 6         & 9.   &50. & 4  &           &           &           & 28.  \\\hline
+			16. & -1+2i & 2         &           & 5         & 10.  & 51. & 4i  &           &           &           & 28.  \\\hline
+			17. & -2+i  & 2+i       &           & 4         & 14.  & 52. & -4  &           &           &           & 28.  \\\hline
+			18. & -2-i  & 1+2i      &           & 7         & 15.  & 53. & -4i  &           &           &           & 28.  \\\hline
+			19. & -1-2i & 2i        &           & 4         & 13.  & 54. & 4+i &           &           &           & 28.  \\\hline
+			20. & 1-2i  & -1+i      &           & 3         & 4.   & 55. & 4+2i &           &           &           & 28.  \\\hline
+			21. & 2-i   & -1        &           & 5         & 8.   & 56. & 2+4i &           &           &           & 28.  \\\hline
+			22. & 2+2i  & -2i       &           & 4         & 13.  & 57. & 1+4i  &           &           &           & 28.  \\\hline
+			23. & -2+2i & 2         &           & 5         & 10.  &58. & -1+4i  &           &           &           & 28.  \\\hline
+			24. & -2-2i & 2i        &           & 4         & 13.  & 59. & -2+4i &           &           &           & 28.  \\\hline
+			25. & -2+2i & 2         &           & 5         & 10.  & 60. & -4+2i &           &           &           & 28.  \\\hline
+			26. & 3     & 2         &           & 5         & 10.  & 61. & -4+i i &           &           &           & 28.  \\\hline
+			27. & 3i    & 2         &           & 5         & 10.  & 62. & -4-i  &           &           &           & 28.  \\\hline
+			28. & -3    & 2         &           & 5         & 10.  & 63. & -4-2i  &           &           &           & 28.  \\\hline
+			29. & -3i   & 2         &           & 5         & 10.  & 64. & -2-4i   &           &           &           & 28.  \\\hline
+			30. & 3+i   & 2         &           & 5         & 10.  & 65. & -1-4i   &           &           &           & 28.  \\\hline
+			31. & 3+2i  & 2         &           & 5         & 10.  & 66. &     1-4i  &           &           &           & 28.  \\\hline
+			32. & 2+3i  & 2         &           & 5         & 10.  & 67. &       2-4i&           &           &           & 28.  \\\hline
+			33. & 1+3i  & 2         &           & 5         & 10.  & 68. &   4-2i    &           &           &           & 28.  \\\hline
+			34. & -1+3i & 2         &           & 5         & 10.  & 69. &4-i       &           &           &           & 28.  \\\hline
+			35. & -2+3i & 2         &           & 5         &   &  &       &           &           &           &   \\\hline
 		\end{tabular}
-	\end{equation*}\newpage	
-	Dokázali jsme, že existuje $k \in \mathbb{N}$ takové, že $z_{k+1} = 0$. Z toho plyne, že $z_k = a_k$, odtud $z_{k-1} = a_k\cdot(-2)^1 + a_{k-1}$, \dots, $z = z_0 = a_k\cdot(-2)^k + a_{k-1}\cdot(-2)^{k-1} + \cdots + a_0$. Pokud zvolíme $a_j = 0$ pro $j > k$, pak $z=\sum_{j=0}^{\infty}a_j\cdot(-2)^j$.
+	\end{equation*}
+	
+	Dokázali jsme, že existuje $k \in \mathbb{N}$ takové, že $z_{k+1} = 0$. Z toho plyne, že $z_k = a_k$, odtud $z_{n-1} = a_n\cdot(-2)^1 + a_{n-1}$, \dots, $z = z_0 = a_n\cdot(-2)^n + a_{n-1}\cdot(-2)^{n-1} + \cdots + a_0$. Pokud zvolíme $a_i = 0$ pro $i > n$, pak $z=\sum_{i=0}^{\infty}a_i\cdot(-2)^i$.
+	
+	
 \end{proof}
 \begin{remark} Algoritmus pro hledání reprezentace čísla v komplexní číselné soustavě
 	\begin{enumerate}
@@ -891,18 +932,19 @@ Demonstrujeme na příkladech
 \end{itemize}
 
 \section{Negafibonacciho číselná soustava}
+
 \begin{definition}
 	Negafibonacciho číselná soustava je číselná soustava na okruhu $(\mathbb{Z},+,\cdot)$ o základu $\{F_{-(i+1)}\}_{i=0}^{\infty}$ (kde $F_{-i}$ je i-tý člen negafibonacciho posloupnosti) s množinou cifer $C=\{0,1\}$.
 \end{definition}
 \begin{remark}
-	Nenechme se zmást symbolem \textbf{'$-$'} u indexu členu negafibonacciho posloupnosti. Používá se pro odlišení od členů fibonacciho posloupnosti. Nejde však o záporný index! Proto píšeme indexy (např.  $(i+1)$) do závorky.
+	Nenechme se zmást symbolem \textbf{'$-$'} u indexu členu negafibonacciho posloupnosti. Používá se pro odlišení od členů fibonacciho posloupnosti. Nejde však o záporný index! Proto píšeme relativní indexy (např.  $(i+1)$) do závorky.
 \end{remark}
-\begin{definition}\label{fiboDef} Negafibonacciho posloupnost\newline
+\begin{definition}\label{fiboDef} NegaFibonacciho posloupnost\newline
 	Je nekonečná posloupnost přirozených čísel definována rekurentní formulí:
 	$$F_{-0} = 0,\quad F_{-1} = 1,\quad F_{-n} = F_{-(n-2)} - F_{-(n-1)}$$
 \end{definition}
 Z definice \ref{fiboDef} si lehce rozmyslíme, že každý další člen bude střídavě záporný kladný a jeho absolutní hodnota bude větší než u předchozích členů.\newline
-Negafibonacciho posloupnost je velice podobná Fibonacciho posloupnosti.
+NegaFibonacciho posloupnost je velice podobná Fibonacciho posloupnosti.
 $$F_{-n} = (-1)^{n+1}\cdot F_n$$
 \begin{example}
 	$$F_{-2} = F_{-0} - F_{-1} =  0 - 1  =  -1$$$$F_{-3 }= F_{-1}-F_{-2} = 1-(-1)=2$$$$F_{-4} = F_{-2} - F_{-3} =  -1 -2 =  -3$$$$\vdots$$
@@ -913,7 +955,7 @@ $$F_{-n} = (-1)^{n+1}\cdot F_n$$
 	$\varphi(x) =  (\posla)_F$\newline
 \end{agreement}
 \begin{remark}
-	Podle definice se jedná o nejednoznačnou číselnou soustavu, což si ukážeme v následujícím příkladu.
+	Podle definice se jedná o nejednoznačnou číselnou soustavu, což si ukážeme v následujícím příkladu. Pokud však správně zavedeme podmínku pro reprezentaci čísla v této číselné soustavě, dostaneme jednoznačnou číšelnou soustavu. Viz. důkaz.
 \end{remark}
 \begin{example}
 	Každé číslo, vezměme si například $27$, můžeme zapsat více způsoby (nekonečně mnoha).\newline
@@ -925,10 +967,11 @@ $$F_{-n} = (-1)^{n+1}\cdot F_n$$
 		\end{tabular}\end{center}
 \end{example}
 \begin{theorem}
-	Analogie Zeckendorfovy věty pro fibonacciho kód. \cite{d}\newline
-	Pro každé celé číslo existuje posloupnost $\{a_n\}_{n=0}^\infty$ splňující podmínky:
+	Obměna Zeckendorfovy věty pro fibonacciho kód. \cite{d}\newline
+	Pro každé celé číslo existuje právě jedna posloupnost $\{a_n\}_{n=0}^\infty$ kdy
 	\begin{itemize}
-		\item $x=\sum_{i=0}^{\infty}a_i\cdot F_{-(i+1)}$, ( důsledkem je, že $D(\varphi) = \mathbb{Z}$ ).
+		\item $x=
+			      \sum_{i=0}^{\infty}a_i\cdot F_{-(i+1)}$, tj. $D(\varphi) = \mathbb{Z}$
 		\item $a_k\cdot a_{k+1}=0$ ( tj. v posloupnosti nejsou nikdy dvě jedničky vedle sebe)
 	\end{itemize}
 \end{theorem}
@@ -936,22 +979,21 @@ $$F_{-n} = (-1)^{n+1}\cdot F_n$$
 	Buď libovolné $z\in\mathbb{Z}$ dáno. Rozdělme si jej na případy.
 	\begin{itemize}
 		\item $z=0$ V tomhle případě klademe každý člen posloupnosti $a_i = 0$
-		\item $z<0$ Označme $n \in \mathbb{N}$ nejmenší index, pro který platí $z>-F_{-n}$ a položme $a_{n-2}=1$ ( poznámka : $(n-2)$ namísto $(n-1)$, protože základ je posunut $\{F_{-(i+1)}\}_{i=0}^{\infty}$, zároveň díky podmínce $z<0$ nebude index nikdy záporný ). Takový index jistě najdeme, protože z negafibonacciho posloupnosti lze vybrat posloupnost vybranou, která je nekonečná a klesající. Nyní uvažujme o čísle $z_{1} = -F_{-(n-1)}+z$.
+		\item $z<0$ Označme $n \in \mathbb{N}$ nejmenší index, pro který platí $z>-F_{-n}$ a položme $a_{n-2}=1$ ( poznámka : $(n-2)$ namísto $(n-1$), protože základ je posunut $\{F_{-(i+1)}\}_{i=0}^{\infty}$ ). Takový index jistě najdeme, protože z negafibonacciho posloupnosti lze vybrat posloupnost vybranou, která je nekonečná a klesající. Nyní uvažujme o čísle $z_{1} = -F_{-(n-1)}+z$.
 		      Uvědomme si, že $F_{-(n-1)}$ je záporné, protože $F_{-n}$ je kladné ( $z>-F_{-n}$ ). Zároveň víme, že $-F_{-(n-1)}$ je menší než $-2z$. Jak toto víme? Dokážeme sporem. Předpokládejme, že
 		      $$-F_{-(n-1)} \ge -2z$$
-		      $$F_{-(n-1)} \le 2z < z$$Poslední nerovnost platí díky tomu, že $z < 0$.
+		      $$F_{-(n-1)} \le 2z$$
 		      $$-F_{-(n-2)}\le\frac{F_{-(n-1)}}{2}\le z$$
-		      Zde vidíme, že by existovalo $(n-2)$, pro které platí $z>-F_{-(n-2)}$, což je v rozporu s minimalitou $n$. Když víme, že $-F_{-(n-1)}$ je menší než $-2z$, pak jistě bude platit $|z_1|<|z|$. S číslem $z_1$ provedeme znova stejnou úvahu, kde dvojice $z_1,z_2$ vystřídá dvojici $z, z_1$. Posloupnost čísel $z_{k}$ se v konečném počtu kroků předchozích úvah dostane k nule. V případě, že nějaké $z_i > 0$, se pomocí vysvětlivek v $z>0$ taky v následujícím kroku přiblížíme nule.
-		\item $z>0$ Označme $n \in \mathbb{N}$ nejmenší index, pro který platí $z\le-F_{-n}$ a položme $a_{n-2}=1$ ( $(n-2)$ můžeme použít jako index, protože díky podmínce $z>0$ nebude nikdy záporný ). Takový index jistě najdeme, protože z negafibonacciho posloupnosti lze vybrat posloupnost vybranou, která je nekonečná a roustoucí. Nyní uvažujme o čísle $z_{1} = -F_{-(n-1)}+z$.
+		      Zde vidíme, že by existovalo $(n-2)$, pro které platí $z>-F_{-(n-2)}$, což je v rozporu s podmínkou, že $n$ musí být nejmenší. Když víme, že $-F_{-(n-1)}$ je menší než $-2z$, pak jistě bude platit $|z_1|<|z|$. S číslem $z_1$ provedeme znova stejnou úvahu, kde dvojice $z_1,z_2$ vystřídá dvojici $z, z_1$. Posloupnost čísel $z_{k}$ se v konečném počtu kroků předchozích úvah dostane k nule. V případě, že nějaké $z_i > 0$, se pomocí vysvětlivek v $z>0$ taky v následujícím kroku přiblížíme nule.
+		\item $z>0$ Označme $n \in \mathbb{N}$ nejmenší index, pro který platí $z\le-F_{-n}$ a položme $a_{n-2}=1$. Takový index jistě najdeme, protože z negafibonacciho posloupnosti lze vybrat posloupnost vybranou, která je nekonečná a roustoucí. Nyní uvažujme o čísle $z_{1} = -F_{-(n-1)}+z$.
 		      Uvědomme si, že $F_{-(n-1)}$ je kladné, protože $F_{-n}$ je záporné ( $z\le-F_{-n}$ ). Zároveň víme, že $-F_{-(n-1)}$ je větší než $-2z$. Jak toto víme? Dokážeme sporem. Předpokládejme, že
 		      $$-F_{-(n-1)} \le -2z$$
 		      $$F_{-(n-1)} \ge 2z$$
 		      $$-F_{-(n-2)}\ge\frac{F_{-(n-1)}}{2}\ge z$$
-		      Zde vidíme, že by existovalo $(n-2)$, pro které platí $z\le-F_{-(n-2)}$, což je v rozporu s minimalitou $n$. Když víme, že $-F_{-(n-1)}$ je větší než $-2z$, pak jistě bude platit $|z_1|<|z|$. 
+		      Zde vidíme, že by existovalo $(n-2)$, pro které platí $z\le-F_{-(n-2)}$, což je v rozporu s podmínkou, že $n$ musí být nejmenší. Když víme, že $-F_{-(n-1)}$ je větší než $-2z$, pak jistě bude platit $|z_1|<|z|$. 
 	\end{itemize}
-	Jestliže je číslo nenulové, pak klademe $a_i=0$ pro $i>n-2$, kde $n$ je zprvu zvolený nejmenší index. \newline
-	$\{a_i\}_{i=0}^\infty$ je posloupnost s konečným počtem nenulových členu, proto platí  $z=\sum_{i=0}^{k_0}a_i\cdot F_{-(i+1)}$, kde $z_{k_0}=0$.\newline
-	Takto zkonstruována posloupnost $\posla$ nebude mít nikdy dvě jedničky vedle sebe. V případě kdyby vedle sebe byly, pak jsme volili špatně nejmenší $n$.
+	Takto zkonstruována posloupnost $\posla$ nebude mít nikdy dvě jedničky vedle sebe. V případě kdyby byly, pak jsme volili špatně nejmenší $n$.\newline Protože $F_{-n}+F_{-(n-1)}=F_{-(n-2)}-F_{-(n-1)}+F_{-(n-1)}=F_{-(n-2)}$, tj. $(\dots011\dots)_F=(\dots100\dots)$
+	Snadno si rozmyslíme, že nejmenší $n$ lze zvolit v každém kroce jednoznačně, a proto je tato reprezentace jednoznačná.
 \end{proof}
 
 \begin{remark} Algoritmus pro hledání reprezentace čísla v negafibonacciho číselné soustavě
@@ -1014,6 +1056,7 @@ Sčítání čísel v negafibonacciho číselné soustavě můžeme provádět p
 		\end{tabular}
 	\end{equation}
 \end{remark}
+
 \begin{itemize}
 	\item Zvolme například $a = 17$ a $b = 23$. Dle výše uvedeného algoritmu nalezneme ciferný zápis těchto celých čísel $17 =  (1010010)_F$ a $23 =  (100101000)_F$.
 	      
@@ -1062,9 +1105,6 @@ Sčítání čísel v negafibonacciho číselné soustavě můžeme provádět p
 	\end{equation}
 	a opravdu $F_{-6}+F_{-3}=-8+2=-6=(100100)_F$
 \end{remark}
-\subsection{Výhody a nevýhody negafibonacciho číselné soustavy}
-Tato číselná soustava je vlastně rozšířením definičního oboru Fibonacciho kódování \cite{d} na obor celých čísel. Proto má stejnou výhodu. Když se správně číslo reprezentuje, pak nemá nikdy dvě jedničky vedle sebe. Toho se dá využít při předávání dat, kdy se obě strany dohodnou, že každou n-tici znaků oddělí dvěmi jedničkami. S tímhle přístupem je pak mnohem jednodušší odhalit chybu při přenosu. Jakmile mezi oddělovači(dvě jedničky) neprojde n-tice znaků, ale jen (n-1)-tice. Samozřejme znaky je myšlen binární signál, a proto by tento přístup byl vhodný pro přenášení digitálních dat. Kromě toho je výhodou definiční obor, není třeba definovat jakým způsobem se při přenosu označí záporné číslo.
-
 
 \section{Faktoriálová číselná soustava}
 
@@ -1098,8 +1138,7 @@ Tato číselná soustava je vlastně rozšířením definičního oboru Fibonacc
 		\sum_{i=0}^{\infty}a_i\cdot (i+1)!$. To jest $D(\varphi)=\mathbb{N}_0$
 \end{theorem}
 \begin{proof}\label{faktDF}
-	Nechť $x\in\mathbb{Z}$ je dáno. Jestliže je $x=0$, pak je v relaci s $(0)_!$. V případě, že $x\ne0$ hledejme největší $n\in\mathbb{N}$, pro které platí: $n!\le x$. Takové jistě najdeme, protože posloupnost $\{(i+1)!\}_{i=0}^\infty$ je rostoucí a nekonečná. Následně si zapíšeme $a_{n-1}=\left\lfloor\frac{x}{n!}\right\rfloor$ ( protože základ soustavy je posunut ). Jelikož je $x\ge n!$, bude $a_{n-1}$ jistě rovno alespoň $1$. Následně uvažujme $x_1 = x - a_{n-1}\cdot n!$ (což je v podstatě zbytek po celočíselném dělení). 
-	$x_1$ je zbytek po dělení čísla x číslem $n!$, proto platí $x_1<n!\le x$. Stejnou úvahu provádíme dokud nedostaneme $x_k=0$. Místo původního čísla $x$ dosazujeme $x_k$. Obdržíme další cifru $a_i$ a celé číslo$x_{k+1}<x_k$. Po konečném kroku se dostaneme k $x_k=0$. Všechny členy posloupnosti, které nebyly určeny položíme $a_i=0$ včetně těch, kde $i\ge n$ a $n$ volíme zprvu zvolené. Pro takto vytvořenou posloupnost platí: $x=\sum_{i=0}^\infty a_i\cdot(i + 1)!$
+	Nechť $x\in\mathbb{Z}$ je dáno. Jestliže je $x=0$, pak je v relaci s $(0)_!$. Jestliže $x<0$, pak najdeme reprezentaci pro $-x$ a zapíšeme před reprezentaci symbol \textbf{`$-$`}. Nyní dokažme, že pro každé $x>0$ lze najít reprezentaci v faktoriálové číselné soustavě. Hledejme největší $n\in\mathbb{N}$, pro které platí: $n!\le x$. Takové jistě najdeme, protože posloupnost $\{(i+1)!\}_{i=0}^\infty$ je rostoucí a nekonečná. Následně si zapíšeme $a_{n-1}=\left\lfloor\frac{x}{n!}\right\rfloor$ ( protože základ soustavy je posunut o index ). Jelikož je $x\ge n!$, bude $a_{n-1}$ jistě rovno alespoň $1$. Následně uvažujme $x_1 = x - a_{n-1}\cdot n!$ (což je v podstatě zbytek po celočíselném dělení). Protože se jedná o zbytek po dělení, je jasné, že $x_1<x$, a proto po opakování konečného počtu kroků se dostaneme k $x_k=0$.  
 \end{proof}
 \begin{remark} Algoritmus pro hledání reprezentace čísla v faktoriálové číselné soustavě
 	\begin{enumerate}
@@ -1109,6 +1148,24 @@ Tato číselná soustava je vlastně rozšířením definičního oboru Fibonacc
 		\item Opakujeme operaci dokud $x_{i+1}\ne0$, nechť $n$ je počet iterací. ($n$ je jistě konečné, viz. důkaz \ref{faktDF})
 	\end{enumerate}
 \end{remark}
+\begin{definition}
+	Omezená množina velikosti i\newline
+	$$C_i=\{k,k\in\mathbb{N}_0,k\le i\}=\{0,\dots,i\}$$
+	Např. $C_5 = \{0,1,2,3,4,5\}$
+\end{definition}
+\begin{theorem}
+	Jestliže omezíme množinu $C$ ( z které vybíráme $a_i$ ) následovně: $C=C_{i+1}$ pro $a_i$, pak bude vyjádření jednoznačné. To jest, každé číslo x $\in\mathbb{N}_0$ lze vyjádřit následovně:
+	$$x=\sum_{i=0}^{\infty}a_i(i+1)!,\quad a_i\in C_{i+1}$$
+\end{theorem}
+\begin{proof}
+	Pokusme se obecně vyjádřit následující číslo $x=n!-1$, takovým příkladem může být třeba $x=5!-1=120-1=119$. Po zvolení $a_i = max (C_{i+1})$ pro $i< n-1$ a $a_i=0$ pro $i\ge n-1$ dosáhneme výsledku. Z definice pak $x=\sum_{i=0}^{\infty}a_i\cdot(i+1)!=1\cdot1!+2\cdot2!+3\cdot3!+\dots+(n-2)\cdot(n-2)!$
+	Dokažme tuto skutečnost indukcí.
+	V prvních případech ($n\in\{0,1,2\}$) je to triviální, ukažme si to na $n=3$.\newline
+	$$x=3!-1=5=1\cdot1!+2\cdot2!=1+4=5$$
+	Jako indukční krok předpokládejme, že tvrzení platí pro $n$, tj. číslo je $x=n!-1$. Sumu omezme na $x=\sum_{i=0}^{n-2}a_i\cdot(i+1)!$\newline
+	Nedodělané
+	Myšlenka je ta, že ukážu na největší číslo vyjádřené určitým počtem cifer a volbou jejich maxima, a "přehoupnutí" na jeden řád výše. Nevím jak validní by to byl důkaz, spíš jde o to aby si to čtenář rozmyslel a uvědomil ... tak možná by to měla být poznámka a ne věta.
+\end{proof}
 \begin{example}
 	$$z=77$$
 	$$77:4!=3\,zb.\,5$$
@@ -1154,7 +1211,7 @@ prací v daném roce nebo na práce řešené na externích pracovištích).
 	\bibitem{a} \href{https://homel.vsb.cz/~bou10/MA1/4.pdf}{Bouchala J., \emph{Matematická analýza ve Vesmíru}, strana 3}
 	\bibitem{b} \href{https://kconrad.math.uconn.edu/blurbs/ugradnumthy/Zinotes.pdf}{Keith C., \emph{The Gaussian integers}}
 	\bibitem{c} \href{https://dml.cz/handle/10338.dmlcz/142019}{Pelantová E. Starosta Š., \emph{Nestandardní zápisy čísel}}
-	\bibitem{d} \href{https://dml.cz/handle/10338.dmlcz/145849}{Snášel V. Bouchala J. Vodstřcil P., \emph{Kouzlo Fibonacciho kódování}}
+	\bibitem{d} Zeckendorfova věta ....
 \end{thebibliography}
 
 \end{document}

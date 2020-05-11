@@ -10,21 +10,21 @@
 
 \EnglishThesisTitle{Non-Standard Numeral Systems}
 
-\SubmissionDate{15. května 2020}
+\SubmissionDate{1. dubna 2020}
+%TODO update
 
-\Thanks{Děkuji panu RNDr. Pavlu Jahodovi, Ph.D. za odborné vedení práce, věcné připomínky, dobré rady a vstřícnost při konzultacích a vypracovávání bakalářské práce.}
+\Thanks{Děkuji panu RNDr. Pavlu Jahodovi, Ph.D. za odborné vedení práce, věcné připomínky, dobré rady a vstřícnost při
+	konzultacích a vypracovávání bakalářské práce.}
 
 \ThesisAssignmentImagePath{data/assignment}
+%TODO update
 
 %\AuthorDeclarationImageFile{data/authorDeclaration.jpg}
 % TODO print and scan
 
 % TODO 10 radku
-\CzechAbstract{Cílem této práce je prozkoumat různé nestandardní možnosti reprezentace čísel. Každý zná desítkovou soustavu ( ne nutně pod tímto označením ). Poměrně známé jsou i soustavy, které se používají v praxi
-\begin{itemize}\item v každém technickém oboru - dvojková a šestnáctková 
-\item při práci s časem, úhly - šedesátková
-	\end{itemize}
-Kromě těchto standardních soustav, kterýchž základ tvoří posloupnost mocnin určitého přirozeného čísla, můžeme jako základ soustavy definovat jinou posloupnost. Cílem této práce je prozkoumání pár takových soustav a zjištění jejich vlastností. U každé soustavy si řekneme, jaký je její definiční obor, jakým způsobem do této soustavy čísla převádíme a případně jestli a jak se dá sčítat a násobit.}
+\CzechAbstract{Cílem této práce je prozkoumat různé nestandardní možnosti zápisu či kódování čísel. Kromě všem známých soustav s číselným základem (dvojková, šestnáctková,...), jsou zde i zvláštní soustavy s jiným základem. Práce nám přiblíží spektrum nestandardních soustav. U každé soustavy se zabývá důkazem jednoznačnosti vyjádření čísel v daném tvaru a důkazem schopnosti vyjádřit libovolně zvolené čísla. Práce zkoumá nejen soustavy s celočíselným základem, ale i se základem iracionálním, či dokonce komplexním.}
+% TODO kolik
 
 \CzechKeywords{číselná soustava}
 
@@ -912,18 +912,6 @@ $$F_{-n} = (-1)^{n+1}\cdot F_n$$
 	V negafibonacciho číselné soustavě zapisujeme:
 	$\varphi(x) =  (\posla)_F$\newline
 \end{agreement}
-\begin{remark}
-	Podle definice se jedná o nejednoznačnou číselnou soustavu, což si ukážeme v následujícím příkladu.
-\end{remark}
-\begin{example}
-	Každé číslo, vezměme si například $27$, můžeme zapsat více způsoby (nekonečně mnoha).\newline
-	\begin{center}\begin{tabular}{c c c c c}
-			$27$ & = & $34-8+1$         & = & $ (100100001)_F$     \\
-			     & = & $34-21+13+1$     & = & $ (111000001)_F$     \\
-			     & = & $89-55-8+1$      & = & $ (11000100001)_F$   \\
-			     & = & $233-144-55-8+1$ & = & $ (1101000100001)_F$ \\
-		\end{tabular}\end{center}
-\end{example}
 \begin{theorem}
 	Analogie Zeckendorfovy věty pro fibonacciho kód. \cite{d}\newline
 	Pro každé celé číslo existuje posloupnost $\{a_n\}_{n=0}^\infty$ splňující podmínky:
@@ -936,22 +924,21 @@ $$F_{-n} = (-1)^{n+1}\cdot F_n$$
 	Buď libovolné $z\in\mathbb{Z}$ dáno. Rozdělme si jej na případy.
 	\begin{itemize}
 		\item $z=0$ V tomhle případě klademe každý člen posloupnosti $a_i = 0$
-		\item $z<0$ Označme $n \in \mathbb{N}$ nejmenší index, pro který platí $z>-F_{-n}$ a položme $a_{n-2}=1$ ( poznámka : $(n-2)$ namísto $(n-1)$, protože základ je posunut $\{F_{-(i+1)}\}_{i=0}^{\infty}$, zároveň díky podmínce $z<0$ nebude index nikdy záporný ). Takový index jistě najdeme, protože z negafibonacciho posloupnosti lze vybrat posloupnost vybranou, která je nekonečná a klesající. Nyní uvažujme o čísle $z_{1} = -F_{-(n-1)}+z$.
+		\item $z<0$ Označme $n \in \mathbb{N}$ nejmenší index, pro který platí $z>-F_{-n}$ a položme $a_{n-2}=1$ ( poznámka : $(n-2)$ namísto $(n-1$), protože základ je posunut $\{F_{-(i+1)}\}_{i=0}^{\infty}$ ). Takový index jistě najdeme, protože z negafibonacciho posloupnosti lze vybrat posloupnost vybranou, která je nekonečná a klesající. Nyní uvažujme o čísle $z_{1} = -F_{-(n-1)}+z$.
 		      Uvědomme si, že $F_{-(n-1)}$ je záporné, protože $F_{-n}$ je kladné ( $z>-F_{-n}$ ). Zároveň víme, že $-F_{-(n-1)}$ je menší než $-2z$. Jak toto víme? Dokážeme sporem. Předpokládejme, že
 		      $$-F_{-(n-1)} \ge -2z$$
 		      $$F_{-(n-1)} \le 2z < z$$Poslední nerovnost platí díky tomu, že $z < 0$.
 		      $$-F_{-(n-2)}\le\frac{F_{-(n-1)}}{2}\le z$$
 		      Zde vidíme, že by existovalo $(n-2)$, pro které platí $z>-F_{-(n-2)}$, což je v rozporu s minimalitou $n$. Když víme, že $-F_{-(n-1)}$ je menší než $-2z$, pak jistě bude platit $|z_1|<|z|$. S číslem $z_1$ provedeme znova stejnou úvahu, kde dvojice $z_1,z_2$ vystřídá dvojici $z, z_1$. Posloupnost čísel $z_{k}$ se v konečném počtu kroků předchozích úvah dostane k nule. V případě, že nějaké $z_i > 0$, se pomocí vysvětlivek v $z>0$ taky v následujícím kroku přiblížíme nule.
-		\item $z>0$ Označme $n \in \mathbb{N}$ nejmenší index, pro který platí $z\le-F_{-n}$ a položme $a_{n-2}=1$ ( $(n-2)$ můžeme použít jako index, protože díky podmínce $z>0$ nebude nikdy záporný ). Takový index jistě najdeme, protože z negafibonacciho posloupnosti lze vybrat posloupnost vybranou, která je nekonečná a roustoucí. Nyní uvažujme o čísle $z_{1} = -F_{-(n-1)}+z$.
+		\item $z>0$ Označme $n \in \mathbb{N}$ nejmenší index, pro který platí $z\le-F_{-n}$ a položme $a_{n-2}=1$. Takový index jistě najdeme, protože z negafibonacciho posloupnosti lze vybrat posloupnost vybranou, která je nekonečná a roustoucí. Nyní uvažujme o čísle $z_{1} = -F_{-(n-1)}+z$.
 		      Uvědomme si, že $F_{-(n-1)}$ je kladné, protože $F_{-n}$ je záporné ( $z\le-F_{-n}$ ). Zároveň víme, že $-F_{-(n-1)}$ je větší než $-2z$. Jak toto víme? Dokážeme sporem. Předpokládejme, že
 		      $$-F_{-(n-1)} \le -2z$$
 		      $$F_{-(n-1)} \ge 2z$$
 		      $$-F_{-(n-2)}\ge\frac{F_{-(n-1)}}{2}\ge z$$
 		      Zde vidíme, že by existovalo $(n-2)$, pro které platí $z\le-F_{-(n-2)}$, což je v rozporu s minimalitou $n$. Když víme, že $-F_{-(n-1)}$ je větší než $-2z$, pak jistě bude platit $|z_1|<|z|$. 
 	\end{itemize}
-	Jestliže je číslo nenulové, pak klademe $a_i=0$ pro $i>n-2$, kde $n$ je zprvu zvolený nejmenší index. \newline
-	$\{a_i\}_{i=0}^\infty$ je posloupnost s konečným počtem nenulových členu, proto platí  $z=\sum_{i=0}^{k_0}a_i\cdot F_{-(i+1)}$, kde $z_{k_0}=0$.\newline
-	Takto zkonstruována posloupnost $\posla$ nebude mít nikdy dvě jedničky vedle sebe. V případě kdyby vedle sebe byly, pak jsme volili špatně nejmenší $n$.
+	Platí tedy $z=\sum_{i=0}^{k_0}a_i\cdot F_{-(i+1)}$, kde $z_{k_0}=0$.\newline
+	Takto zkonstruována posloupnost $\posla$ nebude mít nikdy dvě jedničky vedle sebe. V případě kdyby byly, pak jsme volili špatně nejmenší $n$.
 \end{proof}
 
 \begin{remark} Algoritmus pro hledání reprezentace čísla v negafibonacciho číselné soustavě
@@ -1044,7 +1031,7 @@ Sčítání čísel v negafibonacciho číselné soustavě můžeme provádět p
 	      \end{equation}
 	      
 	      Z posledního řádku vyčteme, že $a + b = (100010001)_F$.\newline A skutečně, $F_{-9}+F_{-5}+F_{-1}=34+5+1=\underline{40}=17+23$
-	      
+	    
 \end{itemize}
 \begin{remark}
 	Kvůli charakteru této soustavy nemůžeme hovořit o hledání opačného čísla ani o násobení čísel. V některých případech bychom se k opačnému číslu dobrali, ale postup nelze generalizovat a najít číslo vždy.\newline
@@ -1062,7 +1049,7 @@ Sčítání čísel v negafibonacciho číselné soustavě můžeme provádět p
 	\end{equation}
 	a opravdu $F_{-6}+F_{-3}=-8+2=-6=(100100)_F$
 \end{remark}
-\subsection{Výhody a nevýhody negafibonacciho číselné soustavy}
+\subsection{Výhody a nevýhody faktoriálové číselné soustavy}
 Tato číselná soustava je vlastně rozšířením definičního oboru Fibonacciho kódování \cite{d} na obor celých čísel. Proto má stejnou výhodu. Když se správně číslo reprezentuje, pak nemá nikdy dvě jedničky vedle sebe. Toho se dá využít při předávání dat, kdy se obě strany dohodnou, že každou n-tici znaků oddělí dvěmi jedničkami. S tímhle přístupem je pak mnohem jednodušší odhalit chybu při přenosu. Jakmile mezi oddělovači(dvě jedničky) neprojde n-tice znaků, ale jen (n-1)-tice. Samozřejme znaky je myšlen binární signál, a proto by tento přístup byl vhodný pro přenášení digitálních dat. Kromě toho je výhodou definiční obor, není třeba definovat jakým způsobem se při přenosu označí záporné číslo.
 
 
@@ -1098,8 +1085,7 @@ Tato číselná soustava je vlastně rozšířením definičního oboru Fibonacc
 		\sum_{i=0}^{\infty}a_i\cdot (i+1)!$. To jest $D(\varphi)=\mathbb{N}_0$
 \end{theorem}
 \begin{proof}\label{faktDF}
-	Nechť $x\in\mathbb{Z}$ je dáno. Jestliže je $x=0$, pak je v relaci s $(0)_!$. V případě, že $x\ne0$ hledejme největší $n\in\mathbb{N}$, pro které platí: $n!\le x$. Takové jistě najdeme, protože posloupnost $\{(i+1)!\}_{i=0}^\infty$ je rostoucí a nekonečná. Následně si zapíšeme $a_{n-1}=\left\lfloor\frac{x}{n!}\right\rfloor$ ( protože základ soustavy je posunut ). Jelikož je $x\ge n!$, bude $a_{n-1}$ jistě rovno alespoň $1$. Následně uvažujme $x_1 = x - a_{n-1}\cdot n!$ (což je v podstatě zbytek po celočíselném dělení). 
-	$x_1$ je zbytek po dělení čísla x číslem $n!$, proto platí $x_1<n!\le x$. Stejnou úvahu provádíme dokud nedostaneme $x_k=0$. Místo původního čísla $x$ dosazujeme $x_k$. Obdržíme další cifru $a_i$ a celé číslo$x_{k+1}<x_k$. Po konečném kroku se dostaneme k $x_k=0$. Všechny členy posloupnosti, které nebyly určeny položíme $a_i=0$ včetně těch, kde $i\ge n$ a $n$ volíme zprvu zvolené. Pro takto vytvořenou posloupnost platí: $x=\sum_{i=0}^\infty a_i\cdot(i + 1)!$
+	Nechť $x\in\mathbb{Z}$ je dáno. Jestliže je $x=0$, pak je v relaci s $(0)_!$. Jestliže $x<0$, pak najdeme reprezentaci pro $-x$ a zapíšeme před reprezentaci symbol \textbf{`$-$`}. Nyní dokažme, že pro každé $x>0$ lze najít reprezentaci v faktoriálové číselné soustavě. Hledejme největší $n\in\mathbb{N}$, pro které platí: $n!\le x$. Takové jistě najdeme, protože posloupnost $\{(i+1)!\}_{i=0}^\infty$ je rostoucí a nekonečná. Následně si zapíšeme $a_{n-1}=\left\lfloor\frac{x}{n!}\right\rfloor$ ( protože základ soustavy je posunut o index ). Jelikož je $x\ge n!$, bude $a_{n-1}$ jistě rovno alespoň $1$. Následně uvažujme $x_1 = x - a_{n-1}\cdot n!$ (což je v podstatě zbytek po celočíselném dělení). Protože se jedná o zbytek po dělení, je jasné, že $x_1<x$, a proto po opakování konečného počtu kroků se dostaneme k $x_k=0$.  
 \end{proof}
 \begin{remark} Algoritmus pro hledání reprezentace čísla v faktoriálové číselné soustavě
 	\begin{enumerate}
@@ -1109,6 +1095,24 @@ Tato číselná soustava je vlastně rozšířením definičního oboru Fibonacc
 		\item Opakujeme operaci dokud $x_{i+1}\ne0$, nechť $n$ je počet iterací. ($n$ je jistě konečné, viz. důkaz \ref{faktDF})
 	\end{enumerate}
 \end{remark}
+\begin{definition}
+	Omezená množina velikosti i\newline
+	$$C_i=\{k,k\in\mathbb{N}_0,k\le i\}=\{0,\dots,i\}$$
+	Např. $C_5 = \{0,1,2,3,4,5\}$
+\end{definition}
+\begin{theorem}
+	Jestliže omezíme množinu $C$ ( z které vybíráme $a_i$ ) následovně: $C=C_{i+1}$ pro $a_i$, pak bude vyjádření jednoznačné. To jest, každé číslo x $\in\mathbb{N}_0$ lze vyjádřit následovně:
+	$$x=\sum_{i=0}^{\infty}a_i(i+1)!,\quad a_i\in C_{i+1}$$
+\end{theorem}
+\begin{proof}
+	Pokusme se obecně vyjádřit následující číslo $x=n!-1$, takovým příkladem může být třeba $x=5!-1=120-1=119$. Po zvolení $a_i = max (C_{i+1})$ pro $i< n-1$ a $a_i=0$ pro $i\ge n-1$ dosáhneme výsledku. Z definice pak $x=\sum_{i=0}^{\infty}a_i\cdot(i+1)!=1\cdot1!+2\cdot2!+3\cdot3!+\dots+(n-2)\cdot(n-2)!$
+	Dokažme tuto skutečnost indukcí.
+	V prvních případech ($n\in\{0,1,2\}$) je to triviální, ukažme si to na $n=3$.\newline
+	$$x=3!-1=5=1\cdot1!+2\cdot2!=1+4=5$$
+	Jako indukční krok předpokládejme, že tvrzení platí pro $n$, tj. číslo je $x=n!-1$. Sumu omezme na $x=\sum_{i=0}^{n-2}a_i\cdot(i+1)!$\newline
+	Nedodělané
+	Myšlenka je ta, že ukážu na největší číslo vyjádřené určitým počtem cifer a volbou jejich maxima, a "přehoupnutí" na jeden řád výše. Nevím jak validní by to byl důkaz, spíš jde o to aby si to čtenář rozmyslel a uvědomil ... tak možná by to měla být poznámka a ne věta.
+\end{proof}
 \begin{example}
 	$$z=77$$
 	$$77:4!=3\,zb.\,5$$

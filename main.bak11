@@ -919,10 +919,10 @@ $$F_{-n} = (-1)^{n+1}\cdot F_n$$
 	Každé číslo, vezměme si například $27$, můžeme zapsat více způsoby (nekonečně mnoha).\newline
 	\begin{center}\begin{tabular}{c c c c c}
 			$27$ & = & $34-8+1$         & = & $ (100100001)_F$     \\
-			     & = & $34-21+13+1$     & = & $ (111000001)_F$     \\
-			     & = & $89-55-8+1$      & = & $ (11000100001)_F$   \\
-			     & = & $233-144-55-8+1$ & = & $ (1101000100001)_F$ \\
-		\end{tabular}\end{center}
+			& = & $34-21+13+1$     & = & $ (111000001)_F$     \\
+			& = & $89-55-8+1$      & = & $ (11000100001)_F$   \\
+			& = & $233-144-55-8+1$ & = & $ (1101000100001)_F$ \\
+	\end{tabular}\end{center}
 \end{example}
 \begin{theorem}
 	Analogie Zeckendorfovy věty pro fibonacciho kód. \cite{d}\newline
@@ -1099,7 +1099,7 @@ Tato číselná soustava je vlastně rozšířením definičního oboru Fibonacc
 \end{theorem}
 \begin{proof}\label{faktDF}
 	Nechť $x\in\mathbb{Z}$ je dáno. Jestliže je $x=0$, pak je v relaci s $(0)_!$. V případě, že $x\ne0$ hledejme největší $n\in\mathbb{N}$, pro které platí: $n!\le x$. Takové jistě najdeme, protože posloupnost $\{(i+1)!\}_{i=0}^\infty$ je rostoucí a nekonečná. Následně si zapíšeme $a_{n-1}=\left\lfloor\frac{x}{n!}\right\rfloor$ ( protože základ soustavy je posunut ). Jelikož je $x\ge n!$, bude $a_{n-1}$ jistě rovno alespoň $1$. Následně uvažujme $x_1 = x - a_{n-1}\cdot n!$ (což je v podstatě zbytek po celočíselném dělení). 
-	$x_1$ je zbytek po dělení čísla x číslem $n!$, proto platí $x_1<n!\le x$. Stejnou úvahu provádíme dokud nedostaneme $x_k=0$. Místo původního čísla $x$ dosazujeme $x_k$. Obdržíme další cifru $a_i$ a celé číslo$x_{k+1}<x_k$. Po konečném kroku se dostaneme k $x_k=0$. Všechny členy posloupnosti, které nebyly určeny položíme $a_i=0$ včetně těch, kde $i\ge n$ a $n$ volíme zprvu zvolené. Pro takto vytvořenou posloupnost platí: $x=\sum_{i=0}^\infty a_i\cdot(i + 1)!$
+	 $x_1$ je zbytek po dělení čísla x číslem $n!$, proto platí $x_1<n!\le x$. Stejnou úvahu provádíme dokud nedostaneme $x_k=0$. Místo původního čísla $x$ dosazujeme $x_k$. Obdržíme další cifru $a_i$ a celé číslo$x_{k+1}<x_k$. Po konečném kroku se dostaneme k $x_k=0$. Všechny členy posloupnosti, které nebyly určeny položíme $a_i=0$ včetně těch, kde $i\ge n$ a $n$ volíme zprvu zvolené. Pro takto vytvořenou posloupnost platí: $x=\sum_{i=0}^\infty a_i\cdot(i + 1)!$
 \end{proof}
 \begin{remark} Algoritmus pro hledání reprezentace čísla v faktoriálové číselné soustavě
 	\begin{enumerate}
