@@ -6,42 +6,46 @@
 \babel@toc {english}{}
 \babel@toc {czech}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam pou\IeC {\v z}it\IeC {\'y}ch zkratek a symbol\IeC {\r u}}{6}{Doc-Start}% 
+\contentsline {section}{Seznam pou\IeC {\v z}it\IeC {\'y}ch zkratek a symbol\IeC {\r u}}{7}{Doc-Start}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}\IeC {\'U}vod}{7}{section.1}% 
+\contentsline {section}{\numberline {1}\IeC {\'U}vod}{8}{section.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}Definice}{7}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.1}Definice}{8}{subsection.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}N\IeC {\'a}zorn\IeC {\'e} p\IeC {\v r}\IeC {\'\i }klady}{10}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.2}N\IeC {\'a}zorn\IeC {\'e} p\IeC {\v r}\IeC {\'\i }klady}{11}{subsection.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Negabin\IeC {\'a}rn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{11}{section.2}% 
+\contentsline {section}{\numberline {2}Negabin\IeC {\'a}rn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{12}{section.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}S\IeC {\v c}\IeC {\'\i }t\IeC {\'a}n\IeC {\'\i } cel\IeC {\'y}ch \IeC {\v c}\IeC {\'\i }sel v negabin\IeC {\'a}rn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{16}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.1}S\IeC {\v c}\IeC {\'\i }t\IeC {\'a}n\IeC {\'\i } cel\IeC {\'y}ch \IeC {\v c}\IeC {\'\i }sel v negabin\IeC {\'a}rn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{17}{subsection.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Nalezen\IeC {\'\i } \IeC {\v c}\IeC {\'\i }sla opa\IeC {\v c}n\IeC {\'e}ho v negabin\IeC {\'a}rn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{17}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.2}Nalezen\IeC {\'\i } \IeC {\v c}\IeC {\'\i }sla opa\IeC {\v c}n\IeC {\'e}ho v negabin\IeC {\'a}rn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{18}{subsection.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}N\IeC {\'a}soben\IeC {\'\i } v negabin\IeC {\'a}rn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{18}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.3}N\IeC {\'a}soben\IeC {\'\i } v negabin\IeC {\'a}rn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{19}{subsection.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Komplexn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{20}{section.3}% 
+\contentsline {subsection}{\numberline {2.4}V\IeC {\'y}hody a nev\IeC {\'y}hody negabin\IeC {\'a}rn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustavy}{20}{subsection.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}S\IeC {\v c}\IeC {\'\i }t\IeC {\'a}n\IeC {\'\i } gaussovsk\IeC {\'y}ch cel\IeC {\'y}ch \IeC {\v c}\IeC {\'\i }sel v komplexn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{26}{subsection.3.1}% 
+\contentsline {section}{\numberline {3}Komplexn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{21}{section.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Nalezen\IeC {\'\i } opa\IeC {\v c}n\IeC {\'e}ho \IeC {\v c}\IeC {\'\i }sla v komplexn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{27}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.1}S\IeC {\v c}\IeC {\'\i }t\IeC {\'a}n\IeC {\'\i } gaussov\IeC {\'y}ch cel\IeC {\'y}ch \IeC {\v c}\IeC {\'\i }sel v komplexn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{28}{subsection.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}N\IeC {\'a}soben\IeC {\'\i } v komplexn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{28}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.2}Nalezen\IeC {\'\i } opa\IeC {\v c}n\IeC {\'e}ho \IeC {\v c}\IeC {\'\i }sla v komplexn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{30}{subsection.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Negafibonacciho \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{30}{section.4}% 
+\contentsline {subsection}{\numberline {3.3}N\IeC {\'a}soben\IeC {\'\i } v komplexn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{31}{subsection.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}S\IeC {\v c}\IeC {\'\i }t\IeC {\'a}n\IeC {\'\i } cel\IeC {\'y}ch \IeC {\v c}\IeC {\'\i }sel v negafibonacciho \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{32}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {3.4}V\IeC {\'y}hody a nev\IeC {\'y}hody komplexn\IeC {\'\i } \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustavy}{32}{subsection.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}V\IeC {\'y}hody a nev\IeC {\'y}hody negafibonacciho \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustavy}{34}{subsection.4.2}% 
+\contentsline {section}{\numberline {4}Negafibonacciho \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{33}{section.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Faktori\IeC {\'a}lov\IeC {\'a} \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{35}{section.5}% 
+\contentsline {subsection}{\numberline {4.1}S\IeC {\v c}\IeC {\'\i }t\IeC {\'a}n\IeC {\'\i } cel\IeC {\'y}ch \IeC {\v c}\IeC {\'\i }sel v negafibonacciho \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{36}{subsection.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}S\IeC {\v c}\IeC {\'\i }t\IeC {\'a}n\IeC {\'\i } cel\IeC {\'y}ch \IeC {\v c}\IeC {\'\i }sel v faktori\IeC {\'a}lov\IeC {\'e} \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{36}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {4.2}V\IeC {\'y}hody a nev\IeC {\'y}hody negafibonacciho \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustavy}{37}{subsection.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}V\IeC {\'y}hody a nev\IeC {\'y}hody faktori\IeC {\'a}lov\IeC {\'e} \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustavy}{37}{subsection.5.2}% 
+\contentsline {section}{\numberline {5}Faktori\IeC {\'a}lov\IeC {\'a} \IeC {\v c}\IeC {\'\i }seln\IeC {\'a} soustava}{38}{section.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{38}{section.6}% 
+\contentsline {subsection}{\numberline {5.1}S\IeC {\v c}\IeC {\'\i }t\IeC {\'a}n\IeC {\'\i } cel\IeC {\'y}ch \IeC {\v c}\IeC {\'\i }sel v faktori\IeC {\'a}lov\IeC {\'e} \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustav\IeC {\v e}}{39}{subsection.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Odkazy}{39}{section.6}% 
+\contentsline {subsection}{\numberline {5.2}V\IeC {\'y}hody a nev\IeC {\'y}hody faktori\IeC {\'a}lov\IeC {\'e} \IeC {\v c}\IeC {\'\i }seln\IeC {\'e} soustavy}{40}{subsection.5.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{41}{section.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Literatura}{42}{section.6}% 

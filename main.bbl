@@ -1,0 +1,191 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{maUniverse}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=cd3651b350a11da7632e230592713848}{%
+           family={J.},
+           familyi={J\bibinitperiod},
+           given={Bouchala},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{cd3651b350a11da7632e230592713848}
+      \strng{fullhash}{cd3651b350a11da7632e230592713848}
+      \strng{bibnamehash}{cd3651b350a11da7632e230592713848}
+      \strng{authorbibnamehash}{cd3651b350a11da7632e230592713848}
+      \strng{authornamehash}{cd3651b350a11da7632e230592713848}
+      \strng{authorfullhash}{cd3651b350a11da7632e230592713848}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Matematická analýza ve Vesmíru}
+      \verb{urlraw}
+      \verb https://homel.vsb.cz/~bou10/MA_1/4.pdf
+      \endverb
+      \verb{url}
+      \verb https://homel.vsb.cz/~bou10/MA_1/4.pdf
+      \endverb
+    \endentry
+    \entry{pcProg}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c7986b8f9a74e8a99dd8346c98b35f3e}{%
+           family={Knuth},
+           familyi={K\bibinitperiod},
+           given={D.E.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education}%
+      }
+      \strng{namehash}{c7986b8f9a74e8a99dd8346c98b35f3e}
+      \strng{fullhash}{c7986b8f9a74e8a99dd8346c98b35f3e}
+      \strng{bibnamehash}{c7986b8f9a74e8a99dd8346c98b35f3e}
+      \strng{authorbibnamehash}{c7986b8f9a74e8a99dd8346c98b35f3e}
+      \strng{authornamehash}{c7986b8f9a74e8a99dd8346c98b35f3e}
+      \strng{authorfullhash}{c7986b8f9a74e8a99dd8346c98b35f3e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780321635761}
+      \field{title}{Art of Computer Programming, Volume 2: Seminumerical Algorithms}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://books.google.cz/books?id=Zu-HAwAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.cz/books?id=Zu-HAwAAQBAJ
+      \endverb
+    \endentry
+    \entry{gaussInt}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=85c2999effc03393762b41c21fb72212}{%
+           family={C.},
+           familyi={C\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{85c2999effc03393762b41c21fb72212}
+      \strng{fullhash}{85c2999effc03393762b41c21fb72212}
+      \strng{bibnamehash}{85c2999effc03393762b41c21fb72212}
+      \strng{authorbibnamehash}{85c2999effc03393762b41c21fb72212}
+      \strng{authornamehash}{85c2999effc03393762b41c21fb72212}
+      \strng{authorfullhash}{85c2999effc03393762b41c21fb72212}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Gaussian integers}
+      \verb{urlraw}
+      \verb https://kconrad.math.uconn.edu/blurbs/ugradnumthy/Zinotes.pdf
+      \endverb
+      \verb{url}
+      \verb https://kconrad.math.uconn.edu/blurbs/ugradnumthy/Zinotes.pdf
+      \endverb
+    \endentry
+    \entry{norm}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=42d29c56c90b213dc917ef6aefa4f563}{%
+           family={V.},
+           familyi={V\bibinitperiod},
+           given={Knichal},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{42d29c56c90b213dc917ef6aefa4f563}
+      \strng{fullhash}{42d29c56c90b213dc917ef6aefa4f563}
+      \strng{bibnamehash}{42d29c56c90b213dc917ef6aefa4f563}
+      \strng{authorbibnamehash}{42d29c56c90b213dc917ef6aefa4f563}
+      \strng{authornamehash}{42d29c56c90b213dc917ef6aefa4f563}
+      \strng{authorfullhash}{42d29c56c90b213dc917ef6aefa4f563}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Čísla Gaussova. [I.]}
+      \verb{urlraw}
+      \verb https://dml.cz/handle/10338.dmlcz/123910
+      \endverb
+      \verb{url}
+      \verb https://dml.cz/handle/10338.dmlcz/123910
+      \endverb
+    \endentry
+    \entry{giApplic}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0cd9fcda69f3ca9245e56f4e0a723348}{%
+           family={Bouyuklieva},
+           familyi={B\bibinitperiod},
+           given={Stefka},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0cd9fcda69f3ca9245e56f4e0a723348}
+      \strng{fullhash}{0cd9fcda69f3ca9245e56f4e0a723348}
+      \strng{bibnamehash}{0cd9fcda69f3ca9245e56f4e0a723348}
+      \strng{authorbibnamehash}{0cd9fcda69f3ca9245e56f4e0a723348}
+      \strng{authornamehash}{0cd9fcda69f3ca9245e56f4e0a723348}
+      \strng{authorfullhash}{0cd9fcda69f3ca9245e56f4e0a723348}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{Applications of the Gaussian integers in coding theory}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1142/9789814541817_0003
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/268163467_Applications_of_the_Gaussian_integers_in_coding_theory
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/268163467_Applications_of_the_Gaussian_integers_in_coding_theory
+      \endverb
+    \endentry
+    \entry{fibCoding}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=04c1f8d5c4ea2924dc1727d21d83d61a}{%
+           family={P.},
+           familyi={P\bibinitperiod},
+           given={Snášel\bibnamedelimb V.\bibnamedelimi Bouchala\bibnamedelimb J.\bibnamedelimi Vodstřcil},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{04c1f8d5c4ea2924dc1727d21d83d61a}
+      \strng{fullhash}{04c1f8d5c4ea2924dc1727d21d83d61a}
+      \strng{bibnamehash}{04c1f8d5c4ea2924dc1727d21d83d61a}
+      \strng{authorbibnamehash}{04c1f8d5c4ea2924dc1727d21d83d61a}
+      \strng{authornamehash}{04c1f8d5c4ea2924dc1727d21d83d61a}
+      \strng{authorfullhash}{04c1f8d5c4ea2924dc1727d21d83d61a}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Kouzlo Fibonacciho kódování}
+      \verb{urlraw}
+      \verb https://dml.cz/handle/10338.dmlcz/145849
+      \endverb
+      \verb{url}
+      \verb https://dml.cz/handle/10338.dmlcz/145849
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

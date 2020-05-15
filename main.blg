@@ -1,0 +1,14 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'main.blg'
+[35] biber-darwin:315> INFO - === Fri May 15, 2020, 16:22:23
+[55] Biber.pm:371> INFO - Reading 'main.bcf'
+[138] Biber.pm:889> INFO - Found 6 citekeys in bib section 0
+[151] Biber.pm:4093> INFO - Processing section 0
+[162] Biber.pm:4254> INFO - Looking for bibtex format file 'citation.bib' for section 0
+[163] bibtex.pm:1523> INFO - LaTeX decoding ...
+[169] bibtex.pm:1340> INFO - Found BibTeX data source 'citation.bib'
+[228] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[228] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'variable = shifted' with 'variable = non-ignorable'
+[228] Biber.pm:3921> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'cs-CZ'
+[239] bbl.pm:636> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[241] bbl.pm:739> INFO - Output to main.bbl

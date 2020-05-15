@@ -1,0 +1,48 @@
+@misc{maUniverse,
+    author    = "Bouchala J.",
+    title     = "Matematická analýza ve Vesmíru",
+    url       = "https://homel.vsb.cz/~bou10/MA_1/4.pdf"
+}
+
+@book{pcProg,
+  title={Art of Computer Programming, Volume 2: Seminumerical Algorithms},
+  author={Knuth, D.E.},
+  isbn={9780321635761},
+  url={https://books.google.cz/books?id=Zu-HAwAAQBAJ},
+  year={2014},
+  publisher={Pearson Education}
+}
+
+@misc{gaussInt,
+    author    = "Keith C.",
+    title     = "The Gaussian integers",
+    url       = "https://kconrad.math.uconn.edu/blurbs/ugradnumthy/Zinotes.pdf"
+}
+
+@misc{nonStandard,
+    author    = "Pelantová E. Starosta Š.",
+    title     = "Nestandardní zápisy čísel",
+    url       = "https://dml.cz/handle/10338.dmlcz/142019"
+}
+
+@misc{fibCoding,
+author    = "Snášel V. Bouchala J. Vodstřcil P.",
+title     = "Kouzlo Fibonacciho kódování",
+url       = "https://dml.cz/handle/10338.dmlcz/145849"
+}
+
+@misc{norm,
+    author    = "Knichal V.",
+    title     = "Čísla Gaussova. [I.]",
+    url       = "https://dml.cz/handle/10338.dmlcz/123910"
+}
+
+@article{giApplic,
+author = "Bouyuklieva, Stefka",
+	year = "2013",
+	month = "11",
+	pages = "",
+	title = "Applications of the Gaussian integers in coding theory",
+doi = "10.1142/9789814541817_0003",
+url = "https://www.researchgate.net/publication/268163467_Applications_of_the_Gaussian_integers_in_coding_theory"
+}
