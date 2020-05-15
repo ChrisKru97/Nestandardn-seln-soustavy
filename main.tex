@@ -16,14 +16,14 @@
 \item při práci s časem, úhly - šedesátková
 \end{itemize}
 Kromě těchto standardních soustav, kterýchž základ tvoří posloupnost mocnin určitého\newline přirozeného čísla, můžeme jako základ soustavy definovat jinou posloupnost.\newline Prozkoumáme 4 číselné soustavy a u každé si řekneme jaký je její definiční obor,\newline jakým způsobem do této soustavy čísla převádíme, jestli se dá sčítat a násobit, případně jak takové operace provádíme.}
-\CzechKeywords{negabinární číselná soustava, faktoriálová číselná soustava, Fibonacciho kódování}
+\CzechKeywords{číselná soustava, negabinární číselná soustava, faktoriálová číselná soustava, Fibonacciho kódování}
 \EnglishAbstract{The goal of this thesis is to explore various non-standard possibilities of representing numbers. The decimal number system is universally well known ( not necessarily under this label ).\newline Other common number systems that are used in practice are
 \begin{itemize}
 \item in technical fields - binary and hexadecimal
 \item when working with time or angles - sexagesimal
 \end{itemize}
 Apart from standard systems (such as those mentioned above ), the base of which is a sequence of powers of a natural number, we can also use different sequences as base. We will examine 4 non-standard numeral systems and their characteristics. Such characteristics will include determining the domain of a system, the steps to achieve conversion, whether it is possible to add and multiply in the given numeral system, and if so, then how.}
-\EnglishKeywords{negabinary numeral system, factorial number system, Fibonacci coding}
+\EnglishKeywords{numeral system, negabinary numeral system, factorial number system, Fibonacci coding}
 \AddAcronym{$\mathbb{N}$}{Množina přirozených čísel}
 \AddAcronym{$\mathbb{N}_0$}{Množina nezáporných celých čísel}
 \AddAcronym{$\mathbb{Z}$}{Množina celých čísel}
@@ -42,6 +42,7 @@ Apart from standard systems (such as those mentioned above ), the base of which 
 \begin{document}
 \MakeTitlePages
 \section{Úvod}
+Pojem číselná soustava je jistě znám každému, kdo studuje technickou školu. Jedná se o\newline systém, který nám umožňuje změnit množinu znaků, kterými reprezentujeme číslo.\newline Jak logika napovídá, čím více použitelných znaků pro reprezentaci máme, tím kratší bude\newline výsledná reprezentace (posloupnost znaků určující reprezentované číslo). Zprvu si definujeme co přesně číselná soustava je a jaké má vlastnosti, abychom se této definice mohli po zbytek práce držet. Následně se podíváme na 4 různé číselné soustavy. V každé kapitole, která se zabývá\newline soustavou bude nejdůležitější důkaz definičního oboru, který nám zajistí, že tímto způsobem\newline můžeme reprezentovat libovolné číslo z nějaké množiny. Jistě by se nikomu nelíbila\newline číselná soustava, která umožňuje reprezentovat jen konečný počet čísel, proto se budeme snažit, aby definičním oborem byla nekonečná množina. Kromě důkazu definičního oboru si popíšeme algoritmus, kterým budeme schopni převést číslo na reprezentaci v číselné soustavě.\newline A v neposlední řadě budeme experimentovat s myšlenkou, zda se dají reprezentace čísel v číselné soustavě sčítat, případně násobit. Jestliže dvě libovolná čísla půjdou sečíst a hodnota výsledku se bude opravdu rovnat součtu dvou čísel (což vlastně znamená, že číselná soustava jako zobrazení je homomorfní pro operaci sčítání), pak si taky ukážeme jak toho docílit. Stejnou úvahu provedeme ohledně operace násobení. Na konci každé kapitoly budeme uvažovat nad tím, zda by se tato soustava dala využít v nějakém reálném případě.\newpage
 \subsection{Definice}
 Připomeňme, že libovolnou podmnožinu $\varphi$ kartézského součinu $A \times B$ nazýváme binární relací (dále jen relací) mezi prvky z množiny $A$ a prvky z množiny $B$. Binární dvojici $(a,b)\in \varphi$ budeme značit $\varphi(a) = b$ a $\varphi \subseteq A \times B$ budeme značit $\varphi : A \rightarrow B$, tak jak je to obvyklé u zobrazení,\newline jež jsou speciálními případy relací.
 \newline Následující definici jsme převzali z materiálu pro výuku matematické analýzy \cite{maUniverse}.
@@ -1026,8 +1027,7 @@ Sčítání čísel v faktoriálové číselné soustavě můžeme provádět po
 		\end{tabular} \end{equation} Z posledního řádku vyčteme, že $a + b = (11120)_!$\newline A skutečně, $1\cdot5!+1\cdot4!+1\cdot3!+2\cdot2!=120+24+6+4=\underline{154}=63+91$
 \end{example}
 \subsection{Výhody a nevýhody faktoriálové číselné soustavy} Tato číselná soustava nemá žádné výhody co se týče použitelnosti. Hlavním problémem je, jak jsme zmínili v úvodu, rostoucí potřeba pro cifry při převodu větších čísel. Postrádá oproti předchozím soustavám výhodu reprezentace záporných čísel bez pomocných symbolů.\newline Co ale této soustavě nemůžeme upřít je její jednoduchost, hezké využití faktoriálu,\newline příjemné sčítání. V praxi se tedy dá použít jedině pro výuku.
-\section{Závěr} Závěrečná kapitola obsahuje zhodnocení dosažených výsledků se zvlášť vyznačeným vlastním přínosem studenta. Povinně se zde objeví i zhodnocení z pohledu dalšího vývoje tématu práce, student uvede náměty vycházející ze zkušeností s řešeným
-tématem a uvede rovněž návaznosti na právě dokončené související práce (řešené v rámci ostatních bakalářských/diplomových
-prací v daném roce nebo na práce řešené na externích pracovištích).
+\section{Závěr}
+Všechny čtyři číselné soustavy jsme prozkoumali, některé podrobněji, a některé méně.\newline Hlavním cílem u dokazování definičního oboru číselné soustavy je ukázka toho, že algoritmus vždy po nějakém počtu kroků dosáhne svého cíle, a to nuly. Sčítání a násobení je u těchto\newline pozičních soustav obdobné jak u desítkové soustavy, kterou všichni dobře znají. Jen je třeba si určit nějaké pravidla, která nám při operacích pomohou.\newline\newline Zajimavým zjištěním byl fakt, že oproti standardním číselným soustavám, kde je základem\newline nějaké přirozené číslo, u nestandardních (konkrétně u komplexní) si jako základ nemůžeme\newline vybrat libovolné číslo (samozřejmě víme, že čím menší norma čísla, tím je menší množina\newline potřebných znaků pro reprezentaci celého definičního oboru). Takovým příkladem byla\newline komplexní soustava. Při pokusech jsme zjistili, že v číselné soustavě\newline se základem $(1-i)$ a $C=\{0,1\}$ nenajdeme reprezentaci pro všechna gaussova celá čísla,\newline i přesto, že norma základu je stejná jako norma základu s kterým jsme definiční obor dokázali $(-1+i)$.\newline\newline Tématem, kterým jsme se v této práci nezabývali a bylo by záhodno ji o něj doplnit, je rozšíření již popsaných číselných soustav na číselné soustavy na tělese (to jsou ty,\newline které umožňují reprezentovat čísla z množiny reálných čísel). Dalším velice zajimavým typem číselných soustav jsou číselné soustavy s iracionálním základem ($e$, $\sqrt{2}$, $\varphi$).
 \printbibliography[title={Literatura}, heading=bibintoc]
 \end{document}
