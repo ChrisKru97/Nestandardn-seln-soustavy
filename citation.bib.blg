@@ -1,0 +1,5 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'citation.bib.blg'
+[35] biber-darwin:315> INFO - === Fri May 15, 2020, 21:37:45
+[182] Utils.pm:209> ERROR - Cannot find control file 'citation.bib.bcf'! - Did latex run successfully on your .tex file before you ran biber?
+[182] Biber.pm:114> INFO - ERRORS: 1
